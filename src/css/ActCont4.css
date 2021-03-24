@@ -1,0 +1,47 @@
+#unfinished{color:red;
+				background-color: pink;
+				border-radius: 10px;
+				width:12%;
+				font-size: 1.5em;}
+	#score{		font-size: 1.5em;
+				font-family: montserrat;
+				font-weight: 800;}
+	.blue{color:#2BE7D0;}
+	.red{color:red;}
+	.green{color:#51E72B;}
+	.yellow{color:#CCE72B;}
+	table{width:100%;
+			background:white;}
+
+
+			/*ActCont2*/
+#act2-status{font-size: 1em;
+				font-family: montserrat;
+				font-weight: 500;
+				margin-right: 2%;
+				border-radius: 10px;
+				color: navy;
+				background-color: lightblue;
+}
+#progress{
+	width:3vw;
+}
+
+/*ActCont1*/
+#linkTo{text-decoration: none;
+		color:black;}
+#ActCont1-table{
+	width:70vw;
+	font-family: Montserrat;
+}
+.ActCont1-header{font-size: 1em;
+					font-weight: 500;}
+#ActCont1-btn{font-family: Montserrat;
+														font-style: normal;
+														font-weight: 500;
+														font-size: 1vw;
+														color: #FEFEFE;
+														background: #57BA61;
+														border-radius: 23.4px;
+														border:none;
+														margin-left: 5%;}

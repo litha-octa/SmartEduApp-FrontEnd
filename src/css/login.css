@@ -1,0 +1,365 @@
+@media (min-width: 769px){  
+body{	background-color: #E5E5E5;
+	}
+#linkToLogin{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					margin-left: 45%;
+	}
+.linkto{color:#5784BA;}
+h1{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4vw;
+		color: #010620;
+		margin-top: 5%;
+		margin-left: 40%;
+	}
+
+#label-username {	
+					width: 30vw;
+					height: 4vw;
+					margin-left: 30%;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 10px;
+				}
+.name{				
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin-top: 4%;
+					margin-left: 5%;
+}
+
+.titik{
+	margin-top: 4%;
+	margin-left: 1%;
+	width:0.9vw;
+	height: 0.8vw;
+}
+
+#label-password{	
+					width: 30vw;
+					height: 4vw;
+					margin-left: 30%;
+					background: #FFFFFF;
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid #5784BA;
+					margin-top: 0%;
+				}
+
+#username-email{	margin-left: 30%;
+					margin-top :1%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+ 				}
+
+#password{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 30%;
+					
+		}
+
+
+.linkToReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1vw;
+		color: #000000;
+		margin-left: 52%;
+	}
+
+button{			width: 30vw;
+				height: 4vw;
+				border:none;
+				border-radius: 6px;
+
+	   }
+
+.btn-login{	
+			background: #5784BA;
+			border-radius: 10px;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4vw;
+			color: #FFFFFF;
+			margin-left: 30%;
+			}
+
+.btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	border-radius: 10px;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.3vw;
+	color: #010620;
+	margin-left: 30%;
+	margin-top: 2%;}
+			
+.google{
+		width:9%;
+}}
+
+@media (max-width:768px) and (min-width:426px){
+	body{	background-color: #E5E5E5;
+	}
+#linkToLogin{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					margin-left: 45%;
+	}
+.linkto{color:#5784BA;}
+h1{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 7vw;
+		color: #010620;
+		margin-top: 5%;
+		margin-left: 45%;
+	}
+
+#label-username {	
+					width: 40vw;
+					height: 5vw;
+					margin-left: 30%;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 10px;
+				}
+.name{				
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin-top: 4%;
+					margin-left: 5%;
+}
+
+.titik{
+	margin-top: 4%;
+	margin-left: 1%;
+	width:2vw;
+	height: 1vw;
+}
+
+#label-password{	
+					width: 40vw;
+					height: 5vw;
+					margin-left: 30%;
+					background: #FFFFFF;
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid #5784BA;
+					margin-top: 0%;
+				}
+
+#username-email{	margin-left: 30%;
+					margin-top :1%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+ 				}
+
+#password{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 30%;
+					
+		}
+
+
+.linkToReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.9vw;
+		color: #000000;
+		margin-left: 54%;
+	}
+
+button{			width: 50vw;
+				height: 6vw;
+				border:none;
+				border-radius: 6px;
+				margin-left: 30%;
+
+	   }
+
+.btn-login{	
+			background: #5784BA;
+			border-radius: 10px;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2.3vw;
+			color: #FFFFFF;
+			
+			}
+
+.btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	border-radius: 10px;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.3vw;
+	color: #010620;
+	margin-top: 2%;}
+			
+.google{
+		width:5vw;
+}
+}
+
+@media(max-width: 425px){  
+body{	background-color: #E5E5E5;
+	}
+
+#linkToLogin{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					margin-left: 45%;
+	}
+	.linkto{color:#5784BA;}
+h1{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10vw;
+		color: #010620;
+		margin-top: 5%;
+		margin-left: 35%;
+	}
+
+#label-username {	
+					width: 60vw;
+					height: 7vw;
+					margin-left: 20%;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 10px;
+				}
+.name{				
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2vw;
+					color: #010620;
+					margin-top: 4%;
+					margin-left: 5%;
+}
+
+.titik{
+	margin-top: 4%;
+	margin-left: 1%;
+	width:2vw;
+	height: 1vw;
+}
+
+#label-password{	
+					width: 60vw;
+					height: 7vw;
+					margin-left: 20%;
+					background: #FFFFFF;
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid #5784BA;
+					margin-top: 0%;
+				}
+
+#username-email{	margin-left: 22%;
+					margin-top :1%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 3vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+ 				}
+
+#password{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 3vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 22%;
+					
+		}
+
+
+.linkToReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 3vw;
+		color: #000000;
+		margin-left: 55%;
+	}
+
+button{			width: 60vw;
+				height: 7vw;
+				border:none;
+				border-radius: 6px;
+				margin-left: 20%;
+
+	   }
+
+.btn-login{	
+			background: #5784BA;
+			border-radius: 10px;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 3vw;
+			color: #FFFFFF;
+			
+			}
+
+.btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	border-radius: 10px;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 3vw;
+	color: #010620;
+	margin-top: 2%;}
+			
+.google{
+		width:5vw;
+}
+}

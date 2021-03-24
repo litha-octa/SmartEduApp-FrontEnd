@@ -1,0 +1,115 @@
+@media(min-width: 768px){
+.header{display: none;}}
+
+
+@media (max-width: 767px) and (min-width:426px) {  
+.header{
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  background-color: #5784BA;
+}
+.title {
+color:black;
+margin-left:3%;
+margin-top:0%;
+text-align: center;
+height:5vh;
+width: 140px;
+font-size: 20px;
+text-align: justify; 
+background-color: #E5E5E5;
+}
+#line-menu{
+  margin-top: 1.5%;
+}
+
+#header-selected{
+  background-color: white;
+  width:7%;
+  font-size: 1em;
+  font-family: roboto;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-right: 5%;
+  margin-left: 1%;
+  color: black;
+}
+#header-menu{
+  color: white;
+  width:7%;
+  font-size: 1em;
+  font-family: roboto;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+#header-icon{
+  width:7vw;
+  float:right;
+  margin-top: -3.5%;
+  background-color:#5784BA;
+  padding: 1%;
+  border-radius: 5px;
+}}
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px){  
+.header{
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top:0;
+  background-color: #5784BA;
+}
+.title {
+color:black;
+margin-left:3%;
+margin-top:0%;
+text-align: center;
+height:4vh;
+width: 20vw;
+font-size: 10px;
+text-align: justify; 
+background-color: #E5E5E5;
+}
+#line-menu{
+  margin-top: 1.5%;
+}
+
+#header-selected{
+  background-color: white;
+  width:7%;
+  font-size: 0.5em;
+  font-family: roboto;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 0% 5% 0% 1%;
+  color: black;
+}
+#header-menu{
+  color: white;
+  width:7%;
+  font-size: 0.5em;
+  font-family: roboto;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-right: 5%;
+}
+#header-icon{
+  width:9vw;
+  float:right;
+  margin-top: -7%;
+  background-color:#5784BA;
+  padding: 1%;
+  border-radius: 5px;
+}}

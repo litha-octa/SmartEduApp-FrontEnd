@@ -1,0 +1,83 @@
+.modal-wrapper {
+background: #5784BA;
+border: 1px solid #d0cccc;
+transition: all .8s;
+width: 90vw;
+height: 90vh;
+margin-top:-7%;
+border-radius: 20px;
+margin-left: 30%;
+}
+
+.modal-header {
+background:#5784BA;
+height: 10%;
+padding: 5px 10px;
+text-align: right;
+}
+
+.modal-header h2 {
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.modal-body {
+padding-left: 10px;
+text-align: center;
+}
+
+
+.close-modal-btn {
+color: white;
+cursor: pointer;
+float: right;
+font-size: 30px;
+margin: 0;
+}
+
+.close-modal-btn:hover {
+color: black;
+}
+
+.btn-cancel {
+background-color: #b71c1c;
+float: left;
+}
+
+.btn-continue {
+background-color: #1b5e20;
+float: right;
+}
+
+.back-shed {
+background-color: lightgrey;
+height: 100%;
+position: fixed;
+transition: all 1.3s;
+width: 100%;
+}
+
+.open-modal-btn {
+background: #5784BA;
+width:5%;
+padding: 0;
+margin-left: 13vw;
+}
+
+
+
+#table-notif{width:90%;
+			margin-left: 5%;
+			background:transparent;	
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 0.7em;
+			line-height: 19px;
+			color: #F9F9F9;
+			text-align: left;
+			overflow:scroll;
+			}
+#slice-notif{font-size: 1.5em;}
+#notif-img{width:2vw;}
