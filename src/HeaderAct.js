@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/HeaderAct.css";
-import { Route, Link, NavLink,HashRouter } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const HeaderAct = function(){
 
@@ -19,7 +19,7 @@ const HeaderAct = function(){
 
                     <NavLink to="/" id="header-menu">Logout</NavLink>
 
-                    <NavLink to="./Profile"><img src="/assets/profile.png" id="header-icon"/></NavLink>
+                    <NavLink to="./Profile"><img src="/assets/profile.png" id="header-icon" alt=" "/></NavLink>
                     </div>
             
             </div>

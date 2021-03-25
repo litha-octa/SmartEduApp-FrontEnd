@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Route, Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./css/activity4.css";
 import HeaderAct from "./HeaderAct";
 import SideActivity from "./SideActivity";
@@ -15,13 +15,13 @@ class Activity4 extends Component {
 <article>
     <div className="article1">
         <p id="title"><Link to ="./Activity">
-          <img src="assets/Back Icon.png"/></Link>
+          <img src="assets/Back Icon.png" alt=" "/></Link>
                 Know more Javascript</p>
-            <img src="assets/activity3-bg.jfif" id="article-bg"/>
+            <img src="assets/activity3-bg.jfif" id="article-bg" alt=" "/>
             <div id="bg-layer2">
     
     
-                <img src="assets/group 205.png" className="icon-comp2"/>
+                <img src="assets/group 205.png" className="icon-comp2" alt=" "/>
                  <div className="sub">Front-end Fundamentals</div>
                      <div className="description">Level : Beginner&nbsp;&nbsp;&nbsp;
                                               Category : Software&nbsp;&nbsp;&nbsp;
@@ -38,7 +38,7 @@ class Activity4 extends Component {
            Progress&nbsp;&nbsp;&nbsp;
            Discussion</div>
 
-          <img src="assets/linepolos.png" className="line"/>
+          <img src="assets/linepolos.png" className="line" alt=" "/>
           <ActCont4/>
          </div>
 

@@ -7,8 +7,8 @@ class SideActivity extends Component {
     return (
 <aside>
   <div id="asideact">
-                  <img src="assets/Notif Icon2.png" id="notif"/><br/>
-                  <img src="assets/profile.png" id="mini-profile"/><br/>
+                  <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
+                  <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
                   <div id="side-name-profile">Emir Kharisma
                   <div id="SideActstatus">online</div></div>
                   <div>
@@ -20,7 +20,7 @@ class SideActivity extends Component {
 
 <div id="asideact2">
                 <Link to="/Activity" id="SideAct-profileSelect">             
-                  <img src="assets/Activity Icon2.png"alt="activity-icon" id="SideActIcon"/>
+                  <img src="assets/Activity Icon2.png" alt="activity-icon" id="SideActIcon"/>
                             Activity
                 </Link><br/>
 </div>

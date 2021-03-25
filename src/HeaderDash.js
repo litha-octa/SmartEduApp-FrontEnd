@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/HeaderDash.css";
-import { Route, Link, NavLink,HashRouter } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const HeaderDash = function(){
 
@@ -20,7 +20,7 @@ const HeaderDash = function(){
 
             <NavLink to="/Profile" id="header-menu">
 
-            <img src="/assets/profile.png" id="header-icon"/></NavLink>
+            <img src="/assets/profile.png" id="header-icon" alt=" "/></NavLink>
             </div>
         </div>
 </HashRouter>

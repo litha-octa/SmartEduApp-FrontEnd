@@ -20,7 +20,7 @@ class Register extends Component {
           <button type="button" className="btn-regist"> Register</button>
           
           <button type="button" className="btn-googleregist">
-                  <img src="assets/logogoogle.png" className="google"/>
+                  <img src="assets/logogoogle.png" className="google" alt=" "/>
                   Register with google
               </button>
 

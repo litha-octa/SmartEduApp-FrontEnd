@@ -30,7 +30,8 @@ class CreateNewClass extends Component {
             <td>Software</td>
             <td>Learn the fundamentals of front end...</td>
             <td>Friday, 08:00 - 09:40</td>
-            <td> 24<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/><img src="assets/list.png" alt="list" className="list"/></td>
+            <td> 24<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/>
+                    <img src="assets/list.png" alt="list" className="list" /></td>
           </tr>
           <tr className="table-content">
             <td><input className="form-check-input" type="checkbox"/></td>
@@ -38,7 +39,8 @@ class CreateNewClass extends Component {
             <td>Software</td>
             <td>HTML from scratch</td>
             <td>Monday, 13:00 - 14:40</td>
-            <td> 32<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/><img src="assets/list.png" alt="list" className="list"/></td>
+            <td> 32<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/>
+                      <img src="assets/list.png" alt="list" className="list"/></td>
           </tr>
           <tr className="table-content">
             <td><input className="form-check-input" type="checkbox"/></td>
@@ -46,7 +48,8 @@ class CreateNewClass extends Component {
             <td id="category">History</td>
             <td id="description">The history of Europe concerns itself...</td>
             <td>Monday, 15:00 - 16:40</td>
-            <td> 17<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/><img src="assets/list.png" alt="list" className="list"/></td>
+            <td> 17<img src="assets/Student Icon.png" id="student-icon" alt="student-icon"/>
+                          <img src="assets/list.png" alt="list" className="list"/></td>
           </tr>
          </table>
               <Link to="./activity2" className="view-all">view all

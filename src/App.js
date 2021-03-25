@@ -29,7 +29,7 @@ class App extends Component {
 
         { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-shed"></div> : null }
 
-        <button className="open-modal-btn" onClick={this.openModalHandler}><img src="assets/Notif Icon2.png"/></button>
+        <button className="open-modal-btn" onClick={this.openModalHandler}><img src="assets/Notif Icon2.png" alt=" "/></button>
 
         <Modal
           className="modal"

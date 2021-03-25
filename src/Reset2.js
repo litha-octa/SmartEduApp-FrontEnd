@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, HashRouter } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./css/others/reset.css";
  
 class Reset2 extends Component {
@@ -8,9 +8,9 @@ class Reset2 extends Component {
     <div>
         <div className="col" id="box">
           <Link to="/Reset">
-            <img src="assets/Back Icon.png" id="back"/>
+            <img src="assets/Back Icon.png" id="back" alt=" "/>
           </Link>
-            <img className="orang" src="assets/orang2.png"/>
+            <img className="orang" src="assets/orang2.png" alt=" "/>
         </div>
         <div class="col" id="box-2">
             <h1 id="reset">Reset Password</h1>

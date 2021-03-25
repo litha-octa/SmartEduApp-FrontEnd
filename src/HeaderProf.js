@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/HeaderProf.css";
-import { Route, Link, NavLink,HashRouter } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 const HeaderProf = function(){
 
@@ -19,7 +19,7 @@ const HeaderProf = function(){
 
             <NavLink to="/" id="header-menu">Logout</NavLink>
 
-            <img src="/assets/profile.png" id="header-icon"/>
+            <img src="/assets/profile.png" id="header-icon" alt=" "/>
             </div>
             
         </div>

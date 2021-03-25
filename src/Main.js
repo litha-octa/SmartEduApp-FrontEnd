@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 import Login from "./Login";
 import Register from "./Register";
 import Reset from "./Reset.js";
@@ -13,7 +13,6 @@ import Activity from "./Activity";
 import Activity2 from "./Activity2";
 import Activity3 from "./Activity3";
 import Activity4 from "./Activity4";
-import ActivityFas from "./ActivityFas";
 import CreateNewClass from "./CreateNewClass";
  
 class Main extends Component {
@@ -35,7 +34,6 @@ class Main extends Component {
             <Route path="/Activity2" component={Activity2}/>
             <Route path="/Activity3" component={Activity3}/>
             <Route path="/Activity4" component={Activity4}/>
-            <Route path="/ActivityFas" component={ActivityFas}/>
             <Route path="/CreateNewClass" component ={CreateNewClass}/>
           </div>
         </div>

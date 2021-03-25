@@ -33,7 +33,7 @@ class Activity extends Component {
         <td className="text-content2-t2">Learn the fundamentals of front end...</td>
         <td><img src="assets/progress bar.png"id="progress" alt=" "/></td>
         <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score1">86<img src="assets/list.png" className="list"/></p>
+        <td><p className="score1">86<img src="assets/list.png" alt=" " className="list"/></p>
         </td>
       </tr>
       <tr class="line-1">
@@ -43,7 +43,7 @@ class Activity extends Component {
         <td className="text-content2-t2">HTML from scratch</td>
         <td><img src="assets/progress bar2.png" id="progress" alt=" "/></td>
         <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score1"> 71<img src="assets/list.png" class="list"/></p>
+        <td><p className="score1"> 71<img src="assets/list.png" alt=" " className="list"/></p>
          </td>
       </tr>
       <tr class="line-1">
@@ -53,7 +53,7 @@ class Activity extends Component {
         <td className="text-content2-t2">The history of Europe concerns itself...</td>
         <td><img src="assets/progress bar3.png"id="progress" alt=" "/></td>
         <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score2">62<img src="assets/list.png" className="list"/></p>
+        <td><p className="score2">62<img src="assets/list.png"  alt=" " className="list"/></p>
         </td>
       </tr>
       <tr><td colspan="7" align="center"> 
