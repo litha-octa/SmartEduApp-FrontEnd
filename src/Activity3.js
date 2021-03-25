@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Route, Link, HashRouter } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "./css/activity3.css";
 import HeaderAct from "./HeaderAct";
 import SideActivity from "./SideActivity";
@@ -14,13 +14,13 @@ class Activity3 extends Component {
 <article>
     <div className="article1">
         <p id="title"><Link to ="./Activity">
-          <img src="assets/Back Icon.png"/></Link>
+          <img src="assets/Back Icon.png" alt=" "/></Link>
                 Know more Javascript</p>
-            <img src="assets/activity3-bg.jfif" id="article-bg"/>
+            <img src="assets/activity3-bg.jfif" id="article-bg" alt=" "/>
             <div id="bg-layer2">
     
     
-                <img src="assets/group 205.png" className="icon-comp2"/>
+                <img src="assets/group 205.png" className="icon-comp2" alt=" "/>
                  <div className="sub">Know more Javascript</div>
                      <div className="description">Level : Beginner&nbsp;&nbsp;&nbsp;
                                               Category : Software&nbsp;&nbsp;&nbsp;
@@ -28,7 +28,7 @@ class Activity3 extends Component {
                       <button type="button" className="btn">Register</button>
     </div>
     <div className="article2">
-         <img src="assets/group 205.png" className="icon-comp"/>
+         <img src="assets/group 205.png" className="icon-comp" alt=" "/>
 
           <div className="content">Information&nbsp;&nbsp;&nbsp;
 
@@ -36,7 +36,7 @@ class Activity3 extends Component {
            Progress&nbsp;&nbsp;&nbsp;</Link>
            Discussion</div>
 
-          <img src="assets/line.png" className="line"/>
+          <img src="assets/line.png" className="line" alt=" "/>
 
           <div className="title-content">Description</div>
 

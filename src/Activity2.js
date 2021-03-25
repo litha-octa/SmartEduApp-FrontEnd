@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/activity2.css";
-import { Route, Link, HashRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HeaderAct from "./HeaderAct";
 import SideActivity from "./SideActivity";
 import ActCont2 from "./ActCont2";
@@ -16,7 +16,7 @@ class Activity2 extends Component {
   <div className="bd-highlight1">
     <Link to ="./Activity">
       <label id="title">
-        <img src="assets/Back Icon.png"/>
+        <img src="assets/Back Icon.png" alt=" "/>
       </label>
     </Link><br/>
     <label id="subtitle">My Class</label><br/>

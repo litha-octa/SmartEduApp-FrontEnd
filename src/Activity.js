@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/activity.css";
-import { Route, Link, HashRouter } from "react-router-dom";
+import {Link} from "react-router-dom";
 import HeaderAct from "./HeaderAct";
 import SideActivity from "./SideActivity";
 import ActCont1 from "./ActCont1";
@@ -31,8 +31,8 @@ class Activity extends Component {
         <td className="text-content2-t2">Front-end fundamentals</td>
         <td className="text-content2-t2">Software</td>
         <td className="text-content2-t2">Learn the fundamentals of front end...</td>
-        <td><img src="assets/progress bar.png"id="progress"/></td>
-        <td><img src="assets/status.png"id="status"/></td>
+        <td><img src="assets/progress bar.png"id="progress" alt=" "/></td>
+        <td><img src="assets/status.png"id="status" alt=" "/></td>
         <td><p className="score1">86<img src="assets/list.png" className="list"/></p>
         </td>
       </tr>
@@ -41,8 +41,8 @@ class Activity extends Component {
         <td className="text-content2-t2">HTML for Beginners</td>
         <td className="text-content2-t2">Software</td>
         <td className="text-content2-t2">HTML from scratch</td>
-        <td><img src="assets/progress bar2.png" id="progress"/></td>
-        <td><img src="assets/status.png"id="status"/></td>
+        <td><img src="assets/progress bar2.png" id="progress" alt=" "/></td>
+        <td><img src="assets/status.png"id="status" alt=" "/></td>
         <td><p className="score1"> 71<img src="assets/list.png" class="list"/></p>
          </td>
       </tr>
@@ -51,14 +51,14 @@ class Activity extends Component {
         <td className="text-content2-t2">History of Europe</td>
         <td className="text-content2-t2">History</td>
         <td className="text-content2-t2">The history of Europe concerns itself...</td>
-        <td><img src="assets/progress bar3.png"id="progress"/></td>
-        <td><img src="assets/status.png"id="status"/></td>
+        <td><img src="assets/progress bar3.png"id="progress" alt=" "/></td>
+        <td><img src="assets/status.png"id="status" alt=" "/></td>
         <td><p className="score2">62<img src="assets/list.png" className="list"/></p>
         </td>
       </tr>
       <tr><td colspan="7" align="center"> 
         <Link to="./activity2" class="view-all">view all
-        <img src="assets/arrow.png" className="arrow"/></Link>
+        <img src="assets/arrow.png" className="arrow" alt=" "/></Link>
       </td></tr>
     </table>
   </div></div>
