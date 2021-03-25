@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/HeaderAct.css";
-import {  NavLink } from "react-router-dom";
+import {  NavLink , HashRouter} from "react-router-dom";
 
 const HeaderAct = function(){
 

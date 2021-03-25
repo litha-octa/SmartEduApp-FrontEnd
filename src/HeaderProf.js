@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/HeaderProf.css";
-import { NavLink} from "react-router-dom";
+import { NavLink, HashRouter} from "react-router-dom";
 
 const HeaderProf = function(){
 
