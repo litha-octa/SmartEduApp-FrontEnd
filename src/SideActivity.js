@@ -11,11 +11,11 @@ class SideActivity extends Component {
                   <img src="assets/profile.png" id="mini-profile"/><br/>
                   <div id="side-name-profile">Emir Kharisma
                   <div id="SideActstatus">online</div></div>
-
-                    <Link to ="/Dashboard"  id="SideAct-profilemenu">
+                  <div>
+                    <Link to ="/Dashboard"  id="SideAct-profilemenu-dash">
                         <img src="assets/Dashboard Icon.png" id="SideActIcon"/>
                             Dashboard
-                    </Link><br/>
+                    </Link></div><br/>
   </div>
 
 <div id="asideact2">
@@ -27,7 +27,7 @@ class SideActivity extends Component {
 
 <div id="asideact">
               <img src="assets/Help Icon.png" id="SideActIcon"/>
-                 <label id="SideAct-profilemenu">Help</label><br/>
+                 <label id="SideAct-profilemenu-dash">Help</label><br/>
 
           <Link to ="/"  id="SideAct-profilemenu2">          
               <img src="assets/Logout Icon.png" id="SideActIcon"/>

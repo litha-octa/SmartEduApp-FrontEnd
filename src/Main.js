@@ -14,6 +14,7 @@ import Activity2 from "./Activity2";
 import Activity3 from "./Activity3";
 import Activity4 from "./Activity4";
 import ActivityFas from "./ActivityFas";
+import CreateNewClass from "./CreateNewClass";
  
 class Main extends Component {
   render() {
@@ -35,6 +36,7 @@ class Main extends Component {
             <Route path="/Activity3" component={Activity3}/>
             <Route path="/Activity4" component={Activity4}/>
             <Route path="/ActivityFas" component={ActivityFas}/>
+            <Route path="/CreateNewClass" component ={CreateNewClass}/>
           </div>
         </div>
       </HashRouter>

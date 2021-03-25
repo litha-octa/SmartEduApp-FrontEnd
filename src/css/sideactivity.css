@@ -3,20 +3,18 @@ aside{
 	float:left;
 	width:15%;
 	position: fixed;
-	
-	
 	}
 
 #asideact{background:#5784BA;
 		border-radius: 20px;
-		padding:10% 0 30% 0;
-		margin-top: -10%;	
+		padding:10% 0 10% 0;
+		margin-top: 0%;	
 				}
 											#notif{				width:2.3vw;
 																margin-top: 8%;
 																margin-left: 75%;		
 											}
-											#mini-profile{		width: 7vw;																margin-left: 8%;
+											#mini-profile{		width: 5vw;																margin-left: 8%;
 																margin-top: 10%;
 											}
 											#side-name-profile{		font-family: Roboto;
@@ -34,10 +32,11 @@ aside{
 																font-size: 1em;
 																color: #ffffff;
 																margin-left: 2%;
+																margin-bottom: 30%;
 											}
 											#SideActIcon{
-												width:3vw;
-												margin-top: 15%;
+												width:2vw;
+												margin: 15% 0 0 7%;
 											}
 											.menu{				font-family: Montserrat;
 																font-style: normal;
@@ -45,33 +44,34 @@ aside{
 																font-size: 1.8vw;
 																color:#ffffff;				
 											}
-											#SideAct-profilemenu{		font-family: Montserrat;
-																font-style: normal;
-																font-weight: 600;
-																font-size: 1.5em;
-																color: #FFFFFF;	
-																margin-top: 15%;
-																text-decoration: none;				
-											}
+											#SideAct-profilemenu-dash{		font-family: Montserrat;
+																			font-style: normal;
+																			font-weight: 600;
+																			font-size: 1em;
+																			color: #FFFFFF;	
+																			margin-top: 25%;
+																			margin-bottom: 0%;
+																			text-decoration: none;				
+																	}
 											#SideAct-profileSelect{		font-family: Montserrat;
 																font-style: normal;
 																font-weight: 600;
-																font-size: 1.5em;
+																font-size: 1em;
 																color: black;	
-																margin-top: 15%;
+																margin-top: 10%;
 																text-decoration: none;				
 											}
 										#SideAct-profilemenu2{	font-family: Montserrat;
 																font-style: normal;
 																font-weight: 600;
-																font-size: 1.5em;
+																font-size: 1em;
 																color: red;	
 																margin-top: -5%;
 																text-decoration: none;				
 											}
 #asideact2{	background: #FFFFFF;
-					border-radius: 20px;
-					padding: 10% 0 20% 0;
+					border-radius: 20px 20px 0 0;
+					padding: 0% 0 20% 0;
 					margin-top: -15%;
 					}
 											#profile-icon-select{	font-family: Montserrat;
