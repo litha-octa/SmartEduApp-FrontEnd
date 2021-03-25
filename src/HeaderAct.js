@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./css/HeaderAct.css";
 import {  NavLink , HashRouter} from "react-router-dom";
 
