@@ -5,7 +5,7 @@ import "./css/login/login.css";
 class Login extends Component {
   render() {
     return (
-  <body>
+  <div id="body-login">
 	<div className="container-login">
     <div className="one"></div>
     <div className="two">
@@ -32,7 +32,8 @@ class Login extends Component {
                 </div>
   </div>
     <div className="three"></div>
-  </div></body>
+  </div>
+  </div>
 			
  			);
   }

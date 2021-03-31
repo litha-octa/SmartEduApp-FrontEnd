@@ -1,0 +1,193 @@
+@media (min-width: 768px){  
+*{margin:0;}	
+body{background-color:  #E6EDF6;}
+ .container-login{	display:flex;
+					width:100%;
+					height:100%;
+					align-content: center; 
+					background-color: #E6EDF6;
+					justify-content: space-between;}
+	.one{	width: 20vw;}
+	.two{	height: 100%;
+			align-content: center;}
+	.three{	width: 20vw;}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 3em;
+		color: #010620;
+		margin:5% 0 15% 38%;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8em;
+					width:10vw;
+					color: #ADA9BB;
+					margin-left: 20%;
+					background-color: #E5E5E5;
+}
+#input {	
+					width: 40vw;
+					height: 6vh;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					align-items: center;
+					margin-left: 20%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.8em;
+		color: #000000;
+		text-decoration:none;
+		margin:2% 0 15% 65%;
+}
+.btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4vw;
+			color: #FFFFFF;
+			margin:7% 0 0 20%;
+			width: 40vw;
+			height: 6vh;
+			border:none;
+			border-radius: 6px;
+}
+.btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1vw;
+	color: #010620;
+	margin:2% 0 0 20%;
+	width:40vw;
+	height: 6vh;
+	border:none;
+	border-radius: 6px;
+}
+			
+.google{margin:-2% 0 4% -42%;
+		width:6%;
+}
+#text-btn-w-google{margin-top: -12%;}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.8em;
+					color: #ADA9BB;
+					margin:5% 0 50% 42%;
+}
+.regist-link{color:#5784BA;}
+}
+
+@media (max-width:425px){  
+*{margin:0;}
+.container-login {	display:flex;
+					width:100%;
+					height:100%;
+					align-content: center; 
+					background-color:  #E6EDF6;
+					justify-content: space-between;}
+	.one{	width: 20vw;}
+	.two{	height: 100%;
+			align-content: center;}
+	.three{	width: 20vw;}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 3em;
+		color: #010620;
+		text-align: center;
+		margin:10% 0 15% 0;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8em;
+					width:15vw;
+					color: #ADA9BB;
+					margin:3% 0 0% 14%;
+					background-color: #E5E5E5;
+}
+#input {	
+					width: 50vw;
+					height: 4vh;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					align-items: center;
+					margin:0 0 0 14%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.8em;
+		color: #000000;
+		text-decoration:none;
+		margin:2% 0 15% 65%;
+}
+.btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.5vw;
+			color: #FFFFFF;
+			margin:7% 0 0 15%;
+			width: 50vw;
+			height: 4vh;
+			border:none;
+			border-radius: 6px;
+}
+.btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5vw;
+	color: #010620;
+	margin:2% 0 0 15%;
+	width:50vw;
+	height: 4vh;
+	border:none;
+	border-radius: 6px;
+}
+			
+.google{margin:-2% 0 4% -42%;
+		width:6%;
+}
+#text-btn-w-google{margin-top: -12%;}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 0.8em;
+					color: #ADA9BB;
+					margin:5% 0 130% 42%;
+}
+.regist-link{color:#5784BA;}
+}
