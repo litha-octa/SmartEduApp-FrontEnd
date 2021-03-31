@@ -1,4 +1,4 @@
-@media (min-width: 768px){  
+@media (min-width: 769px){  
 *{margin:0;}	
 body{background-color:  #E6EDF6;}
  .container-login{	display:flex;
@@ -17,7 +17,8 @@ body{background-color:  #E6EDF6;}
 		font-weight: 500;
 		font-size: 3em;
 		color: #010620;
-		margin:5% 0 15% 38%;
+		text-align: center; 
+		margin:5% 0 10% 0%;
 }
 #label{				
 					font-family: Kanit;
@@ -26,11 +27,11 @@ body{background-color:  #E6EDF6;}
 					font-size: 0.8em;
 					width:10vw;
 					color: #ADA9BB;
-					margin-left: 20%;
+					margin-left: 30%;
 					background-color: #E5E5E5;
 }
 #input {	
-					width: 40vw;
+					width: 25vw;
 					height: 6vh;
 					background: #FFFFFF;
 					border: 1px solid #ADA9BB;
@@ -42,7 +43,7 @@ body{background-color:  #E6EDF6;}
 					font-size: 1.8vw;
 					color: #010620;
 					align-items: center;
-					margin-left: 20%;
+					margin-left: 30%;
 }
 #toReset{	
 		font-family: Roboto;
@@ -51,7 +52,7 @@ body{background-color:  #E6EDF6;}
 		font-size: 0.8em;
 		color: #000000;
 		text-decoration:none;
-		margin:2% 0 15% 65%;
+		margin:2% 0 15% 58%;
 }
 .btn-login{	
 			background: #5784BA;
@@ -60,8 +61,8 @@ body{background-color:  #E6EDF6;}
 			font-weight: 500;
 			font-size: 1.4vw;
 			color: #FFFFFF;
-			margin:7% 0 0 20%;
-			width: 40vw;
+			margin:7% 0 0 30%;
+			width: 25vw;
 			height: 6vh;
 			border:none;
 			border-radius: 6px;
@@ -71,10 +72,10 @@ body{background-color:  #E6EDF6;}
 	font-family: Kanit;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 1vw;
+	font-size: 0.9em;
 	color: #010620;
-	margin:2% 0 0 20%;
-	width:40vw;
+	margin:1% 0 0 30%;
+	width:25vw;
 	height: 6vh;
 	border:none;
 	border-radius: 6px;
@@ -90,12 +91,12 @@ body{background-color:  #E6EDF6;}
 					font-weight: 500;
 					font-size: 0.8em;
 					color: #ADA9BB;
-					margin:5% 0 50% 42%;
+					margin:15% 0 0% 45%;
 }
 .regist-link{color:#5784BA;}
 }
 
-@media (max-width:425px){  
+@media (min-width:768px) and (max-width:426px){  
 *{margin:0;}
 .container-login {	display:flex;
 					width:100%;
