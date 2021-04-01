@@ -1,15 +1,12 @@
-/*
-@media (min-width:768px){
+@media (min-width:769px){
 
-*{
-    margin: 0;
-}
-.container{
+*{margin: 0;}
+.container-reset{
 	width: 100%;
 	height:100%;
 	display: flex;
 	flex-wrap: wrap;
-	border:10px solid black;
+	background-color: #E6EDF6;
 }
 #back{
 	float:left;
@@ -17,51 +14,50 @@
 	margin-left: 2%;
 }
 .orang{
-	width:60%;
+	width:45%;
 	height: auto;
-	margin-top:10%;
+	margin-top:20%;
 	margin-bottom: 30%;
-	margin-left: 15%;
+	margin-left: 25%;
 }
-#box{
+#box1-reset{
 	width:50%;
 	height: 100%;
-	background-color: #E5E5E5;
+	background-color: #E6EDF6;
 	float:left;
 }
-#box-2{
+#box2-reset{
 	width:50%;
 	height: 100%;
 	background: #FFFFFF;
 	border-radius:30px;
 	float:right;
-	margin-top: -10%;
-	padding-top: 10%;
-	padding-bottom: 22%;
+	padding-bottom: 10%;
 }
-#reset{
+#reset-caption{
 font-family: Kanit;
 font-style: normal;
 font-weight: 500;
-font-size: 4vw;
-margin-top: 3%;
+font-size: 2.5em;
+margin-top: 10%;
 margin-left: 25%;
 }
-h6{
+.rsth6-1{
 font-family: Kanit;
 font-style: normal;
 font-weight: 500;
-font-size: 2vw;
+font-size: 1.3em;
 text-align: center;
 color: #010620;
-margin-top: 5%;
+margin-top: 10%;
+
 }
 
-.h6-2{
+.rsth6-2{
 font-family: Kanit;
 font-style: normal;
 font-weight: normal;
-font-size: 1.5vw;
+font-size: 0.9em;
 text-align: center;
 color: #837F8F;
 margin-top: 0%;
@@ -70,16 +66,28 @@ padding-bottom: 5%;
 #verCode{
 	background-color: transparent;
 	border: bottom;
-	margin-left:15%;
+	margin:20% 0 10% 15%;
 	width: 70%;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.8vw;
-	line-height: 28px;
 	color: #010620;
+	border:none;
+	border-bottom: 2px solid black;
 }
-#passReset3{	margin-left: 20%;
+#passReset1{	margin-left: 15%;
+					margin-top: 25%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					width: 6vw;
+					background-color: #E5E5E5;
+					text-align: center;
+ 				}
+#passReset3{	margin-left: 15%;
 					margin-top: 5%;
 					font-family: Kanit;
 					font-style: normal;
@@ -90,13 +98,179 @@ padding-bottom: 5%;
 					background-color: #E5E5E5;
 					text-align: center;
  				}
-#namebox{
+#inputemail{
 	background: #FFFFFF;
-	width:75%;
+	width:70%;
 	height: 8vh;
 	border: 1px solid #ADA9BB;
 	box-sizing: border-box;
-	border-radius: 10px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8vw;
+	line-height: 28px;
+	color: #010620;
+	margin-left: 15%;
+}
+#input-new-pass{
+	background: #FFFFFF;
+	width:70%;
+	height: 6vh;
+	border: 1px solid #ADA9BB;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8vw;
+	line-height: 28px;
+	color: #010620;
+	margin: 0% 0 -5% 15%;
+}
+
+.reset-btn-send{	
+				width: 70%;
+				height:8vh;
+				background: #5784BA;
+				border-radius: 5px;
+				border:none;
+				margin: 5% 0  30% 15%;
+				color:white;
+				font-family: Kanit;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 2.1vw;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media   (max-width: 768px) and (min-width:684px){
+*{margin: 0;}
+.container-reset{
+	width: 100%;
+	height:100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #E6EDF6;
+}
+#back{
+	float:left;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+.orang{
+	width:55%;
+	height: auto;
+	margin-top:40%;
+	margin-bottom: 30%;
+	margin-left: 15%;
+}
+#box1-reset{
+	width:50%;
+	height: 100%;
+	background-color: #E6EDF6;
+	float:left;
+}
+#box2-reset{
+	width:50%;
+	height: 100%;
+	background: #FFFFFF;
+	border-radius:30px;
+	float:right;
+	padding-bottom: 23%;
+}
+#reset-caption{
+font-family: Kanit;
+font-style: normal;
+font-weight: 500;
+font-size: 3em;
+margin-top: 25%;
+text-align: center;
+}
+.rsth6-1{
+font-family: Kanit;
+font-style: normal;
+font-weight: 500;
+font-size: 1.3em;
+text-align: center;
+color: #010620;
+margin-top: 10%;
+
+}
+
+.rsth6-2{
+font-family: Kanit;
+font-style: normal;
+font-weight: normal;
+font-size: 0.9em;
+text-align: center;
+color: #837F8F;
+margin-top: 0%;
+padding-bottom: 5%;
+}
+#verCode{
+	background-color: transparent;
+	border: bottom;
+	width: 70%;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8vw;
+	color: #010620;
+	border:none;
+	border-bottom: 2px solid black;
+	margin:20% 0 20% 15%;
+}
+#passReset1{	margin-left: 15%;
+					margin-top: 5%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					width: 6vw;
+					background-color: #E5E5E5;
+					text-align: center;
+ 				}
+#passReset3{	margin-left: 15%;
+					margin-top: 10%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					width: 6vw;
+					background-color: #E5E5E5;
+					text-align: center;
+ 				}
+#inputemail{
+	background: #FFFFFF;
+	width:35vw;
+	height: 6vh;
+	border: 1px solid #ADA9BB;
+	box-sizing: border-box;
+	border-radius: 5px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
@@ -106,13 +280,13 @@ padding-bottom: 5%;
 	margin-left: 15%;
 	margin-top: 0%;
 }
-#namebox2{
+#input-new-pass{
 	background: #FFFFFF;
-	width:75%;
-	height: 8vh;
+	width:70%;
+	height: 6vh;
 	border: 1px solid #ADA9BB;
 	box-sizing: border-box;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
@@ -122,73 +296,99 @@ padding-bottom: 5%;
 	margin-left: 15%;
 }
 
-.btn-send{	
-				width: 75%;
-				height:8vh;
+.reset-btn-send{	
+				width: 70%;
+				height:6vh;
 				background: #5784BA;
-				border-radius: 10px;
+				border-radius: 5px;
 				border:none;
 				margin-top: 5%;
 				margin-left: 15%;
-}									p-send{ color:white;
-											font-family: Kanit;
-											font-style: normal;
-											font-weight: 500;
-											font-size: 2.1vw;
-											line-height: 36px;
-											}}
+				color:white;
+				font-family: Kanit;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 2.1vw;
+				bottom: 0;
+}}
 
 
 
 
-@media   (max-width: 767px) and (min-width:425px){
-*{
-    margin: 0;
-}
 
-.container{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 683px){
+*{margin: 0;}
+.container-reset{
 	width: 100%;
-	height:100%;
-	display: flex;
-	flex-wrap: wrap;
+	height:50%;
+	background-color: #E6EDF6;
 }
 #back{
 	float:left;
-	margin-top: 6%;
-	width:5%;
+	margin:5% 0 0 2%;
 }
 .orang{
-	min-width:30%;
-	width:40%; 
-	margin-left: 25%;
-	
+	width:40%;
+	height: auto;
+	margin:10% 0 -15% 23%;
 }
-#box{
-	background-color: #E5E5E5;
-	width: 100%;
-	height: 30%;
-}
-#box-2{
-	width: 100%;
-	height: 70%;
+#box1-reset{
+	width:100%;
+	height: 50%;
+	background-color: #E6EDF6;
+	}
+#box2-reset{
+	width:100%;
+	height: 100%;
 	background: #FFFFFF;
-	border-radius: 10px;
-	padding-bottom: 30%; 
+	border-radius:30px;
+	padding-bottom: 23%;
 }
-#passReset3{		margin-left: 15%;
-					font-family: Kanit;
-					font-style: normal;
-					font-weight: normal;
-					font-size: 3vw;
-					color: #ADA9BB;
-					width: 20vw;
-					background-color: #E5E5E5;
-					text-align: center;
- 				}
+#reset-caption{
+font-family: Kanit;
+font-style: normal;
+font-weight: 500;
+font-size: 3em;
+padding-top: 20%;
+margin-left: 30%;
+}
+.rsth6-1{
+font-family: Kanit;
+font-style: normal;
+font-weight: 500;
+font-size: 1.7em;
+text-align: center;
+color: #010620;
+margin-top: 10%;
+}
+
+.rsth6-2{
+font-family: Kanit;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4em;
+text-align: center;
+color: #837F8F;
+}
 #verCode{
 	background-color: transparent;
 	border: bottom;
-	margin-left:15%;
+	margin:5% 0 10% 15%;
 	width: 70%;
 	font-family: Roboto;
 	font-style: normal;
@@ -197,211 +397,72 @@ padding-bottom: 5%;
 	line-height: 28px;
 	color: #010620;
 }
-#reset{
-font-family: Kanit;
-font-style: normal;
-font-weight: 500;
-font-size: 7vw;
-margin-top: 2%;
-margin-left: 15%;
-}
-h6{
-font-family: Kanit;
-font-style: normal;
-font-weight: 500;
-font-size: 3vw;
-text-align: center;
-color: #010620;
-margin-top: 1%;
-}
-.h6-2{
-font-family: Kanit;
-font-style: normal;
-font-weight: normal;
-font-size: 2.5vw;
-color: #837F8F;
-text-align: center;
-}
-#namebox{
+#passReset1{	margin-left: 15%;
+					margin-top: 5%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.8vw;
+					color: #ADA9BB;
+					width: 6vw;
+					background-color: #E5E5E5;
+					text-align: center;
+ 				}
+#passReset3{	margin-left: 15%;
+					margin-top: 15%;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2vw;
+					color: #ADA9BB;
+					width: 10vw;
+					background-color: #E5E5E5;
+					text-align: center;
+ 				}
+#inputemail{
 	background: #FFFFFF;
-	width:70vw;
-	height: 30px;
+	width:70%;
+	height: 6vh;
 	border: 1px solid #ADA9BB;
 	box-sizing: border-box;
-	border-radius: 10px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3vw;
-	color: #010620;
-	margin-left: 15%;
-}
-#namebox2{
-	background: #FFFFFF;
-	width:70vw;
-	height: 30px;
-	border: 1px solid #ADA9BB;
-	box-sizing: border-box;
-	border-radius: 10px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3vw;
-	color: #010620;
-	margin-left: 15%;
-}
-p{ 
-	margin-top: 5%;
-	margin-left: 5%;
-	}
-
-.btn-send{	
-				width:70vw;
-				height: 35px;
-				background: #5784BA;
-				border-radius: 10px;
-				border:none;
-				margin-left: 20%;
-				margin-top: 5%;
-			}
-
-p-send{ color:white;
-		font-family: Kanit;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 3.4vw;}}
-
-
-@media (max-width: 424px){
-*{
-    margin: 0;
-}
-
-.container{
-	width: 100%;
-	height:100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-#back{
-	float:left;
-	margin-top: 6%;
-	width:5%;
-}
-.orang{
-	min-width:30%;
-	width:50%; 
-	margin-left: 20%;
-	padding-bottom: 30px;
-	
-}
-#box{
-	background-color: #E5E5E5;
-	width: 100%;
-	height: 30%;
-}
-#box-2{
-	width: 100%;
-	height: 70%;
-	background: #FFFFFF;
-	border-radius: 10px;
-	padding-bottom: 70%; 
-}
-#reset{
-font-family: Kanit;
-font-style: normal;
-font-weight: 500;
-font-size: 7vw;
-margin-top: 2%;
-margin-left: 20%;
-}
-h6{
-font-family: Kanit;
-font-style: normal;
-font-weight: 500;
-font-size: 3vw;
-text-align: center;
-color: #010620;
-}
-.h6-2{
-font-family: Kanit;
-font-style: normal;
-font-weight: normal;
-font-size: 3vw;
-color: #837F8F;
-text-align: center;
-}
-#verCode{
-	background-color: transparent;
-	border: bottom;
-	margin-left:15%;
-	width: 70%;
+	border-radius: 5px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.8vw;
 	line-height: 28px;
 	color: #010620;
-}
-#passReset3{		margin-left: 15%;
-					font-family: Kanit;
-					font-style: normal;
-					font-weight: normal;
-					font-size: 3vw;
-					color: #ADA9BB;
-					width: 20vw;
-					background-color: #E5E5E5;
-					text-align: center;
- 				}
-#namebox{
-	background: #FFFFFF;
-	width:70vw;
-	height: 25px;
-	border: 1px solid #ADA9BB;
-	box-sizing: border-box;
-	border-radius: 10px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3vw;
-	color: #010620;
-	margin-left: 10%;
+	margin-left: 15%;
 }
 #namebox2{
 	background: #FFFFFF;
-	width:70vw;
-	height: 25px;
+	width:70%;
+	height: 6vh;
 	border: 1px solid #ADA9BB;
 	box-sizing: border-box;
 	border-radius: 10px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 3vw;
+	font-size: 1.8vw;
+	line-height: 28px;
 	color: #010620;
-	margin-left: 10%;
+	margin-left: 15%;
 }
-p{ 
-	margin-top: 5%;
-	margin-left: 5%;
-	}
 
-.btn-send{	
-				width:70vw;
-				height: 25px;
+.reset-btn-send{	
+				width: 70%;
+				height:6vh;
 				background: #5784BA;
-				border-radius: 10px;
+				border-radius: 5px;
 				border:none;
-				margin-left: 15%;
-				margin-top: 5%;
-			}
+				margin:5% 0 0 15%;
+				color:white;
+				font-family: Kanit;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 2.1vw;
+				margin-bottom: 30%;
 
-p-send{ color:white;
-		font-family: Kanit;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 4vw;}}
-*/
-
-
+}}
 

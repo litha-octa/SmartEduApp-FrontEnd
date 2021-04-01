@@ -190,22 +190,21 @@ margin-top: -13%}
 @media (max-width:425px){
 *{margin: 0;}
 #body-regist{	background-color: #E6EDF6;
-				margin-top:0%;
 				width: 100%;
 				height: 100%;}
 #title-regist{		
 		font-family: Kanit;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 3em;
+		font-size: 5em;
 		color: #010620;
-		margin:0% 0 5% 0%;
+		margin:0% 0 15% 0%;
 		padding-top: 10%;
 		text-align: center; 
 }
-#label-input {		width: 40vw;
-					height: 5vw;
-					margin-left: 30%;
+#label-input {		width: 50vw;
+					height: 6vw;
+					margin-left: 25%;
 					background: #FFFFFF;
 					border: 1px solid #ADA9BB;
 					box-sizing: border-box;
@@ -223,11 +222,11 @@ margin-top: -13%}
 #caption{			font-family: Kanit;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 1vw;
-					width:8%;
+					font-size: 1em;
+					width:18vw;
 					color: #ADA9BB;
 					background-color: #E5E5E5;
-					margin-left: 30%;
+					margin-left: 25%;
 }
 .btn-regist{	
 			background: #5784BA;
@@ -237,9 +236,9 @@ margin-top: -13%}
 			font-weight: 500;
 			font-size: 2vw;
 			color: #FFFFFF;
-			margin:5% 0 0 30%;
-			width: 40vw;
-			height: 5vw;
+			margin:5% 0 0 25%;
+			width: 50vw;
+			height: 6vw;
 			border:none;
 			border-radius: 5px;
 			}
@@ -247,14 +246,14 @@ margin-top: -13%}
 .btn-googleregist{
 	background: rgba(0, 13, 79, 0.08);
 	border-radius: 10px;
-	margin:2% 0 2% 30%;
-	width: 40vw;
-	height: 5vw;
+	margin:2% 0 2% 25%;
+	width: 50vw;
+	height: 6vw;
 	border:none;
 	border-radius: 5px;}
 			
 .google{margin-left: -60%;
-	margin-top: 2%;
+	margin-top: -2%;
 		width:9%;
 }
 #registwith{font-family: Kanit;
@@ -263,15 +262,18 @@ margin-top: -13%}
 	font-size: 2vw;
 	color: #010620;
 	text-align: center;
-margin-top: -13%}
+margin-top: -12%}
 #linkToLogin{		font-family: Kanit;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 0.8vw;
 					color: #ADA9BB;
-					margin:25% 0 0% 45%;
-					padding-bottom:20%;
+					margin:20% 0 20% 45%;
 					bottom: 0;
+					background-color:#E6EDF6; 
+					padding-bottom: 50%;
+					width: 20%;
+					height: 40%;
 }
 .linktologin{color: blue;}
 }
