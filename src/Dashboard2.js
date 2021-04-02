@@ -2,109 +2,118 @@ import React, { Component } from "react";
 import "./css/dashboard.css";
 import {Link} from "react-router-dom";
 import HeaderDash from "./HeaderDash";
-import App from "./App";
+
 
 class Dashboard2 extends Component {
  render() {
     return (
-<div>
-
+<div id="body-dash">
 <HeaderDash/>
+<div className="container-dash">
+  <div className="aside">
+  <div id="asidedash">
+                  <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
+                  <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
+                  <div id="side-name-profile">Emir Kharisma
+                  <div id="SideActstatus">online</div></div>
+                  
+                   
+  </div>
 
-	<div className="grid-container">
-	<div className="grid-item" id="grid1">
-        <div id="dash-aside-col">
-                  <div id="popup-notif"><App/></div><br/>
-                   <Link to="/profile">
-                    <img src="assets/profile.png" id="dash-mini-profile" alt=" "/></Link><br/>
-                  <p className="name-profile">Emir Kharisma</p>
-                  <p className="status">online</p>
-              </div>
-          <div id="dash-aside-col2">
-           <img src="assets/Dashboard Icon.jpg" alt=" " className="dash-aside-icon"/>
-              <label id="menu-profile-selected">Dashboard
-            </label><br/>
-        </div>
-  </div>
- 	<div className="grid-item" id="grid2">
-        <box>
-        	<p className="news">News</p>
-        	<img src="assets/Carousel.png" alt=" " id="news-pics"/>
-        </box>
-  	</div>
-  	<div className="grid-item" id="grid3">
-	    <p className="mesagges">Mesagges</p>
-	    <img src="assets/Nissa Sabyan.png" className="chats" alt=" "/><br/>
-	    <img src="assets/Rio Dewanto.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Group 21.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Isyana Sarasvati.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Tompi.png"className="chats" alt=" "/><br/>
-	    <img src="assets/MPC.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Peppy.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Sandra Dewi.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Reza Rahadian.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Group 23.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Raisa.png"className="chats" alt=" "/><br/>
-	    <img src="assets/dr. Adrian.png"className="chats" alt=" "/><br/>
-	    <img src="assets/Uus.png"className="chats" alt=" "/><br/>
-  </div>
-	<div className="grid-item" id="grid4">
-              <div id="dash-aside-col3">
-                    <Link to ="/Activity" id="link-menu">
-                        <img src="assets/Activity Icon.png" className="dash-aside-icon" alt=" "/>
-                        <label id="menu-profile">Activity</label>
-                    </Link><br/>
-                    <Link id="link-menu">
-                        <img src="assets/Help Icon.png" className="dash-aside-icon" alt=" "/>
-                        <label id="menu-profile">Help</label>
-                    </Link><br/>
-                    <Link to ="/" id="link-menu">
-                        <img src="assets/Logout Icon.png" className="dash-aside-icon" alt=" "/>
-                        <label id="menu-profile-red">Logout</label>
-                    </Link>
-              </div>
-  </div>
-  	<div className="grid-item" id="grid5">
-  	<table>
-  <tr id="date">
-    <td colspan="7">
-       Today, October 16<img src="assets/Calendar Icon.png" className="calendar" alt=" "/>
-    </td>
-  </tr>
-  <tr>
-    <td><div id="date-day">Mo<br/>12</div></td>
-    <td><div id="date-day">Tu<br/>13</div></td>
-    <td><div id="date-day">We<br/>14</div></td>
-    <td><div id="date-day">Th<br/>15</div></td>
-    <td><div id="select">Fr<br/>16</div></td>
-    <td><div id="date-day">Sa<br/>17</div></td>
-    <td><div id="date-day">Su<br/>18</div></td>
-  </tr>
-  <tr>
-    <td colspan="7" id="time"><Link to="/Dashboard"><h5 className ="link">All Schedule</h5></Link></td>
-  </tr>
-  <tr>
-    <td colspan="7" id ="time"><h5>For You</h5></td>
-  </tr>
-  <tr>
-    <td colspan="7" id ="time"><img src="assets/8.00.png" id="img" alt=" "/></td>
-  </tr>
-  <tr>
-    <td colspan="7" id ="time"><img src="assets/d2fc.png" id="task1-pic" alt=" "/></td>
-  </tr>
-  <tr>
-    <td colspan="7" id ="time"><img src="assets/11.00.png" id="img" alt=" "/></td>
-  </tr>
-  <tr>
-    <td colspan="7" id ="time"><img src="assets/d2sc.png" id="task1-pic" alt=" "/></td>
-  </tr>
-   <tr>
-    <td colspan="7" id ="time"><img src="assets/finish.png" id="img" alt=" "/></td>
-  </tr>
-</table>
-	</div>
+<div id="asidedash2">
+                <div>
+                 <Link to ="/Dashboard"  id="SideAct-profileSelect">
+                        <img src="assets/Dashboard Icon2.jpg" alt="dashboard-icon" id="SideActIcon"/>
+                            Dashboard
+                    </Link></div><br/>
 </div>
 
+<div id="asidedash">
+            <Link to="/Activity" id="SideAct-profilemenu-dash">             
+                  <img src="assets/Activity Icon.png" alt="activity-icon" id="SideActIcon"/>
+                            Activity
+                </Link><br/>
+              <img src="assets/Help Icon.png" alt="help-icon" id="SideActIcon"/>
+                 <label id="SideAct-profilemenu-dash">Help</label><br/>
+
+          <Link to ="/"  id="SideAct-profilemenu2">          
+              <img src="assets/Logout Icon.png" alt="logout-icon" id="SideActIcon"/>
+                           Logout</Link><br/>
+          <div id="blank"></div>
+
+</div>
+  </div>
+  <div className="contentdash1">
+    <div className="grid-item" id="dashnews">
+        <box>
+          <p className="dash-news">News</p>
+          <img src="assets/Carousel.png" className="dash-news-pics" alt=" "/>
+        </box>
+    </div>
+    <div className="grid-item" id="schedule">
+    <table className="table-schedule">
+      <tr id="date">
+        <td colspan="7">
+          Today, October 16<img src="assets/Calendar Icon.png" className="calendar" alt=" "/>
+       </td>
+      </tr>
+      <tr>
+        <td><div id="date-day">Mo<br/>12</div></td>
+        <td><div id="date-day">Tu<br/>13</div></td>
+        <td><div id="date-day">We<br/>14</div></td>
+        <td><div id="date-day">Th<br/>15</div></td>
+        <td><div id="select">Fr<br/>16</div></td>
+        <td><div id="date-day">Sa<br/>17</div></td>
+        <td><div id="date-day">Su<br/>18</div></td>
+      </tr>
+      <tr>
+        <td colspan="7" id="time"><h5 className="h5-dash">All Schedule</h5></td>
+      </tr>
+      <tr>
+        <td colspan="7" id ="time"><Link to ="/Dashboard2" className ="link-foryou"><h5>For You</h5></Link></td>
+      </tr>
+      <tr>
+        <td colspan="7" id ="time"><img src="assets/8.00.png" id="img" alt=" "/></td>
+      </tr>
+      <tr>
+        <td colspan="7" id ="time"><img src="assets/d2fc.png" id="task1-pic" alt=" "/></td>
+      </tr>
+      <tr>
+        <td colspan="7" id ="time"><img src="assets/11.00.png" id="img" alt=" "/></td>
+      </tr>
+      <tr>
+        <td colspan="7" id ="time"><img src="assets/d2sc.png" id="task1-pic" alt=" "/></td>
+      </tr>
+       <tr>
+        <td colspan="7" id ="time"><img src="assets/finish.png" id="img" alt=" "/></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <div className="contentdash2">
+      <div className="grid-item" id="grid3">
+      <p className="mesagges">Mesagges</p>
+      <div id="search-bar">
+      <img src="assets/Search Icon.png" id="search-icon" alt =" "/>
+      <input type="text" placeholder="search" id="search-in-chats"/>
+      </div>
+      <img src="assets/Nissa Sabyan.png" className="chats" alt=" "/><br/>
+      <img src="assets/Rio Dewanto.png"className="chats" alt=" "/><br/>
+      <img src="assets/Group 21.png"className="chats" alt=" "/><br/>
+      <img src="assets/Isyana Sarasvati.png"className="chats" alt=" "/><br/>
+      <img src="assets/Tompi.png"className="chats" alt=" "/><br/>
+      <img src="assets/MPC.png"className="chats" alt=" "/><br/>
+      <img src="assets/Peppy.png"className="chats" alt=" "/><br/>
+      <img src="assets/Sandra Dewi.png"className="chats" alt=" "/><br/>
+      <img src="assets/Reza Rahadian.png"className="chats" alt=" "/><br/>
+      <img src="assets/Group 23.png"className="chats" alt=" "/><br/>
+      <img src="assets/Raisa.png"className="chats" alt=" "/><br/>
+      <img src="assets/dr. Adrian.png"className="chats" alt=" "/><br/>
+      <img src="assets/Uus.png"className="chats" alt=" "/><br/>
+
+  </div>
+  </div>
+</div>
 </div>
     );
   }

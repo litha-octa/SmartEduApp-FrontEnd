@@ -409,7 +409,7 @@ color: #837F8F;
 					text-align: center;
  				}
 #passReset3{	margin-left: 15%;
-					margin-top: 15%;
+					margin-top: 2%;
 					font-family: Kanit;
 					font-style: normal;
 					font-weight: normal;
@@ -434,7 +434,7 @@ color: #837F8F;
 	color: #010620;
 	margin-left: 15%;
 }
-#namebox2{
+#input-new-pass{
 	background: #FFFFFF;
 	width:70%;
 	height: 6vh;
