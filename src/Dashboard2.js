@@ -67,10 +67,10 @@ class Dashboard2 extends Component {
         <td><div id="date-day">Su<br/>18</div></td>
       </tr>
       <tr>
-        <td colspan="7" id="time"><h5 className="h5-dash">All Schedule</h5></td>
+        <td colspan="7" id="time"><Link to ="/Dashboard" className ="link-foryou"><h5>All Schedule</h5></Link></td>
       </tr>
       <tr>
-        <td colspan="7" id ="time"><Link to ="/Dashboard2" className ="link-foryou"><h5>For You</h5></Link></td>
+        <td colspan="7" id ="time"><h5 className="h5-dash">For You</h5></td>
       </tr>
       <tr>
         <td colspan="7" id ="time"><img src="assets/8.00.png" id="img" alt=" "/></td>

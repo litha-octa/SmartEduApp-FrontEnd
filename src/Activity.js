@@ -12,66 +12,65 @@ class Activity extends Component {
 <div>
 <HeaderAct/>
 <SideActivity/>
-  <div className="d-flex">
-  <div className="bd-highlight1">
-    <label id="title">Activity</label><br/>
-    <label id="subtitle">My Class</label><br/>
-    <table>
+  <div className="container-act">
+    <div className="myclass">
+      <label id="title-act1">Activity</label><br/>
+      <label id="subtitle-act1">My Class</label><br/>
+        <table id="myclass-table">
       <tr>
-        <td><input 	className="form-check-input" type="checkbox"/></td>
-        <td className="text-content-t1">Class Name</td>
-        <td className="text-content-t1">Category</td>
-        <td className="text-content-t1">Description</td>
-        <td className="text-content-t1">Progress</td>
-        <td className="text-content-t1">Status</td>
-        <td className="text-content-t1">Score</td>
+        <td><input  className="form-check-input" type="checkbox"/></td>
+        <td className="myclass-table-column">Class Name</td>
+        <td className="myclass-table-column">Category</td>
+        <td className="myclass-table-column">Description</td>
+        <td className="myclass-table-column">Progress</td>
+        <td className="myclass-table-column">Status</td>
+        <td className="myclass-table-column">Score</td>
       </tr>
-      <tr className="line-1">
+      <tr className="white-line">
         <td><input className="form-check-input" type="checkbox"/></td>
-        <td className="text-content2-t2">Front-end fundamentals</td>
-        <td className="text-content2-t2">Software</td>
-        <td className="text-content2-t2">Learn the fundamentals of front end...</td>
+        <td className="myclass-table-content">Front-end fundamentals</td>
+        <td className="myclass-table-content">Software</td>
+        <td className="myclass-table-content">Learn the fundamentals of front end...</td>
         <td><img src="assets/progress bar.png"id="progress" alt=" "/></td>
-        <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score1">86<img src="assets/list.png" alt=" " className="list"/></p>
+        <td><img src="assets/status.png"id="myclass-status" alt=" "/></td>
+        <td><p id="font-score" className="score1">86<img src="assets/list.png" alt=" " className="list"/></p>
         </td>
       </tr>
-      <tr class="line-1">
+      <tr class="white-line">
         <td><input className="form-check-input" type="checkbox"/></td>
-        <td className="text-content2-t2">HTML for Beginners</td>
-        <td className="text-content2-t2">Software</td>
-        <td className="text-content2-t2">HTML from scratch</td>
+        <td className="myclass-table-content">HTML for Beginners</td>
+        <td className="myclass-table-content">Software</td>
+        <td className="myclass-table-content">HTML from scratch</td>
         <td><img src="assets/progress bar2.png" id="progress" alt=" "/></td>
-        <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score1"> 71<img src="assets/list.png" alt=" " className="list"/></p>
+        <td><img src="assets/status.png"id="myclass-status" alt=" "/></td>
+        <td><p id="font-score" className="score1"> 71<img src="assets/list.png" alt=" " className="list"/></p>
          </td>
       </tr>
-      <tr class="line-1">
+      <tr class="white-line">
         <td><input class="form-check-input" type="checkbox"/></td>
-        <td className="text-content2-t2">History of Europe</td>
-        <td className="text-content2-t2">History</td>
-        <td className="text-content2-t2">The history of Europe concerns itself...</td>
-        <td><img src="assets/progress bar3.png"id="progress" alt=" "/></td>
-        <td><img src="assets/status.png"id="status" alt=" "/></td>
-        <td><p className="score2">62<img src="assets/list.png"  alt=" " className="list"/></p>
+        <td className="myclass-table-content">History of Europe</td>
+        <td className="myclass-table-content">History</td>
+        <td className="myclass-table-content">The history of Europe concerns itself...</td>
+        <td><img src="assets/progress bar3.png" id="progress" alt=" "/></td>
+        <td><img src="assets/status.png" id="myclass-status" alt=" "/></td>
+        <td><p id="font-score" className="score2">62<img src="assets/list.png"  alt=" " className="list"/></p>
         </td>
       </tr>
-      <tr><td colspan="7" align="center"> 
-        <Link to="./activity2" class="view-all">view all
-        <img src="assets/arrow.png" className="arrow" alt=" "/></Link>
-      </td></tr>
-    </table>
-  </div></div>
-
-  <div className="container">
-    <div id="subtitle">New Class</div>
-    <input type="text" className="search-bar" placeholder="Quick Search"/>
-    <input type="button" className="search-button" value="Search"/><br/>
-    <div className="filter-by"> Categories &nbsp;&nbsp;&nbsp;Level&nbsp;&nbsp;&nbsp;Pricing</div>
+     </table>
+        <Link to="./activity2" className="act1-view-all">view all
+        <img src="assets/arrow.png" className="arrowicon-act1" alt=" "/></Link>
+      
+   
+  </div>
+  
+  <div className="container-newclass">
+    <div id="subtitle-act1">New Class</div>
+    <input type="text" className="searchbar-act" placeholder="Quick Search"/>
+    <input type="button" className="searchbutton-act" value="Search"/><br/>
+    <div className="filterby-act"> Categories &nbsp;&nbsp;&nbsp;Level&nbsp;&nbsp;&nbsp;Pricing</div>
     <ActCont1/>
     </div>
-      
-
+    </div>
 
 
 

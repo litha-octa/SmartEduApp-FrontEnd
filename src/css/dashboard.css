@@ -7,9 +7,6 @@
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
   			//text-align: center;
   		}
-.aside{width:20%;
-		margin-right: 2%;}
-
 .aside{
 	float:left;
 	width:15%;
@@ -97,10 +94,11 @@
 													margin-top:100%; }
 .contentdash1{width: 60%;
 			background:#E6EDF6;
-  			margin-left: 17.5%;
+  			margin-left: 16%;
 }
 .contentdash2{width: 25%;
-			border-radius: 20px;}
+			border-radius: 20px;
+			margin-left: -2%;}
 									#grid3{		
 											width: 100%;
 											border-radius: 20px;
@@ -253,29 +251,28 @@ color: #000000;
 
 
 
-@media(max-width:425px){  
-#body-dash{background:#E6EDF6;}
+
+@media (min-width: 768px) and (max-width: 426px){  
+#body-dash{background:blue;}
 .container-dash{display:flex;
 				width: 100%;
 				align-content: space-around;
-				margin:12% 0 0 0%;}
+				margin:1% 0 0 0%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
   			//text-align: center;
   		}
+
 .aside{
-	display:none;
+	display: none;
 	}
 
 
-.contentdash1{width: 70%;
+.contentdash1{width: 50%;
 			background:#E6EDF6;
-  			margin-left: 0%;
+  			float:left;
 }
-.contentdash2{width: 30%;
-			border-radius: 20px;
-			float:right;
-			margin-left:68%;
-			position: fixed;}
+.contentdash2{width: 25%;
+			border-radius: 20px;}
 									#grid3{		
 											width: 100%;
 											border-radius: 20px;
@@ -353,6 +350,142 @@ color: #000000;
 										float:right;
 										margin-right:10%;
 									}
+									#date-day{font-size: 0.8em;}
+									#select{
+												background-color: #5784BA;
+												color:white;
+												border-radius: 20px;
+												width:30%;
+											}
+									#img 			{width: 100%;}
+									#time			{grid-column-end: span 7;}
+									.h5-dash		{color:blue;
+													text-align: center}
+									.link-foryou	{text-align: center;
+													text-decoration: none;
+													color: #ADA9BB;}
+									#task1-pic		{
+														width:100%;
+														height: 100%;
+														}
+#fas-task{
+	height: 7vw;
+	box-shadow: 3px -3px 5px rgba(0,0,0,0.8);
+    padding: 5px;
+    border: 1px dashed grey;
+	font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 1em;
+line-height: 22px;
+color: #000000;
+}
+#fas-new-task{
+	background-color: #5784BA;
+	color:white;
+	border-radius: 20px;
+	width: 20%;
+	text-align: center;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.5em;
+	padding: 0 15px;
+	margin-left: 40%;
+	}
+	}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:425px){  
+#body-dash{background:#E6EDF6;}
+.container-dash{
+				width: 100%;
+				align-content: space-around;
+				padding:20% 0 0 2.5%;}
+.grid-item{background-color: rgba(255, 255, 255, 0.8);
+  			//text-align: center;
+  		}
+.aside{
+	display:none;
+	}
+.contentdash1{width: 100%;
+			background:#E6EDF6;
+}
+.contentdash2{display: none}		
+#dashnews {
+  width:95%;
+  height:25%;
+  margin-right: 3%;
+  border-radius: 20px;
+}
+				.dash-news{
+					margin-left: 3%;
+					padding-top: 1%;
+					font-family: Montserrat;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 1.5rem;
+					color: #000000;
+				}
+				.dash-news-pics{
+					border-radius: 20px;
+					width: 100%;
+					height: 100%;
+				}
+#schedule{
+		  width:95%;
+		  height:25%;
+		  margin:2% 1% 0 0;
+		  border-radius: 20px;	
+}
+								.table-schedule{
+									width: 100%;
+									border-radius: 20px;
+								}
+								#date{
+										grid-column-end: span 7;
+										font-family: Montserrat;
+										font-style: normal;
+										font-weight: bold;
+										font-size: 2.5em;
+										line-height: 29px;
+										color: #000000;
+										text-align: left;
+										padding-left:4%;
+										padding-top:4%;
+										padding-bottom: 2%;
+									}
+									.calendar{
+										width:6vw;
+										float:right;
+										margin-right:10%;
+									}
 									#date-day{font-size: 1.5em;
 												font-weight: 500;}
 									#select{
@@ -362,13 +495,16 @@ color: #000000;
 												width:30%;
 											}
 									#img 			{width: 80%;
-														margin-left: 10%;}
+														margin-left: 10%;
+														margin-top: 2%;}
 									#time			{grid-column-end: span 7;}
 									.h5-dash		{color:blue;
-													text-align: center}
+													text-align: center;
+													font-size:1em;}
 									.link-foryou	{text-align: center;
 													text-decoration: none;
-													color: #ADA9BB;}
+													color: #ADA9BB;
+													font-size:1em}
 									#task1-pic		{
 													width:80%;
 													margin-left: 10%;
