@@ -1,4 +1,4 @@
-@media (min-width: 769px){  
+@media (min-width: 426px){  
 #body-dash{background:#E6EDF6;}
 .container-dash{display:flex;
 				width: 100%;
@@ -219,7 +219,7 @@ color: #000000;
 	padding: 0 15px;
 	margin-left: 40%;
 	}
-	}					
+	}				
 										
 
 
@@ -251,8 +251,8 @@ color: #000000;
 
 
 
-
-@media (min-width: 768px) and (max-width: 426px){  
+/*
+@media (max-width: 426px){  
 #body-dash{background:blue;}
 .container-dash{display:flex;
 				width: 100%;
@@ -395,7 +395,7 @@ color: #000000;
 	}
 	}		
 
-
+*/
 
 
 

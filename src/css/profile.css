@@ -10,15 +10,17 @@ aside{
 }
 .asideprofile1{
 	background: #FFFFFF;
-	border-radius: 20px;
+	border-radius: 10px;
 	padding-left: 5%;
+	height: 30%;
+	padding-bottom:15%;
 }
 .asideprofile2{
 		background:#5784BA;
-		border-radius: 20px;
-		margin-top: -10%;
-		padding: 20% 0 0 5%;
-		height: 100%;
+		border-radius: 10px;
+		margin-top: -4%;
+		padding: 0% 0 0 5%;
+		height: 70%;
 }
 #notif{
 		width:1.4vw;
@@ -26,22 +28,27 @@ aside{
 		margin-left: 85%;
 }
 #mini-profile{
-width: 5vw;
-height: 10vh;
+width: 6vw;
 margin-left: 8%;
 margin-top: 10%;
 }
-#side-name-profile{font-weight: 500;}
+/*#side-name-profile{
+	margin-left: 0%;
+	color:black;
+	float:left;
+	font-weight: 500;} */
 #status{
 	font-family: Roboto;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 1vw;
 	color: black;
 	color: #202020;
-	margin: 1% 0 0 0%;
-	padding-bottom: 40%;
+	margin: 3% 50% 0% 0%;
+	padding: 10% 0 20% 0;
 }
+
+#side-icon-prof{width:15%;}
 
 #profile-icon{
 		font-family: Montserrat;

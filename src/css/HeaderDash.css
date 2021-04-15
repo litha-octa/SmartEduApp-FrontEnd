@@ -1,8 +1,8 @@
-@media(min-width:769px){
+@media(min-width:426px){
 .headerDash{display: none;}
 }
 
-
+/*
 @media (max-width:768px) and (min-width:426px){  
 .headerDash{
   height: 15vh;
@@ -55,7 +55,7 @@ background-color: #E5E5E5;
   padding-right: 3%;
   border-radius: 5px;
 }}
-
+*/
 
 
 

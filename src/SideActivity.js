@@ -8,9 +8,10 @@ class SideActivity extends Component {
 <aside>
   <div id="asideact">
                   <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
+                  <Link to ="/profile">
                   <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
                   <div id="side-name-profile">Emir Kharisma
-                  <div id="SideActstatus">online</div></div>
+                  <div id="SideActstatus">online</div></div></Link>
                   <div>
                     <Link to ="/Dashboard"  id="SideAct-profilemenu-dash">
                         <img src="assets/Dashboard Icon.png" alt="dashboard-icon" id="SideActIcon"/>

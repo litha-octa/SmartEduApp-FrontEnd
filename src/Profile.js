@@ -12,23 +12,28 @@ class Profile extends Component {
   <div className="asideprofile1">
                   <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
                   <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
-                  <div id="side-name-profile">Emir Kharisma
-                  <div id="status">online</div></div>
+                  
+                  <div id="status">
+                    Emir Kharisma
+                      <br/>
+                      online </div>
+                 
   </div>
 <div class="asideprofile2">
               <Link to ="/Dashboard"  id="profile-icon">
-                <img src="assets/Dashboard Icon.png" alt=" "/>
-                            Dashboard</Link><br/>
+                <img src="assets/Dashboard Icon.png" alt=" " id="side-icon-prof"/>
+                            Dashboard</Link><br/><br/>
 
                 <Link to="/Activity"  id="profile-icon">             
-                <img src="assets/Activity Icon.png" alt=" "/>
-                            Activity</Link><br/>
-                <img src="assets/Help Icon.png" alt=" "/>
-                           <label id="profile-icon">Help</label><br/>
+                <img src="assets/Activity Icon.png" alt=" " id="side-icon-prof"/>
+                            Activity</Link><br/><br/>
+
+                <img src="assets/Help Icon.png" alt=" " id="side-icon-prof"/>
+                           <label id="profile-icon">Help</label><br/><br/>
 
                  <Link to ="/"  id="profile-icon2">          
-                <img src="assets/Logout Icon.png" alt=" "/>
-                           Logout</Link><br/>
+                <img src="assets/Logout Icon.png" alt=" " id="side-icon-prof"/>
+                           Logout</Link><br/><br/>
 </div>
 </aside>
 <article id="articleprof">  
