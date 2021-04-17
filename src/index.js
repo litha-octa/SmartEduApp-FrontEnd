@@ -3,8 +3,11 @@ import ReactDOM from "react-dom";
 import Main from "./Main";
 
 
- 
+
 ReactDOM.render(
-  <Main/>, 
+
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>,
   document.getElementById("root")
 );

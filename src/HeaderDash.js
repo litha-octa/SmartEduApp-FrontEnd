@@ -20,7 +20,7 @@ const HeaderDash = function(){
 
             <NavLink to="/Profile" id="header-menu">
 
-            <img src="/assets/profile.png" id="header-icon" alt=" "/></NavLink>
+            <img src="/assets/profile.png" id="header-icon-dash" alt=" "/></NavLink>
             </div>
         </div>
 </HashRouter>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./css/dashboard.css";
 import {Link} from "react-router-dom";
 import HeaderDash from "./HeaderDash";
+//import DateTodayForDash from "./component/DateTodayForDash";
 
 
 class Dashboard extends Component {
@@ -51,7 +52,7 @@ class Dashboard extends Component {
         </box>
     </div>
     <div className="grid-item" id="schedule">
-    <table className="table-schedule">
+      <table className="table-schedule">
       <tr id="date">
         <td colspan="7">
           Today, October 16<img src="assets/Calendar Icon.png" className="calendar" alt=" "/>
@@ -94,10 +95,10 @@ class Dashboard extends Component {
         <td colspan="7" id ="time"><img src="assets/finish.png" id="img" alt=" "/></td>
       </tr>
     </table>
-  </div>
+    </div>
   </div>
   <div className="contentdash2">
-      <div className="grid-item" id="grid3">
+     <div className="grid-item" id="grid3">
       <p className="mesagges">Mesagges</p>
       <div id="search-bar">
       <img src="assets/Search Icon.png" id="search-icon" alt=" "/>

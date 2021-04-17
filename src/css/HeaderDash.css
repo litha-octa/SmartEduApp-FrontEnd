@@ -1,15 +1,17 @@
-@media(min-width:426px){
+@media(min-width:769px){
 .headerDash{display: none;}
 }
 
-/*
+
 @media (max-width:768px) and (min-width:426px){  
 .headerDash{
-  height: 15vh;
+  height: 10%;
+  min-height: 30px;
   width: 100%;
   position: fixed;
   top:0;
   background-color: #5784BA;
+  padding-bottom: 1%;
 }
 .title {
 color:black;
@@ -29,33 +31,28 @@ background-color: #E5E5E5;
 #header-selected{
   background-color: white;
   width:7%;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
-  margin-top: 10%;
-  margin-right: 5%;
-  margin-left: 1%;
+  margin: 7% 5% 2% 1%;
   color: black;
 }
 #header-menu{
   color: white;
-  width:7%;
+  width:10%;
   font-size: 1.5em;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
   margin-right: 5%;
 }
-#header-icon{
-  width:7vw;
-  float:right;
-  margin-top: -3.5%;
-  background-color:#5784BA;
-  padding-right: 3%;
-  border-radius: 5px;
+#header-icon-dash{
+  min-width: 40px;
+  width:6%;
+  margin: -6% 0% 5% 90%;
 }}
-*/
+
 
 
 
@@ -108,11 +105,8 @@ background-color: #E5E5E5;
   border-radius: 10px;
   margin-right: 5%;
 }
-#header-icon{
-  width:8vw;
-  float:right;
-  margin-top: -7%;
-  background-color:#5784BA;
+#header-icon-dash{
+  width:4em;
+  margin: -8% 2% 0 80%;
   padding: 1%;
-  border-radius: 5px;
 }} 

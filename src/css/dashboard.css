@@ -1,15 +1,16 @@
-@media (min-width: 426px){  
-#body-dash{background:#E6EDF6;}
+@media (min-width: 769px){  
+#body-dash{background:#E6EDF6;
+			width: 100%;}
 .container-dash{display:flex;
-				width: 100%;
 				align-content: space-around;
 				margin:1% 0 0 0%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
-  			//text-align: center;
+  			text-align: center;
   		}
 .aside{
 	float:left;
 	width:15%;
+	margin-left: 2%;
 	position: fixed;
 	}
 
@@ -92,13 +93,13 @@
 
 											#blank{height: 10%;
 													margin-top:100%; }
-.contentdash1{width: 60%;
+.contentdash1{width: 63%;
 			background:#E6EDF6;
-  			margin-left: 16%;
+  			margin-left: 19%;
 }
-.contentdash2{width: 25%;
+.contentdash2{width: 30%;
 			border-radius: 20px;
-			margin-left: -2%;}
+			margin:0 2% 0 1%;}
 									#grid3{		
 											width: 100%;
 											border-radius: 20px;
@@ -130,7 +131,7 @@
 									
 #dashnews {
   width:95%;
-  height:25%;
+  height:30%;
   margin-right: 1%;
   border-radius: 20px;
 }
@@ -183,7 +184,7 @@
 												border-radius: 20px;
 												width:30%;
 											}
-									#img 			{width: 100%;}
+									#img 			{width: 80%;}
 									#time			{grid-column-end: span 7;}
 									.h5-dash		{color:blue;
 													text-align: center}
@@ -191,8 +192,7 @@
 													text-decoration: none;
 													color: #ADA9BB;}
 									#task1-pic		{
-														width:100%;
-														height: 100%;
+														width: 80%;
 														}
 #fas-task{
 	height: 7vw;
@@ -251,28 +251,27 @@ color: #000000;
 
 
 
-/*
-@media (max-width: 426px){  
-#body-dash{background:blue;}
+
+@media (min-width: 426px) and (max-width: 768px){  
+#body-dash{background:#E6EDF6;
+			width: 100%;}
 .container-dash{display:flex;
-				width: 100%;
 				align-content: space-around;
-				margin:1% 0 0 0%;}
+				margin:0% 0% 0 2%;
+				padding: 12% 5% 10% 2%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
-  			//text-align: center;
-  		}
+  			text-align: center;
+  			}
 
 .aside{
 	display: none;
 	}
-
-
-.contentdash1{width: 50%;
+.contentdash1{width: 67%;
 			background:#E6EDF6;
-  			float:left;
 }
-.contentdash2{width: 25%;
-			border-radius: 20px;}
+.contentdash2{width: 35%;
+			border-radius: 20px;
+			}
 									#grid3{		
 											width: 100%;
 											border-radius: 20px;
@@ -289,8 +288,8 @@ color: #000000;
 														width: 80%;
 													}
 									.chats{
-										width:20vw;
-										margin-left:8%;
+										width:75%;
+										margin:2% 0 0 0;
 									}
 									.mesagges{	font-family: Montserrat;
 												font-style: normal;
@@ -357,7 +356,8 @@ color: #000000;
 												border-radius: 20px;
 												width:30%;
 											}
-									#img 			{width: 100%;}
+									#img 			{width: 85%;
+													}
 									#time			{grid-column-end: span 7;}
 									.h5-dash		{color:blue;
 													text-align: center}
@@ -365,8 +365,8 @@ color: #000000;
 													text-decoration: none;
 													color: #ADA9BB;}
 									#task1-pic		{
-														width:100%;
-														height: 100%;
+														width:90%;
+														margin: 0 3% 0 3%;
 														}
 #fas-task{
 	height: 7vw;
@@ -395,7 +395,6 @@ color: #000000;
 	}
 	}		
 
-*/
 
 
 
