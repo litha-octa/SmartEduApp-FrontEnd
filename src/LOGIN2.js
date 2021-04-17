@@ -12,9 +12,9 @@ class Login extends Component {
     password: null,
     modalShow: false,
   };
-  emailHandler = (a) => {
+  nameHandler = (a) => {
     this.setState({
-      email: a.target.value,
+      name: a.target.value,
     });
   };
   passwordHandler = (a) => {
@@ -30,12 +30,12 @@ class Login extends Component {
   submitHandler = (a) => {
     a.preventDefault();
     let dataLogin = {
-      email: this.state.email,
+      name: this.state.email,
       password: this.state.password,
     };
 
     axios
-      .post('http://localhost:8300/api/v1/auth/login/', { dataLogin })
+      .post('http://localhost:8300/api/v1/auth/', { dataLogin })
       .then((res) => {
         if (res.data.success) {
           res.data.role_id === 1 ?
@@ -65,7 +65,7 @@ class Login extends Component {
                 type='text'
                 className='input'
                 placeholder='user@email.com'
-                name='email'
+                name='name'
                 onChange={this.emailHandler}
               />
 

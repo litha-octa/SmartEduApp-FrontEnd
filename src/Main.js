@@ -17,7 +17,7 @@ import CreateNewClass from "./CreateNewClass";
 import HeaderDash from "./HeaderDash";
 import HeaderAct from "./HeaderAct";
 import HeaderProf from "./HeaderProf";
-import test from "./testing login2";
+
 
 
 
@@ -44,7 +44,7 @@ class Main extends Component {
             <Route path="/HeaderAct" component={HeaderAct} />
             <Route path="/HeaderProf" component={HeaderProf} />
             <Route path="/HeaderDash" component={HeaderDash} />
-            <Route path="/testing login2" component={test} />
+
           </div>
         </div>
       </HashRouter>
