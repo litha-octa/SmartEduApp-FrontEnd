@@ -1,12 +1,13 @@
+/*AFTER CLICK*/
 .modal-wrapper {
-background: #5784BA;
+background:#5784BA ;
 border: 1px solid #d0cccc;
 transition: all .8s;
-width: 90vw;
-height: 90vh;
+width: 55vw;
+height: 50vw;
 margin-top:-7%;
 border-radius: 20px;
-margin-left: 30%;
+margin-left: 300%;
 }
 
 .modal-header {
@@ -18,8 +19,7 @@ text-align: right;
 
 .modal-header h2 {
 float: left;
-margin: 0;
-padding: 0;
+margin-bottom: 5%;
 }
 
 .modal-body {
@@ -27,9 +27,9 @@ padding-left: 10px;
 text-align: center;
 }
 
-
 .close-modal-btn {
 color: white;
+background: transparent; 
 cursor: pointer;
 float: right;
 font-size: 30px;
@@ -37,22 +37,25 @@ margin: 0;
 }
 
 .close-modal-btn:hover {
-color: black;
+background-color: black;
+color:white;
+border-radius: 20px;
+font-size: 30px;
+
 }
 
-.btn-cancel {
-background-color: #b71c1c;
+/*.btn-cancel {
+background-color: red;
 float: left;
 }
 
 .btn-continue {
 background-color: #1b5e20;
 float: right;
-}
+}*/
 
 .back-shed {
 background-color: lightgrey;
-height: 100%;
 position: fixed;
 transition: all 1.3s;
 width: 100%;
@@ -60,14 +63,12 @@ width: 100%;
 
 .open-modal-btn {
 background: #5784BA;
-width:5%;
-padding: 0;
-margin-left: 13vw;
+width:10%;
+border:none;
+margin:2% 0% 0% 0 ;
 }
 
-
-
-#table-notif{width:90%;
+#table-notif{width:100%;
 			margin-left: 5%;
 			background:transparent;	
 			font-family: Roboto;
@@ -79,5 +80,8 @@ margin-left: 13vw;
 			text-align: left;
 			overflow:scroll;
 			}
-#slice-notif{font-size: 1.5em;}
-#notif-img{width:2vw;}
+#slice-notif{font-size: 1.5em;
+			padding-top: 3%;}
+#notif-img{width:2vw;
+			padding-top:2%;
+			}

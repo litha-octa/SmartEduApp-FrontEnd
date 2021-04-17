@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./css/dashboard.css";
 import {Link} from "react-router-dom";
-import HeaderDash from "./HeaderDash";
+import HeaderDash from "./component/HeaderDash";
+import App from "./Modal/App";
 //import DateTodayForDash from "./component/DateTodayForDash";
 
 
@@ -13,7 +14,8 @@ class Dashboard extends Component {
 <div className="container-dash">
   <div className="aside">
   <div id="asidedash">
-                  <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
+                  
+                  <div><App/></div>
                   <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
                   <div id="side-name-profile">Emir Kharisma
                   <div id="SideActstatus">online</div></div>
@@ -34,8 +36,9 @@ class Dashboard extends Component {
                   <img src="assets/Activity Icon.png" alt="activity-icon" id="SideActIcon"/>
                             Activity
                 </Link><br/>
+                <Link id="SideAct-profilemenu-dash">
               <img src="assets/Help Icon.png" alt="help-icon" id="SideActIcon"/>
-                 <label id="SideAct-profilemenu-dash">Help</label><br/>
+                Help </Link><br/>
 
           <Link to ="/"  id="SideAct-profilemenu2">          
               <img src="assets/Logout Icon.png" alt="logout-icon" id="SideActIcon"/>

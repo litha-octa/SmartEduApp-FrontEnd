@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link} from "react-router-dom";
 import "./css/activity3.css";
-import HeaderAct from "./HeaderAct";
-import SideActivity from "./SideActivity";
+import HeaderAct from "./component/HeaderAct";
+import SideActivity from "./component/SideActivity";
 
 class Activity3 extends Component {
  render() {

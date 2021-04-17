@@ -1,42 +1,47 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom";
-import "./css/sideactivity.css";
+import "./src/css/sideactivity.css";
+import App from "./Modal/App";
 
 class SideActivity extends Component {
  render() {
     return (
-<aside>
-  <div id="asideact">
-                  <img src="assets/Notif Icon2.png" id="notif" alt=" "/><br/>
-                  <Link to ="/profile">
+      <div className="aside">
+  <div id="asidedash">
+                  
+                  <div><App/></div>
+                  
                   <img src="assets/profile.png" id="mini-profile" alt=" "/><br/>
-                  <div id="side-name-profile">Emir Kharisma
-                  <div id="SideActstatus">online</div></div></Link>
-                  <div>
-                    <Link to ="/Dashboard"  id="SideAct-profilemenu-dash">
-                        <img src="assets/Dashboard Icon.png" alt="dashboard-icon" id="SideActIcon"/>
-                            Dashboard
-                    </Link></div><br/>
+                  <div id="side-name-profile">
+                    <Link to ="/Profile">
+                      Emir Kharisma</Link></div>
+                  <div id="SideActstatus">online</div>
+                  
+                   
   </div>
 
-<div id="asideact2">
-                <Link to="/Activity" id="SideAct-profileSelect">             
-                  <img src="assets/Activity Icon2.png" alt="activity-icon" id="SideActIcon"/>
-                            Activity
-                </Link><br/>
+<div id="asidedash2">
+                <div>
+                 <Link to ="/Dashboard"  id="SideAct-profileSelect">
+                        <img src="assets/Dashboard Icon2.jpg" alt="dashboard-icon" id="SideActIcon"/>
+                            Dashboard
+                    </Link></div><br/>
 </div>
 
-<div id="asideact">
+<div id="asidedash">
+            <Link to="/Activity" id="SideAct-profilemenu-dash">             
+                  <img src="assets/Activity Icon.png" alt="activity-icon" id="SideActIcon"/>
+                            Activity
+                </Link><br/>
+                <Link id="SideAct-profilemenu-dash">
               <img src="assets/Help Icon.png" alt="help-icon" id="SideActIcon"/>
-                 <label id="SideAct-profilemenu-dash">Help</label><br/>
+                Help </Link><br/>
 
           <Link to ="/"  id="SideAct-profilemenu2">          
               <img src="assets/Logout Icon.png" alt="logout-icon" id="SideActIcon"/>
                            Logout</Link><br/>
           <div id="blank"></div>
 
-</div>
-</aside>
-
+</div></div>
     );}}
    export default SideActivity;

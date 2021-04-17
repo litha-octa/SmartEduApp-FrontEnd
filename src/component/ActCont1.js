@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom";
-import "./css/ActCont4.css";
+import "../css/ActCont4.css";
 
 class ActCont1 extends Component {
  render() {

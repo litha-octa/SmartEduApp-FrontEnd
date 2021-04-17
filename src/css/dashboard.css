@@ -45,7 +45,7 @@
 											}
 											#SideActIcon{
 												width:2vw;
-												margin: 15% 0 0 7%;
+												margin: 10% 0 0 7%;
 											}
 											.menu{				font-family: Montserrat;
 																font-style: normal;
@@ -58,7 +58,7 @@
 																			font-weight: 600;
 																			font-size: 1em;
 																			color: #FFFFFF;	
-																			margin-top: 25%;
+																			margin-top: 10%;
 																			margin-bottom: 0%;
 																			text-decoration: none;				
 																	}
@@ -80,7 +80,7 @@
 											}
 #asidedash2{	background: #FFFFFF;
 					border-radius: 20px 20px 0 0;
-					padding: 0% 0 20% 0;
+					padding: 0% 0 10% 0;
 					margin-top: -15%;
 					}
 											#profile-icon-select{	font-family: Montserrat;

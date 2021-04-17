@@ -14,9 +14,9 @@ import Activity2 from "./Activity2";
 import Activity3 from "./Activity3";
 import Activity4 from "./Activity4";
 import CreateNewClass from "./CreateNewClass";
-import HeaderDash from "./HeaderDash";
-import HeaderAct from "./HeaderAct";
-import HeaderProf from "./HeaderProf";
+import HeaderDash from "./component/HeaderDash";
+import HeaderAct from "./component/HeaderAct";
+import HeaderProf from "./component/HeaderProf";
 
 
 
@@ -41,9 +41,9 @@ class Main extends Component {
             <Route path="/Activity3" component={Activity3} />
             <Route path="/Activity4" component={Activity4} />
             <Route path="/CreateNewClass" component={CreateNewClass} />
-            <Route path="/HeaderAct" component={HeaderAct} />
-            <Route path="/HeaderProf" component={HeaderProf} />
-            <Route path="/HeaderDash" component={HeaderDash} />
+            <Route path="/component/HeaderAct" component={HeaderAct} />
+            <Route path="/component/HeaderProf" component={HeaderProf} />
+            <Route path="/component/HeaderDash" component={HeaderDash} />
 
           </div>
         </div>

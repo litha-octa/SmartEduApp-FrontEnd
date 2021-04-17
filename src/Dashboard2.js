@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./css/dashboard.css";
 import {Link} from "react-router-dom";
-import HeaderDash from "./HeaderDash";
+import HeaderDash from "./component/HeaderDash";
 
 
 class Dashboard2 extends Component {

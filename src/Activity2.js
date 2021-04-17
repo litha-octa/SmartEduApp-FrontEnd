@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import "./css/activity.css";
 import { Link } from "react-router-dom";
-import HeaderAct from "./HeaderAct";
-import SideActivity from "./SideActivity";
-import ActCont2 from "./ActCont2";
+import HeaderAct from "./component/HeaderAct";
+import SideActivity from "./component/SideActivity";
+import ActCont2 from "./component/ActCont2";
 
 class Activity2 extends Component {
+
+
+  
  render() {
     return (
 <div>

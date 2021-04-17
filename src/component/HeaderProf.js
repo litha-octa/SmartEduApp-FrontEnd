@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/HeaderProf.css";
+import "../css/HeaderProf.css";
 import { NavLink, HashRouter} from "react-router-dom";
 
 const HeaderProf = function(){

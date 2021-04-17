@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link} from "react-router-dom";
 import "./css/profile.css";
-import HeaderProf from "./HeaderProf";
+import HeaderProf from "./component/HeaderProf";
 
 class Profile extends Component {
   render() {

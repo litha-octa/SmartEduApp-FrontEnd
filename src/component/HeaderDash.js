@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/HeaderDash.css";
+import "../css/HeaderDash.css";
 import { NavLink , HashRouter} from "react-router-dom";
 
 const HeaderDash = function(){

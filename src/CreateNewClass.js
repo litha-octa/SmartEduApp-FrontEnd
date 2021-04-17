@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./css/styleActFas/CreateNewClass.css";
 import {Link} from "react-router-dom";
-import HeaderAct from "./HeaderAct";
-import SideActivity from "./SideActivity";
+import HeaderAct from "./component/HeaderAct";
+import SideActivity from "./component/SideActivity";
 
 
 

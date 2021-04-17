@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Modal from "./Modal/Modal";
+import Modal from "./notif";
+import "../css/cssApp.css";
 
 class App extends Component {
 
@@ -25,8 +26,7 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-
+      <div className="click-notif">
         { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-shed"></div> : null }
 
         <button className="open-modal-btn" onClick={this.openModalHandler}><img src="assets/Notif Icon2.png" alt=" "/></button>
