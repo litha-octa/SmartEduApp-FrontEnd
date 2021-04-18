@@ -21,7 +21,8 @@ const allClassReducer = (state = initialState, { type, payload }) => {
         ...state,
         isFulfilled: true,
         isPending: false,
-        results:payload.data
+        results: payload.data.results,
+        info: payload
       };
     case "GET_allClass_REJECTED":
       return {

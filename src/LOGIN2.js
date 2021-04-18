@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import "./css/login/login.css";
-import ModalComp from './component/modalComp';
+import ModalComp from './component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -73,7 +73,6 @@ class Login extends Component {
             <input
               type='password'
               className='input'
-
               placeholder='password'
               onChange={this.passwordHandler}
             />

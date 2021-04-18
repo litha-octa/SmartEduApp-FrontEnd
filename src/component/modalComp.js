@@ -31,7 +31,7 @@ function ModalComp(props) {
                 >
                     {props.msg}
                 </p>
-            </Modal.Body><br/><br/><br/>
+            </Modal.Body><br /><br /><br />
             <Modal.Footer
                 style={{
                     justifyContent: 'center',
