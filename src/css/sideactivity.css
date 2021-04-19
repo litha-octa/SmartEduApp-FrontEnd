@@ -1,13 +1,11 @@
-@media(min-width:426px){  
-
-
-#asideact{background:#5784BA;
-		border-radius: 20px;
-		padding:10% 0 10% 0;
-		margin-top: 0%;	
-		float:left;
-	width:15%;
-	position: fixed;
+/* @media(min-width:769px){  
+.asideAct{	background:#5784BA;
+			border-radius: 20px;
+			padding:10% 0 10% 0;
+			margin-top: 0%;	
+			float:left;
+			width:15%;
+			position: fixed;
 				}
 											#notif{				width:2.3vw;
 																margin-top: 8%;
@@ -86,4 +84,4 @@
 											}
 @media (max-width:425px){
 	aside{display:none;}
-} 
+}  */

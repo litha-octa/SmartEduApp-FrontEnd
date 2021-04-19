@@ -37,15 +37,15 @@ class Login extends Component {
     axios
       .post('http://localhost:8300/api/v1/auth/', dataLogin)
       .then((res) => {
-        if (res.data.role_id === 1) {
-          this.props.history.push('/DashboardFas');
-        }
-        else {
-          this.props.history.push('/Dashboard');
+        if (res.data.success) {
+          res.data.role_name === 'student' ?
+            this.props.history.push('/DashboardFas') :
+            this.props.history.push('/Dashboard');
         }
       })
       .catch((err) => {
-        this.setState({modalShow: true,
+        this.setState({
+          modalShow: true,
         });
       });
   };

@@ -1,11 +1,11 @@
 import React from "react";
-import "./css/activity.css";
+import "../css/activity.css";
 import { Link } from "react-router-dom";
-import HeaderAct from "./component/HeaderAct";
-import SideActivity from "./component/SideActivity";
+import HeaderAct from "../component/HeaderAct";
+import SideForStuAct from "./SideForStuAct";
 //simport ActCont1 from "./component/ActCont1";
 import { connect } from "react-redux";
-import getAllClass from "./redux/ActionCreators/allclass";
+import getAllClass from "../redux/ActionCreators/allclass";
 //import allClassReducer from "./redux/Reducers/allclass"
 
 
@@ -19,13 +19,13 @@ function Activity(props) {
   return (
     <div>
       <HeaderAct />
-      <SideActivity />
+      <SideForStuAct />
       <div className="container-act">
         <div className="myclass">
           <label id="title-act1">Activity</label><br />
           <label id="subtitle-act1">My Class</label><br />
 
-          <Link to="./activity2" className="act1-view-all">view all
+          <Link to="./ActivityStudent/activity2" className="act1-view-all">view all
         <img src="assets/arrow.png" className="arrowicon-act1" alt=" " /></Link>
 
 

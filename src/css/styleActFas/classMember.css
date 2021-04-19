@@ -1,0 +1,92 @@
+@media (min-width:426px){  
+#bodyAct 	{background-color: #E6EDF6;}
+
+.contentAct{
+	width:100%;
+	margin: 1% 0 0 0;
+	background-color: #E6EDF6;
+}
+.article1{width:85%;
+			height: 50%;
+		margin:-3% 0 0 7%;}
+									#titleAct-Fas{
+														font-family: Montserrat;
+														font-style: normal;
+														font-weight: bold;
+														font-size: 2vw;
+														margin-left: 20%;
+														margin-top: 0%;
+														color: #000000;
+														
+											}
+								#article-bg{			width:75%;
+														height: 50%;
+														float:right;
+														margin:0% 6% 0 0;
+														border-radius: 20px 20px 0px 0px;
+														background: #E6EDF6;
+											}
+								#bg-layer2	{			width:75%;
+														bottom: 0;
+														padding-bottom: 20%; 
+														float:right;
+														margin:-35% 6% 0 0;
+														background: linear-gradient(0deg, #E6EDF6 -94.8%, 
+																	rgba(0, 0, 0, 0) 122%);
+														border-radius: 20px 20px 0px 0px;
+											}
+
+
+								.icon-comp2{				width:15vw;
+														margin: 25% 0 0 10%;
+											}
+								.icon-comp{display:none;}
+								.class-name-detail{
+														font-family: Montserrat;
+														font-style: normal;
+														font-weight: 500;
+														font-size: 2.5vw;
+														color: #000000;
+														margin: -13% 0 0 35%;
+											}
+								.description{
+														font-family: Montserrat;
+														font-style: normal;
+														font-weight: 500;
+														font-size: 1.2vw;
+														color: #000000;
+														margin-left: 35%;
+											}
+
+.article2{		background-color: white;
+				width:85%;
+				margin: -15% 0 0 7%;
+				padding:5% 0 0 0%;
+		}
+								.title-content{
+														font-family: Montserrat;
+														font-style: normal;
+														font-weight: 600;
+														font-size: 1.8vw;
+														color: #000000;
+								}
+								.content{
+														font-family: Roboto;
+														font-style: normal;
+														font-weight: 300;
+														font-size: 1.3vw;
+														color: #000000;
+
+								}
+								.line{width:100%;
+								}
+								.Member-Icon{ width:4vw;
+											margin: 2% 0 0 2%;
+											 }
+								#nameMember{font-family: Montserrat;
+														font-style: normal;
+														font-weight: 600;
+														font-size: 1.5vw;
+														color: #000000;
+														margin:2% 0 0 2.5%;}
+							}

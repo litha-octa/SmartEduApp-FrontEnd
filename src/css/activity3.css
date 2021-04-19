@@ -1,47 +1,52 @@
 @media (min-width:426px){  
-body 	{background-color: #E5E5E5;}
+#bodyAct 	{background-color: #E6EDF6;}
 
-article{
+.articleAct{
 	width:100%;
+	margin: 1% 0 0 0;
+	background-color: #E6EDF6;
 }
-.article1{}
-									#title{
+.article1{width:100%;
+		margin-left:2%;}
+									#titleAct-Fas{
 														font-family: Montserrat;
 														font-style: normal;
 														font-weight: bold;
 														font-size: 2vw;
-														margin-left: 21%;
+														margin-left: 20%;
+														margin-top: 0%;
 														color: #000000;
+														
 											}
 								#article-bg{			width:75%;
 														height: 50%;
 														float:right;
-														margin:-4% 6% 0 0;
+														margin:0% 6% 0 0;
 														border-radius: 20px 20px 0px 0px;
-														background: #EDEDED;
+														background: #E6EDF6;
 											}
 								#bg-layer2	{			width:75%;
 														bottom: 0;
 														padding-bottom: 20%; 
 														float:right;
 														margin:-35% 6% 0 0;
-														background: linear-gradient(0deg, #EDEDED -94.8%, 
+														background: linear-gradient(0deg, #E6EDF6 -94.8%, 
 																	rgba(0, 0, 0, 0) 122%);
 														border-radius: 20px 20px 0px 0px;
 											}
 
 
 								.icon-comp2{				width:15vw;
-														margin: 30% 0 0 10%;
+														margin: 0% 0 0 10%;
 											}
 								.icon-comp{display:none;}
-								.sub{
+								.class-name-detail{
 														font-family: Montserrat;
 														font-style: normal;
 														font-weight: 500;
 														font-size: 2.5vw;
 														color: #000000;
-														margin: -15% 0 0 35%;
+														margin: -13% 0 0 35%;
 											}
 								.description{
 														font-family: Montserrat;
@@ -64,13 +69,8 @@ article{
 											}
 
 .article2{		background-color: white;
-				width:75%;
-				height: auto;
-				float:right;
-				padding-top: 2%;
-				padding-bottom: 10%;
-				margin: -15% 6% 0% 0%;
-
+				width:100%;
+				padding:-10% 0 0 0%;
 		}
 								.title-content{
 														font-family: Montserrat;
@@ -87,57 +87,59 @@ article{
 														color: #000000;
 
 								}
-								.line{width:95%;
+								.line{width:100%;
 								}
 								.navbar{display:none;}}
 
 @media (max-width:425px){  
-body 	{background-color: #E5E5E5;}
+#bodyAct 	{background-color: #E6EDF6;}
 
-article{
+.articleAct{
 	width:100%;
-	left:0;
+	margin: 1% 0 0 0;
+	background-color: #E6EDF6;
 }
-.article1{width: 100%;
-			left:0;}
-									#title{
+.article1{width:100%;
+		margin-left:2%;}
+									#titleAct-Fas{
 														font-family: Montserrat;
 														font-style: normal;
 														font-weight: bold;
-														font-size: 4vw;
-														margin-left: 21%;
+														font-size: 2vw;
+														margin-left: 20%;
+														margin-top: 0%;
 														color: #000000;
-														margin-left:-1%;
+														
 											}
-								#article-bg{			width:90%;
-														height: 10%;
+								#article-bg{			width:75%;
+														height: 50%;
 														float:right;
-														margin:-4% 6% 0 0;
+														margin:0% 6% 0 0;
 														border-radius: 20px 20px 0px 0px;
-														background: #EDEDED;
+														background: #E6EDF6;
 											}
-								#bg-layer2	{			width:90%;
+								#bg-layer2	{			width:75%;
 														bottom: 0;
 														padding-bottom: 20%; 
 														float:right;
-														margin:-45% 6% 0 0;
-														background: linear-gradient(0deg, #EDEDED -94.8%, 
+														margin:-35% 6% 0 0;
+														background: linear-gradient(0deg, #E6EDF6 -94.8%, 
 																	rgba(0, 0, 0, 0) 122%);
 														border-radius: 20px 20px 0px 0px;
 											}
 
 
 								.icon-comp2{				width:15vw;
-														margin: 30% 0 0 10%;
+														margin: 0% 0 0 10%;
 											}
 								.icon-comp{display:none;}
-								.sub{
+								.class-name-detail{
 														font-family: Montserrat;
 														font-style: normal;
 														font-weight: 500;
 														font-size: 2.5vw;
 														color: #000000;
-														margin: -15% 0 0 35%;
+														margin: -13% 0 0 35%;
 											}
 								.description{
 														font-family: Montserrat;
@@ -160,28 +162,24 @@ article{
 											}
 
 .article2{		background-color: white;
-				width:90%;
-				height: auto;
-				top:0;
-				margin: 0% 0% 0% 5%;
-
+				width:100%;
+				padding:-10% 0 0 0%;
 		}
 								.title-content{
 														font-family: Montserrat;
 														font-style: normal;
 														font-weight: 600;
-														font-size: 2.2vw;
+														font-size: 1.8vw;
 														color: #000000;
 								}
 								.content{
 														font-family: Roboto;
 														font-style: normal;
 														font-weight: 300;
-														font-size: 2vw;
+														font-size: 1.3vw;
 														color: #000000;
 
 								}
-								.line{width:95%;
+								.line{width:100%;
 								}
 								.navbar{display:none;}}
-
