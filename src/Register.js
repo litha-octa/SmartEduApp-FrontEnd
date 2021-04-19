@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import "./css/register/register.css";
 import { connect } from 'react-redux';
 import ModalComp from './component/ModalComp';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { register } from './redux/ActionCreators/regis';
 
 
@@ -161,6 +162,7 @@ function Register(props) {
       )}
       <div id="role-selector">Helo !, Im a ..
         <select id="role-drop" onChange={roleidHandler}>
+        <option>...</option>
           <option value='1' >Student</option>
           <option value='2' >Teacher</option>
         </select>

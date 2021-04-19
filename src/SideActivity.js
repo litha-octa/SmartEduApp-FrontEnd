@@ -6,8 +6,8 @@ import App from "./Modal/App";
 class SideActivity extends Component {
  render() {
     return (
-      <div className="aside">
-  <div id="asidedash">
+     <div className="asideact">
+      
                   
                   <div><App/></div>
                   
@@ -42,6 +42,6 @@ class SideActivity extends Component {
                            Logout</Link><br/>
           <div id="blank"></div>
 
-</div></div>
+</div></div></div>
     );}}
    export default SideActivity;

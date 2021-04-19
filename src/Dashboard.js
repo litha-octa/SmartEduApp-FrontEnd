@@ -12,7 +12,7 @@ class Dashboard extends Component {
 <div id="body-dash">
 <HeaderDash/>
 <div className="container-dash">
-  <div className="aside">
+  <div className="asidedash">
   <div id="asidedash">
                   
                   <div><App/></div>

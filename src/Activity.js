@@ -39,8 +39,8 @@ function Activity(props) {
         </div>
       </div>
 
-      <button onClick={getAllClass}>
-        Show Rick and Morty Characters
+      <button className="show" onClick={getAllClass}>
+        Regist New Class
       </button>
 
       <div className="show">
@@ -49,8 +49,8 @@ function Activity(props) {
         ) : (
           <ol>
             {allClassReducer.isFulfilled
-              ? allClassReducer.result.map((char) => (
-                <li key={char.class_id}>{char.class_name} </li>
+              ? allClassReducer.results.map(() => (
+                <li>{[2]}</li>
               ))
               : null}
           </ol>

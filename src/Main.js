@@ -18,6 +18,7 @@ import CreateNewClass from "./CreateNewClass";
 import HeaderDash from "./component/HeaderDash";
 import HeaderAct from "./component/HeaderAct";
 import HeaderProf from "./component/HeaderProf";
+import CreateNewClassdummy from "./CreateNewClassdummy";
 
 
 
@@ -45,6 +46,7 @@ class Main extends Component {
             <Route path="/component/HeaderAct" component={HeaderAct} />
             <Route path="/component/HeaderProf" component={HeaderProf} />
             <Route path="/component/HeaderDash" component={HeaderDash} />
+            <Route path="/CreateNewClassdummy" component={CreateNewClassdummy} />
 
           </div>
         </div>
