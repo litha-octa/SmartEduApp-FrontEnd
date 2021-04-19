@@ -4,6 +4,7 @@ import "../css/styleActFas/CreateNewClass.css";
 import HeaderAct from "../component/HeaderAct";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SideForStuAct from "../ActivityStudent/SideForStuAct";
 
 import { connect } from 'react-redux';
 import { createClass } from '../redux/ActionCreators/createClass';
@@ -101,6 +102,7 @@ function CreateNewClass2(props) {
 
         <div>
             <HeaderAct />
+            <SideForStuAct />
             {/* <SideActivity /><br /> */}
             <div id="title-box">
                 <label id="title-act">Activity</label><br />

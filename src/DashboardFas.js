@@ -80,9 +80,11 @@ class DashboardFas extends Component {
       </tr>
       <tr>
         <td colspan="7">
-          <div id="fas-new-task" align="center">
+          <div  align="center">
+            <Link to="/ActivityFas/CreateNewClassdummy" id="fas-new-task">
               <img src="assets/Plus Icon.png" id="plus-icon" alt=" "/>
                 New Task
+            </Link>
           </div>
         </td>
       </tr>

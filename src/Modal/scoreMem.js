@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Modal from "./score";
-import "../css/cssApp.css";
+import "../css/memberPop.css";
 
-class scoreMem extends Component {
+class Member extends Component {
 
   constructor() {
     super();
@@ -26,10 +26,10 @@ class scoreMem extends Component {
 
   render () {
     return (
-      <div className="click-notif">
+      <div className="click-member">
         { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-shed"></div> : null }
 
-        <button className="open-modal-btn" onClick={this.openModalHandler}><img src="assets/Notif Icon2.png" alt=" "/></button>
+        <button className="modalMember" onClick={this.openModalHandler}><img src="assets/Member.png" alt=" "/></button>
 
         <Modal
           className="modal"
@@ -41,4 +41,4 @@ class scoreMem extends Component {
   }
 }
 
-export default scoreMem;
+export default Member;

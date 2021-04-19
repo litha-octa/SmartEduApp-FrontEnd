@@ -1,0 +1,87 @@
+/*AFTER CLICK*/
+.modal-wrapper {
+background:white ;
+border: 1px solid #d0cccc;
+transition: all .8s;
+width: 25vw;
+height: 30vw;
+margin-top:-7%;
+border-radius: 20px;
+margin-left: 300%;
+}
+
+.modal-header {
+background:white;
+height: 10%;
+padding: 5px 10px;
+text-align: right;
+}
+
+.modal-header h2 {
+float: left;
+margin-bottom: 5%;
+}
+
+.modal-body {
+padding-left: 10px;
+text-align: center;
+}
+
+.close-modal-btn {
+color: white;
+background: transparent; 
+cursor: pointer;
+float: right;
+font-size: 30px;
+margin: 0;
+}
+
+.close-modal-btn:hover {
+background-color: black;
+color:white;
+border-radius: 20px;
+font-size: 30px;
+
+}
+
+/*.btn-cancel {
+background-color: red;
+float: left;
+}
+
+.btn-continue {
+background-color: #1b5e20;
+float: right;
+}*/
+
+.back-shed {
+background-color: lightgrey;
+position: fixed;
+transition: all 1.3s;
+width: 100%;
+}
+
+.open-modal-btn {
+background: #5784BA;
+width:10%;
+border:none;
+margin:2% 0% 0% 0 ;
+}
+
+#table-notif{width:100%;
+			margin-left: 5%;
+			background:transparent;	
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1em;
+			line-height: 19px;
+			color: black;
+			text-align: left;
+			overflow:scroll;
+			}
+#slice-notif{font-size: 1.5em;
+			padding-top: 3%;}
+#notif-img{width:2vw;
+			padding-top:2%;
+			}

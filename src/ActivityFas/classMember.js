@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/styleActFas/classMember.css";
 import HeaderAct from "../component/HeaderAct";
 import SideForStuAct from "../ActivityStudent/SideForStuAct";
+import Member from "../Modal/scoreMem";
 
 class classMember extends Component {
   render() {
@@ -51,7 +52,7 @@ class classMember extends Component {
                 <img src="assets/Member.png" alt=" " className="Member-Icon"/><label id="nameMember">Isyana</label><br/>
             </div>
             <div>
-                <img src="assets/Member.png" alt=" " className="Member-Icon"/><label id="nameMember">Nissa Sabyan</label><br/>
+                <Member/><div><label id="nameMember">Nissa Sabyan</label></div><br/>
             </div>
             <div>
                 <img src="assets/Member.png" alt=" " className="Member-Icon"/><label id="nameMember">Pepoy</label><br/>
