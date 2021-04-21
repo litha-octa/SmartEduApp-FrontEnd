@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
 
-import Login from "./LOGIN2";
-import Register from "./Register";
+import Login from "./Auth/Login";
+import Register from "./Auth/Register";
 
-import Reset from "./Reset.js";
-import Reset2 from "./Reset2.js";
-import Reset3 from "./Reset3.js";
+import ResetInsertEmail from "./ResetPass/ResetInsertEmail.js";
+import ResetOTP from "./ResetPass/ResetOTP.js";
+import CreateNewPass from "./ResetPass/CreateNewPass.js";
 
-import Dashboard from "./Dashboard.js";
-import Dashboard2 from "./Dashboard2.js";
-import DashboardFas from "./DashboardFas";
+import dashAllSchedule from "./Dashboard/dashAllSchedule.js";
+import dashMySchedule from "./Dashboard/dashMyschedule.js";
+import DashboardFas from "./Dashboard/DashboardFas";
 
-import Profile from "./Profile";
+import Profile from "./Profile/Profile";
 
-import Activity from "./ActivityStudent/Activity";
-import Activity2 from "./ActivityStudent/Activity2";
-import Activity3 from "./ActivityStudent/Activity3";
-import Activity4 from "./ActivityStudent/Activity4";
+import addNewClass from "./ActivityStudent/addNewClass";
+import myClass from "./ActivityStudent/myClass";
+import classDetailStu from "./ActivityStudent/classDetailStu";
+import classProgress from "./ActivityStudent/classProgress";
 
 import HeaderDash from "./component/HeaderDash";
 import HeaderAct from "./component/HeaderAct";
@@ -40,28 +40,32 @@ class Main extends Component {
             <Route exact path="/" component={Login} />
             <Route path="/Register" component={Register} />
 
-            <Route path="/Reset" component={Reset} />
-            <Route path="/Reset2" component={Reset2} />
-            <Route path="/Reset3" component={Reset3} />
+            {/* Reset Password */}
+            <Route path="/ResetPass/ResetInsertEmail" component={ResetInsertEmail} />
+            <Route path="/ResetOTP" component={ResetOTP} />
+            <Route path="/CreateNewPass" component={CreateNewPass} />
 
-            <Route path="/Dashboard" component={Dashboard} />
-            <Route path="/Dashboard2" component={Dashboard2} />
-            <Route path="/DashboardFas" component={DashboardFas} />
+            {/* Dashboard student,fasilitator & profile */}
+            <Route path="/Dashboard/dashAllSchedule" component={dashAllSchedule} />
+            <Route path="/dashMySchedule" component={dashMySchedule} />
+            <Route path="/Dashboard/DashboardFas" component={DashboardFas} />
             <Route path="/Profile" component={Profile} />
 
-            <Route path="/ActivityStudent/Activity" component={Activity} />
-            <Route path="/ActivityStudent/Activity2" component={Activity2} />
-            <Route path="/ActivityStudent/Activity3" component={Activity3} />
-            <Route path="/ActivityStudent/Activity4" component={Activity4} />
+            {/* Activity Student */}
+            <Route path="/ActivityStudent/addNewClass" component={addNewClass} />
+            <Route path="/myClass" component={myClass} />
+            <Route path="/classDetailStu" component={classDetailStu} />
+            <Route path="/classProgress" component={classProgress} />
 
             <Route path="/component/HeaderAct" component={HeaderAct} />
             <Route path="/component/HeaderProf" component={HeaderProf} />
             <Route path="/component/HeaderDash" component={HeaderDash} />
 
+            {/* Activity Fasilitator */}
             <Route path="/ActivityFas/CreateNewClass" component={CreateNewClass} />
             <Route path="/ActivityFas/CreateNewClassdummy" component={CreateNewClassdummy} />
-            <Route path="/ActivityFas/classDetailFas" component={classDetailFas} />
-            <Route path="/ActivityFas/classMember" component={classMember} />
+            <Route path="/classDetailFas" component={classDetailFas} />
+            <Route path="/classMember" component={classMember} />
 
           </div>
         </div>

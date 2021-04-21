@@ -1,14 +1,17 @@
-@media(min-width:426px){
-.headerAct{display: none;}}
+@media(min-width:769px){
+.header{display: none;}
+}
 
 
-/*@media (max-width: 767px) and  {  
+@media (max-width:768px) and (min-width:426px){  
 .header{
-  height: 80px;
+  height: 15%;
+  min-height: 30px;
   width: 100%;
   position: fixed;
   top:0;
   background-color: #5784BA;
+  padding-bottom: 1%;
 }
 .title {
 color:black;
@@ -28,32 +31,29 @@ background-color: #E5E5E5;
 #header-selected{
   background-color: white;
   width:7%;
-  font-size: 1em;
+  font-size: 1.5vw;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
-  margin-top: 10%;
-  margin-right: 5%;
-  margin-left: 1%;
+  margin: 7% 5% 2% 1%;
   color: black;
 }
 #header-menu{
   color: white;
-  width:7%;
-  font-size: 1em;
+  width:10%;
+  font-size: 1.5em;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
   margin-right: 5%;
 }
-#header-icon{
-  width:7vw;
-  float:right;
-  margin-top: -3.5%;
-  background-color:#5784BA;
-  padding: 1%;
-  border-radius: 5px;
-}}*/
+#header-icon-dash{
+  min-width: 40px;
+  width:6%;
+  margin: -6% 0% 5% 90%;
+}}
+
+
 
 
 
@@ -64,12 +64,11 @@ background-color: #E5E5E5;
 
 
 @media (max-width: 425px){  
-.headerAct{
-  height: 40px;
+.header{
+  height: 10%;
   width: 100%;
   position: fixed;
-  top:0;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
   background-color: #5784BA;
 }
 .title {
@@ -77,9 +76,9 @@ color:black;
 margin-left:3%;
 margin-top:0%;
 text-align: center;
-height:4vh;
+height:2%;
 width: 20vw;
-font-size: 10px;
+font-size: 1em;
 text-align: justify; 
 background-color: #E5E5E5;
 }
@@ -90,7 +89,7 @@ background-color: #E5E5E5;
 #header-selected{
   background-color: white;
   width:7%;
-  font-size: 10px;
+  font-size: 0.5em;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
@@ -100,17 +99,14 @@ background-color: #E5E5E5;
 #header-menu{
   color: white;
   width:7%;
-  font-size: 10px;
+  font-size: 0.5em;
   font-family: roboto;
   text-decoration: none;
   border-radius: 10px;
   margin-right: 5%;
 }
-#header-icon{
-  width:38px;
-  float:right;
-  margin: -6% 4% 0% 0%;
-  background-color:#5784BA;
+#header-icon-dash{
+  width:4em;
+  margin: -8% 2% 0 80%;
   padding: 1%;
-  border-radius: 5px;
-}}
+}} 

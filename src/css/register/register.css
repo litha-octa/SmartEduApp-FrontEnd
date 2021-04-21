@@ -7,7 +7,8 @@
 		font-weight: 500;
 		font-size: 2.5em;
 		color: #010620;
-		margin: 2% 0 5% 0;
+		margin: 0% 0 3% 0;
+		padding-top: 2%;
 		text-align: center;
 }
 .label-input-register {		width: 25vw;
@@ -93,6 +94,12 @@
 					margin:3% 0 0 45%;
 }
 .linktologin{color: blue;}
+#matchIcon{width:2.5vw;}
+#isMatch{margin-left: 45%;
+		width:11vw;
+		margin-bottom: 2%;
+		background-color: white;
+		border-radius: 10px;}
 }
 
 

@@ -1,52 +1,17 @@
 import React, { Component } from "react";
-import "./css/dashboard.css";
+import "../css/dashboard.css";
 import { Link } from "react-router-dom";
-import HeaderDash from "./component/HeaderDash";
-import App from "./Modal/App";
-//import DateTodayForDash from "./component/DateTodayForDash";
+import HeaderDash from "../component/HeaderDash";
+import SideForDash from "../component/SideForDash";
 
 
-class Dashboard extends Component {
+class Dashboard2 extends Component {
   render() {
     return (
       <div id="body-dash">
         <HeaderDash />
+        <SideForDash />
         <div className="container-dash">
-          <div className="asidedash">
-            <div id="asidedash">
-
-              <div><App /></div>
-              <img src="assets/profile.png" id="mini-profile" alt=" " /><br />
-              <div id="side-name-profile">Emir Kharisma
-                  <div id="SideActstatus">online</div></div>
-
-
-            </div>
-
-            <div id="asidedash2">
-              <div>
-                <Link to="/Dashboard" id="SideAct-profileSelect">
-                  <img src="assets/Dashboard Icon2.jpg" alt="dashboard-icon" id="SideActIcon" />
-                            Dashboard
-                    </Link></div><br />
-            </div>
-
-            <div id="asidedash">
-              <Link to="/ActivityStudent/Activity" id="SideAct-profilemenu-dash">
-                <img src="assets/Activity Icon.png" alt="activity-icon" id="SideActIcon" />
-                            Activity
-                </Link><br />
-              <Link id="SideAct-profilemenu-dash">
-                <img src="assets/Help Icon.png" alt="help-icon" id="SideActIcon" />
-                Help </Link><br />
-
-              <Link to="/" id="SideAct-profilemenu2">
-                <img src="assets/Logout Icon.png" alt="logout-icon" id="SideActIcon" />
-                           Logout</Link><br />
-              <div id="blank"></div>
-
-            </div>
-          </div>
           <div className="contentdash1">
             <div className="grid-item" id="dashnews">
               <box>
@@ -71,28 +36,22 @@ class Dashboard extends Component {
                   <td><div id="date-day">Su<br />18</div></td>
                 </tr>
                 <tr>
-                  <td colspan="7" id="time"><h5 className="h5-dash">All Schedule</h5></td>
+                  <td colspan="7" id="time"><Link to="/Dashboard/dashAllSchedule" className="link-foryou"><h5>All Schedule</h5></Link></td>
                 </tr>
                 <tr>
-                  <td colspan="7" id="time"><Link to="/Dashboard2" className="link-foryou"><h5>For You</h5></Link></td>
+                  <td colspan="7" id="time"><h5 className="h5-dash">For You</h5></td>
                 </tr>
                 <tr>
                   <td colspan="7" id="time"><img src="assets/8.00.png" id="img" alt=" " /></td>
                 </tr>
                 <tr>
-                  <td colspan="7" id="time"><img src="assets/d1fc.png" id="task1-pic" alt=" " /></td>
+                  <td colspan="7" id="time"><img src="assets/d2fc.png" id="task1-pic" alt=" " /></td>
                 </tr>
                 <tr>
                   <td colspan="7" id="time"><img src="assets/11.00.png" id="img" alt=" " /></td>
                 </tr>
                 <tr>
-                  <td colspan="7" id="time"><img src="assets/d1sc.png" id="task1-pic" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/13.00.png" id="img" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/d1tc.png" id="task1-pic" alt=" " /></td>
+                  <td colspan="7" id="time"><img src="assets/d2sc.png" id="task1-pic" alt=" " /></td>
                 </tr>
                 <tr>
                   <td colspan="7" id="time"><img src="assets/finish.png" id="img" alt=" " /></td>
@@ -130,4 +89,4 @@ class Dashboard extends Component {
 }
 
 
-export default Dashboard;
+export default Dashboard2;

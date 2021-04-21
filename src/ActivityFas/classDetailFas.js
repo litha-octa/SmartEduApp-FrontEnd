@@ -1,99 +1,73 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../css/activity3.css";
+import "../css/styleActFas/classDetail.css";
 import HeaderAct from "../component/HeaderAct";
-import SideForStuAct from "../ActivityStudent/SideForStuAct";
+import SideForStuAct from "../component/SideForStuAct";
+import ClassDetailCont from "../component/classDetailCont";
 
 class classDetailFas extends Component {
   render() {
     return (
-      <div id="bodyAct">
-        <HeaderAct />
+      <div className="Container-ActFas">
+        <body>
+          <HeaderAct />
         <SideForStuAct />
-            <div className="articleAct">
-                    <Link to="/CreateNewClassdummy">
-                    <div id="titleAct-Fas">
-                      <img src="assets/Back Icon.png" alt=" " />
-                      
-                        Front-end Fundamentals
-                      </div> 
-                    </Link>    
-                  
-           <div className="article1">
-              <img src="assets/activity3-bg.jfif" id="article-bg" alt=" " />
-                <div id="bg-layer2">
-                  <img src="assets/group 205.png" className="icon-comp2" alt=" " />
-                    <div className="class-name-detail">Front-end Fundamentals</div>
-                      <div className="description">
-                          Level : Beginner&nbsp;&nbsp;&nbsp;
-                          Category : Software&nbsp;&nbsp;&nbsp;
-                          Price : Free
+            <p id="title-ActFas">
+              <Link to="./Activity">
+                <img src="assets/Back Icon.png" alt=" " />
+              </Link>
+                Front-end Fundamentals
+            </p>
+
+            <img src="assets/activity3-bg.jfif" id="articlebg-ActFas" alt=" " /> 
+              <div id="articlebglayer2-ActFas">
+                <img src="assets/group 205.png" className="iconComp" alt=" " />
+                
+                  <div className="classNameDetail">Front-end Fundamentals</div>
+                   <button type="button" className="RegClass">
+                          Register
+                    </button>
+                      <div className="descriptionClass">
+                                            Level : Beginner&nbsp;&nbsp;&nbsp;
+                                            Category : Software&nbsp;&nbsp;&nbsp;
+                                            Price : Free
                       </div>
-                    </div>
-            <div className="article2">
-              <img src="assets/group 205.png" className="icon-comp" alt=" " />
-                <div className="content">
-                  Information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  Progress&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  Class Discussion &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                  <Link to ="/ActivityFas/classMember">
-                  Class Member
-                  </Link>
-                  &nbsp;&nbsp;&nbsp;
-              </div>
-              <img src="assets/line.png" className="line" alt=" " />
-          <div className="title-content">Description</div>
-            <div className="content">
-                Javascript from the basic for beginner.
-                JavaScript is a programming language that adds interactivity to your website.
-                This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms;
-                with dynamic styling; with animation, etc.
-                This className helps you get started with JavaScript and furthers your understanding of what is possible.
-            </div><br />
-          <div className="title-content">What will I learn?</div>
-              <ul>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-            </div>
-                </li>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-            </div>
-                </li>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-            </div>
-                </li>
-              </ul><br />
-              <div className="title-content">Content 2</div>
-              <ul>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-          </div>
-                </li>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-          </div>
-                </li>
-                <li>
-                  <div className="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit blandit risus, tempor ullamcorper metus sit accumsan. Dictum sit tincidunt turpis malesuada arcu amet cursus blandit. Sociis diam elit imperdiet eget posuere id sagittis.
-          </div>
-                </li>
-              </ul>
+                  </div>
+                  <div className="articleActFas2">
+                      <img src="assets/group 205.png" className="icon-comp" alt=" " />
+                      <img src="assets/80progress.png" alt="" id="progressMeters"/>
+                        <div className="contentDetail">
+                                        Information
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                        Class Progress
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                      Class Discussion
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                                  &nbsp;&nbsp;&nbsp;
+                                      
 
-
-            </div>
-          </div>
-
-        </div>
-
-
+                            <Link to="/classMember" className="linkFromClassDetail">
+                                       Member
+                            </Link>&nbsp;&nbsp;&nbsp;
+                                        
+                        </div>
+                      <img src="assets/line.png" className="line" alt=" " /> 
+                      <ClassDetailCont/>
+                  </div>
+         
+        
+             </body>
       </div>
     );
   }

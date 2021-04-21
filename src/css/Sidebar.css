@@ -1,5 +1,5 @@
-@media(min-width:426px){  
-.sideAct{	background:#5784BA;
+@media(min-width:769px){  
+.sidebar{	background:#5784BA;
 			border-radius: 20px;
 			padding:1% 0 30% 0;
 			margin: 1% 0 0 1%;	
@@ -7,14 +7,18 @@
 			width:15%;
 			position: fixed;
 }
-#sideAct-Prof{
+.sidebarminiprofile{padding-bottom: 30%;}
+
+#side-MiniProf{
     height: 15vw;
 }
 											#notif{				width:2.3vw;
 																float:right;
                                                                 margin:0% 12% 0 0;		
 											}
-											#sideActMiniProfile{width: 6vw;																margin-left: 8%;
+											
+											#sideActMiniProfile{width: 6vw;
+																margin-left: 8%;
 																margin-top: 25%;
 											}
 											#sideActMiniName{	font-family: Roboto;
@@ -25,60 +29,60 @@
 																margin-top: 9%;
 																margin-left:6%;
 											}
-
 											#sideActMiniStatus{ font-family: Roboto;
 																font-style: normal;
 																font-weight: normal;
 																font-size: 1em;
 																color: #ffffff;
 																margin-left: 2%;
-																margin-bottom: 30%;
+																
 											}
-#sideAct-Dash{  height: 5vw;
-                padding:20% 0 0% 0;
-                margin-bottom:10%;
+
+#sideDash-none{  height: 5vw;
+                padding:5 0 0% 0;
                 border-radius: 10px;
+                margin:2% 0 3% 0; 
             }
-#sideAct-Act{  height: 5vw;
-                padding:7% 0 0% 0;
+#sideDash-white{  height: 5vw;
+                padding:5% 0 0% 0;
                 background-color: white;
                 border-radius: 10px;
+                margin:2% 0 3% 0;
             }
-#sideAct-Help{  height: 5vw;
-                padding:10% 0 5% 0;
-                border-radius: 10px;
-            }
-#sideAct-Logout{  height: 5vw;
-                padding:0% 0 10% 0;
-                border-radius: 10px;
-            }
-        #SideAct-Menu{  font-family: montserrat;
+
+        #Sidebar-Menu{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1em;
+						font-size: 0.5em;
                         color:white;
                         text-justify: center;
                     }
-        #SideAct-MenuSelected{  font-family: montserrat;
+
+
+        #Sidebar-MenuSelected{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
 						font-size: 1em;
                         color:black;
-                        text-justify: center;
+                        background-color: white;
+                        		                border-radius: 10px;
                     }
-        #SideAct-MenuLogout{  font-family: montserrat;
+        #Sidebar-MenuLogout{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
 						font-size: 1em;
                         color:rgb(201, 28, 28);
                         text-justify: center;
-                    }
-        #SideActIcon{   width:2vw;
-                        justify-items: center;
-                        margin-top:2%;}
+		                border-radius: 10px;
+
+		                }
+        #SidebarIcon{   width:1vw;
+                        justify-content: center;
+                        margin-top:2%;
+                    	margin-left:6%;}
         
         }
                                             
-@media (max-width:425px){
-	aside{display:none;}
+@media (max-width:768px){
+	.sidebar{display:none;}
 } 

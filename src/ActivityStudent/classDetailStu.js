@@ -1,29 +1,29 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom";
-import "../css/styleActFas/classMember.css";
+import { Link } from "react-router-dom";
+import "../css/styleActFas/classDetail.css";
 import HeaderAct from "../component/HeaderAct";
 import SideForStuAct from "../component/SideForStuAct";
-import Member from "../Modal/scoreMem";
+import ClassDetailCont from "../component/classDetailCont";
 
-class classMember extends Component {
+class classDetailStu extends Component {
   render() {
     return (
-     <div className="Container-ActFas">
+      <div className="Container-ActFas">
         <body>
           <HeaderAct />
         <SideForStuAct />
             <p id="title-ActFas">
-              <Link to="/ActivityFas/CreateNewClassdummy">
+              <Link to="/ActivityStudent/addNewClass">
                 <img src="assets/Back Icon.png" alt=" " />
               </Link>
-                Front-end Fundamentals
+                Know more Javascript
             </p>
 
             <img src="assets/activity3-bg.jfif" id="articlebg-ActFas" alt=" " /> 
               <div id="articlebglayer2-ActFas">
                 <img src="assets/group 205.png" className="iconComp" alt=" " />
                 
-                  <div className="classNameDetail">Front-end Fundamentals</div>
+                  <div className="classNameDetail">Know more Javascript</div>
                    <button type="button" className="RegClass">
                           Register
                     </button>
@@ -35,18 +35,15 @@ class classMember extends Component {
                   </div>
                   <div className="articleActFas2">
                       <img src="assets/group 205.png" className="icon-comp" alt=" " />
-                      <img src="assets/80progress.png" alt="" id="progressMeters"/>
+                      
                         <div className="contentDetail">
-                                                 
-                                                  
-                                                  &nbsp;&nbsp;&nbsp;
-                              <Link to="/classDetailFas" className="linkFrom">Information</Link>
+                                        Information
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
-                                        Class Progress
+                                        <Link to="/classProgress" className="linkFromClassDetail">Class Progress</Link>
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
@@ -57,14 +54,16 @@ class classMember extends Component {
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
                                                   &nbsp;&nbsp;&nbsp;
-                                                  &nbsp;&nbsp;&nbsp;
-                                      Member      &nbsp;&nbsp;&nbsp;
-                            </div>
-                            <img src="assets/Group 212 (2).png" alt="" className="lineMember"/>
-                            </div>
-                            
-                            </body></div>
+                                                  &nbsp;&nbsp;&nbsp;         
+                        </div>
+                      <img src="assets/line.png" className="line" alt=" " /> 
+                      <ClassDetailCont/>
+                  </div>
+         
+        
+             </body>
+      </div>
     );
   }
 }
-export default classMember;
+export default classDetailStu;

@@ -4,7 +4,7 @@ import "../css/styleActFas/CreateNewClass.css";
 import HeaderAct from "../component/HeaderAct";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SideForStuAct from "../ActivityStudent/SideForStuAct";
+import SideForStuAct from "../component/SideForStuAct";
 
 import { connect } from 'react-redux';
 import { createClass } from '../redux/ActionCreators/createClass';
@@ -119,7 +119,7 @@ function CreateNewClass2(props) {
                         <td>Student</td>
                     </tr>
                     <tr className="table-content">
-                        <td><input className="form-check-input" type="checkbox" /></td>
+                        <td><input className="form-check-input" type="checkbox"/></td>
                         <td>Front-end fundamentals</td>
                         <td>Software</td>
                         <td>Learn the fundamentals of front end...</td>
@@ -149,7 +149,11 @@ function CreateNewClass2(props) {
 
             </div><br />
             <div id="title-box">
-                <label id="title-act">Activity</label><br />
+                <label id="title-act">
+                    <Link to ="/classDetailFas" id="linkToClassDetail">
+                        Activity
+                    </Link>
+                </label><br />
             </div>
             <div className="create-container" >
                 <table className="form-create-new-class">

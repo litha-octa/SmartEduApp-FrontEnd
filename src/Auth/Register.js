@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import "./css/register/register.css";
+import "../css/register/register.css";
 import { connect } from 'react-redux';
-import ModalComp from './component/ModalComp';
+import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { register } from './redux/ActionCreators/regis';
+import { register } from '../redux/ActionCreators/regis';
 
 
 
@@ -149,20 +149,20 @@ function Register(props) {
       <div id="caption">Confirm Password</div>
       <input type="password" className="label-input-register" placeholder="Confirm password" onChange={rePasswordHandler} />
       {match ? (
-        <small className='match password d-flex justify-content-start'>
+        <small className='match password d-flex justify-content-start' id="isMatch">
           Password match
-          <img src="assets/matchIcon.png" alt='match icon' />
+          <img src="assets/matchIcon.png" id="matchIcon" alt='match icon' />
         </small>
       ) : match === undefined ? (
         <small className='notmatch password d-flex justify-content-start'></small>
       ) : (
-        <small className='notmatch password d-flex justify-content-start'>
+        <small className='notmatch password d-flex justify-content-start' id="isMatch">
           Password not match
         </small>
       )}
       <div id="role-selector">Helo !, Im a ..
         <select id="role-drop" onChange={roleidHandler}>
-        <option>...</option>
+          <option>...</option>
           <option value='1' >Student</option>
           <option value='2' >Teacher</option>
         </select>

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "../css/activity.css";
 import { Link } from "react-router-dom";
 import HeaderAct from "../component/HeaderAct";
-import SideActivity from "../component/SideActivity";
+import SideForStuAct from "../component/SideForStuAct";
 import ActCont2 from "../component/ActCont2";
 
-class Activity2 extends Component {
+class myClass extends Component {
 
 
 
@@ -13,30 +13,23 @@ class Activity2 extends Component {
     return (
       <div>
         <HeaderAct />
-        <SideActivity />
+        <SideForStuAct/>
         <main>
           <div className="container-act2">
             <div className="myclass">
-              <Link to="./Activity">
+              <Link to="/ActivityStudent/addNewClass">
                 <img src="assets/Back Icon.png" alt=" " id="backicon-act2" />
-              </Link>
-              <label id="subtitle-act2">My Class</label><br /><br />
+              </Link><br/>
+              <label id="subtitle-act2"><Link to ="/classDetailStu">My Class</Link></label><br /><br />
               <input type="text" className="searchbar-act" placeholder="Quick Search" />
               <input type="button" className="searchbutton-act" value="Search" /><br />
               <div className="filterby-act"> Categories &nbsp;&nbsp;&nbsp;Level&nbsp;&nbsp;&nbsp;Pricing</div>
 
               <ActCont2 />
             </div></div>
-
-
         </main>
-
-
-
-
-
       </div>
     );
   }
 }
-export default Activity2;
+export default myClass;

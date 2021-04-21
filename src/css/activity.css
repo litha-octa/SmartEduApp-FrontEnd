@@ -1,10 +1,10 @@
-@media (min-width:426px){
+@media (min-width:769px){
 .container-act{
-	width:80%;
+	width:70%;
 	background-color: #E6EDF6;
-	padding:0 3% 0 20%; 
+	margin:0 3% 0 18%; 
 }
-.show{margin-left: 50%;}
+/*.show{margin-left: 50%;}*/
 										.myclass{	width:100%;
 													border-radius:10px;
 													padding: 1%;
@@ -135,6 +135,138 @@
 
 
 
+
+
+
+@media (min-width:768px)and(max-width: 426px){
+.container-act{
+	width:100%;
+	background-color: #E6EDF6;
+	padding: 15% 0% 0 0% ;
+	margin-left: 5%; 
+}
+										.myclass{	width:100%;
+													border-radius:5px;
+													padding: 5%;
+													margin-left: 5%; 
+													}
+										#title-act1{
+											font-family: Montserrat;
+											font-style: normal;
+											font-weight: bold;
+											font-size: 2em;
+											color: #000000;
+											
+										}
+										#subtitle-act1{
+											font-family: Montserrat;
+										font-style: normal;
+										font-weight: bold;
+										font-size: 1.5em;
+										color: #000000;}
+
+										#myclass-table{width:100%;}
+
+										.myclass-table-column{
+											font-family: Montserrat;
+											font-style: normal;
+											font-weight: 600;
+											font-size: 1.4em;
+											color: #000000;
+										}
+										.myclass-table-content{
+											font-family: Montserrat;
+											font-style: normal;
+											font-weight: 500;
+											font-size: 1.1em;
+											color: #000000;
+										}
+										#font-score{
+															font-family: Montserrat;
+															font-style: normal;
+															font-weight: bold;
+															font-size: 2em;
+															margin-left: -2%;
+															
+										}
+										.score1{color: #51E72B;}
+										.score2{color: #CCE72B;}
+
+										.list{
+											display: none;
+										}
+										.white-line{
+											background-color: white;	 
+										}
+										.act1-view-all{
+											margin-left: 40%;
+											font-family: Montserrat;
+											font-style: normal;
+											font-weight: 500;
+											font-size: 1.2em;
+											line-height: 15px;
+											color: #000000;
+											text-decoration: none;
+										}
+										.arrowicon-act1{
+											width:2.5vw;
+										}
+										#progress{
+											width:8vw;
+											margin-left: 0%;
+										}
+										#myclass-status{
+											width: 7vw;
+										}
+
+.container-newclass{
+	background-color: white;
+	width:95%;
+	border-radius: 10px;
+	padding: 1% 2%;
+	margin:5% 0 0 2%;
+border: none;}
+										.searchbar-act{	width:80%;
+														height: 2vh;
+														border:1px solid black;
+														border-radius:3px;}	
+										.searchbutton-act{	width:15%;
+															height: 3vh;
+															border:none;
+															font-family: Montserrat;
+															font-style: normal;
+															font-weight: 600;
+															font-size: 1.2em;
+															color: #FFFFFF;
+															background: #5784BA;
+															border-radius:3px;
+															}
+										.filterby-act	{	background: #EEEEEE;
+															color:black;
+															width:94%;
+															font-family: Roboto;
+															font-style: normal;
+															font-weight: normal;
+															font-size: 1.2em;
+															padding:1%;
+														}	
+
+.container-act2{
+	width:95%;
+	height: 100%;
+	background-color: #E6EDF6;
+	padding: 15% 5% 0 0 ; 
+}
+#backicon-act2{width:2vw;
+				margin:1% 1% 0 0;}
+#subtitle-act2{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 1.5em;
+				padding-bottom: 5%;
+				color: #000000;}																								
+}
 
 
 

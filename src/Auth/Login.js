@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import "./css/login/login.css";
-import ModalComp from './component/ModalComp';
+import "../css/login/login.css";
+import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -38,9 +38,9 @@ class Login extends Component {
       .post('http://localhost:8300/api/v1/auth/', dataLogin)
       .then((res) => {
         if (res.data.success) {
-          res.data.role_name === 'student' ?
-            this.props.history.push('/DashboardFas') :
-            this.props.history.push('/Dashboard');
+          // res.data.role_name === 'student' ?
+          //   this.props.history.push('/Dashboard/dashMySchedule') :
+          this.props.history.push('/Dashboard/dashAllSchedule');
         }
       })
       .catch((err) => {
@@ -77,7 +77,7 @@ class Login extends Component {
               onChange={this.passwordHandler}
             />
 
-            <Link to="/Reset">
+            <Link to="/ResetPass/ResetInsertEmail">
               <label id="toReset">
                 Forgot password?
                  </label>
