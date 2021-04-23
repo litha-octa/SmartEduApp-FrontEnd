@@ -13,7 +13,7 @@ class classDetailFas extends Component {
           <HeaderAct />
         <SideForStuAct />
             <p id="title-ActFas">
-              <Link to="./Activity">
+            <Link to="/ActivityFas/CreateNewClassdummy">
                 <img src="assets/Back Icon.png" alt=" " />
               </Link>
                 Front-end Fundamentals

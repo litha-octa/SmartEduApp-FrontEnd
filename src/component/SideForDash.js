@@ -9,21 +9,21 @@ class SideForDash extends Component {
             <div className="sidebar">
 
                 <div className="sidebarminiprofile">
-                <div id="side-MiniProf">
-                    <div id="notif"><App /></div>
-                    <Link to ="/Profile/Profile"><img src="assets/profile.png" id="sideActMiniProfile" alt=" " /><br />
-                        <div id="sideActMiniName">
-                            Emir Kharisma
+                    <div id="side-MiniProf">
+                        <div id="notif"><App /></div>
+                        <Link to="/Profile/Profile"><img src="assets/profile.png" id="sideActMiniProfile" alt=" " /><br />
+                            <div id="sideActMiniName">
+                                Emir Kharisma
                         <div id="sideActMiniStatus">
-                                online
+                                    online
                         </div>
-                        </div>
-                    </Link>
-                </div>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
 
                 <div id="sideDash-white">
-                    <Link to="/Dashboard" id="Sidebar-MenuSelected">
+                    <Link to="/Dashboard/dashAllSchedule" id="Sidebar-MenuSelected">
                         <div>
                             <img src="assets/Dashboard Icon2.jpg" alt="dashboard-icon" id="SidebarIcon" />
                             Dashboard
@@ -39,7 +39,7 @@ class SideForDash extends Component {
                         </div>
                     </Link>
                 </div>
-                
+
                 <div id="sideDash-none">
                     <div id="Sidebar-Menu">
                         <img src="assets/Help Icon.png" alt="dashboard-icon" id="SidebarIcon" />
@@ -48,14 +48,14 @@ class SideForDash extends Component {
                 </div>
 
                 <div id="sideDash-none">
-                    <Link to ="/" id="Sidebar-MenuLogout">
+                    <Link to="/" id="Sidebar-MenuLogout">
                         <div>
                             <img src="assets/Logout Icon.png" alt="dashboard-icon" id="SidebarIcon" />
                                 Logout
                         </div>
                     </Link>
                 </div>
-              
+
             </div>
         );
     }

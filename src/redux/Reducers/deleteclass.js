@@ -1,39 +1,39 @@
 const initialState = {
-    result: {},
+    results: {},
+    info: {},
     isPending: false,
     isFulfilled: false,
     isRejected: false,
-    error: {},
-    currentUser: {},
+    err: {},
 };
 
-export const registerReducer = (state = initialState, { type, payload }) => {
+const deleteClassReducer = (state = initialState, { type, payload }) => {
     switch (type) {
-        case 'REGISTER_PENDING':
+        case "DEL_Class_PENDING":
             return {
                 ...state,
                 isPending: true,
                 isFulfilled: false,
                 isRejected: false,
             };
-        case 'REGISTER_FULFILLED':
+        case "DEL_Class_FULFILLED":
             return {
                 ...state,
                 isFulfilled: true,
                 isPending: false,
-                result: payload.data.result,
+                results: payload.data.results,
+                info: payload
             };
-        case 'REGISTER_REJECTED':
+        case "DEL_Class_REJECTED":
             return {
                 ...state,
                 isRejected: true,
                 isPending: false,
-                result: payload,
+                err: payload
             };
         default:
             return state;
     }
 };
 
-
-// export default {registerReducer,loginReducer};
+export default deleteClassReducer;

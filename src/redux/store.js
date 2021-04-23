@@ -4,13 +4,16 @@ import rpm from "redux-promise-middleware";
 
 
 import allClassReducer from "./Reducers/allclass";
-import registerReducer from "./Reducers/regis";
-import createClassReducer from "./Reducers/createClass";
+import { registerReducer } from "./Reducers/regis";
+//import createClassReducer from "./Reducers/createClass";
+import deleteClassReducer from "./Reducers/deleteclass";
+
 
 const reducers = combineReducers({
   allClassReducer,
   registerReducer,
-  createClassReducer,
+  //createClassReducer,
+  deleteClassReducer,
 });
 const logger = createLogger();
 const enhancers = applyMiddleware(rpm, logger);

@@ -26,6 +26,9 @@
 
 										#myclass-table{width:100%;
 												}
+										#addnewclass-table{	width:100%;
+															margin-left: 0%;
+												}
 
 										.myclass-table-column{
 											font-family: Montserrat;
@@ -126,13 +129,16 @@
 			font-style: normal;
 			font-weight: bold;
 			font-size: 1.5em;
-			color: #000000;}																
+			color: #000000;}		
+.showPag{background: transparent;
+			border:none;
+			margin-left: 30%;}														
 }
 
 
 
-
-
+/*
+onChange={searchHandler}   onClick={submitHandler}  onChange={sortHandler}*/
 
 
 

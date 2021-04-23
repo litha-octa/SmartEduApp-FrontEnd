@@ -9,22 +9,22 @@ const initialState = {
 
 const allClassReducer = (state = initialState, { type, payload }) => {
   switch (type) {
-    case "GET_allClass_PENDING":
+    case "GET_allClass_PAGINATED_PENDING":
       return {
         ...state,
         isPending: true,
         isFulfilled: false,
         isRejected: false,
       };
-    case "GET_allClass_FULFILLED":
+    case "GET_allClass_PAGINATED_FULFILLED":
       return {
         ...state,
         isFulfilled: true,
         isPending: false,
-        results: payload.data.results,
-        info: payload
+        results: payload.data.result,
+        info: payload.data.info,
       };
-    case "GET_allClass_REJECTED":
+    case "GET_allClass_PAGINATED_REJECTED":
       return {
         ...state,
         isRejected: true,

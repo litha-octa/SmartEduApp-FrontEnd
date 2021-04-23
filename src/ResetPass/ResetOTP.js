@@ -7,7 +7,7 @@ class Reset2 extends Component {
     return (
       <div className="container-reset">
         <div id="box1-reset">
-          <Link to="/Reset">
+          <Link to="/ResetPass/ResetInsertEmail">
             <img src="assets/Back Icon.png" id="back" alt=" " />
           </Link>
           <img className="orang" src="assets/orang2.png" alt=" " />

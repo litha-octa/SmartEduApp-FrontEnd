@@ -39,8 +39,8 @@ class Login extends Component {
       .then((res) => {
         if (res.data.success) {
           res.data.role === 1 ?
-            this.props.history.push('/Dashboard/DashboardFas') :
-            this.props.history.push('/Dashboard/dashAllSchedule');
+            this.props.history.push('/Dashboard/dashAllSchedule') :
+            this.props.history.push('/Dashboard/DashboardFas');
         }
       })
       .catch((err) => {

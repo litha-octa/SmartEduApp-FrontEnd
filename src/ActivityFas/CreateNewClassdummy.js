@@ -5,9 +5,10 @@ import HeaderAct from "../component/HeaderAct";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SideForStuAct from "../component/SideForStuAct";
+import axios from 'axios';
 
-import { connect } from 'react-redux';
-import { createClass } from '../redux/ActionCreators/createClass';
+// import { connect } from 'react-redux';
+// import { createClass } from '../redux/ActionCreators/createClass';
 
 
 
@@ -18,16 +19,15 @@ function CreateNewClass2(props) {
     const [description, setDescription] = useState();
     const [pricing, setPricing] = useState();
     const [schedule, setSchedule] = useState();
-    const [classImage, setClassImage] = useState();
-    const [, setClassNameIsTaken] = useState(false);
+    const [avatar, setAvatar] = useState();
+    // const [, setClassNameIsTaken] = useState(false);
     const [modalShow, setModalShow] = useState(false);
-    const [, setRequiredTxt] = useState(false);
+    // const [, setRequiredTxt] = useState(false);
 
-    const { createClassReducer, classAdd } = props;
+    // const { createClassReducer, createClass } = props;
 
     const class_nameHandler = (e) => {
         setClassName(e.target.value);
-        setClassNameIsTaken(false);
     };
 
     const categoryHandler = (e) => {
@@ -49,52 +49,48 @@ function CreateNewClass2(props) {
     const scheduleHandler = (e) => {
         setSchedule(e.target.value);
     };
-    const fileHandler = (e) => {
-        setClassImage(e.target.value);
+    const avatarHandler = (e) => {
+        setAvatar(e.target.files[0]);
     };
 
-    const subClassHandler = (e) => {
+
+    const history = useHistory();
+
+
+    const createClassHandler = (e) => {
         e.preventDefault();
-        const dataClass = {
-            class_name: class_name,
-            category_id: category_id,
-            description: description,
-            level_id: level_id,
-            pricing: pricing,
-            schedule: schedule,
-            classImage: classImage,
-        };
+        let formData = new FormData();
+        formData.append('class_name', class_name);
+        formData.append('category_id', category_id);
+        formData.append('description', description);
+        formData.append('pricing', pricing);
+        formData.append('schedule', schedule);
+        formData.append('level_id', level_id);
+        formData.append('avatar', avatar);
 
-        classAdd(dataClass);
-    };
-    const ref = useRef();
-
-    useEffect(() => {
-        if (!ref.current) {
-            ref.current = true;
-        } else {
-            if (createClassReducer.isPending) {
-                console.log('Loading');
-            } else if (createClassReducer.isFulfilled) {
+        axios
+            .post('http://localhost:8300/api/v1/newclass/create', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                },
+            })
+            .then((res) => {
+                console.log('Success');
                 setModalShow(true);
-            } else if (createClassReducer.isRejected) {
-                const conflict =
-                    props.createClassReducer.result.payload;
+                setClassName();
+                setCategory_id();
+                setPricing();
+                setSchedule();
+                setLevel_id();
+                setAvatar();
+                setDescription();
+                // setModalShow(false);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
 
-                if (conflict === 'name') {
-                    setClassNameIsTaken(true);
-                } else {
-                    setRequiredTxt(true);
-                }
-            }
-        }
-    }
-        , [
-            createClassReducer.isFulfilled,
-            createClassReducer.isPending,
-            createClassReducer.isRejected,
-            props,
-        ]);
 
 
     return (
@@ -119,7 +115,7 @@ function CreateNewClass2(props) {
                         <td>Student</td>
                     </tr>
                     <tr className="table-content">
-                        <td><input className="form-check-input" type="checkbox"/></td>
+                        <td><input className="form-check-input" type="checkbox" /></td>
                         <td>Front-end fundamentals</td>
                         <td>Software</td>
                         <td>Learn the fundamentals of front end...</td>
@@ -150,7 +146,7 @@ function CreateNewClass2(props) {
             </div><br />
             <div id="title-box">
                 <label id="title-act">
-                    <Link to ="/classDetailFas" id="linkToClassDetail">
+                    <Link to="/classDetailFas" id="linkToClassDetail">
                         Activity
                     </Link>
                 </label><br />
@@ -206,7 +202,7 @@ function CreateNewClass2(props) {
                                 </select >
                             </div>
                         </td>
-                        <td><input type='file' onChange={fileHandler} /></td>
+                        <td><input type='file' onChange={avatarHandler} /></td>
                     </tr>
                     <tr>
                         <td>
@@ -217,37 +213,22 @@ function CreateNewClass2(props) {
                     </tr>
                 </table>
                 <textarea className="description-field" onChange={descriptionHandler} />
-                <button id="btn-create" onClick={subClassHandler}>Create</button>
+                <button id="btn-create" onClick={createClassHandler}>Create</button>
 
             </div>
             <ModalComp
-                header='Login gagal !'
-                msg='Email atau Password salah'
+                header='Kelas Berhasil dibuat !'
+                msg=''
                 show={modalShow}
-                onHide={() => useHistory.push('/CreateNewClass')}
+                onHide={() => history.push('/classDetailFas')}
                 variant='success'
-                footermsg='refresh' />
+                footermsg='OK' />
+
+
+
+
         </div>
     );
 }
 
-const mapStateToProps = (state) => {
-    const { createClassReducer } = state;
-    return {
-        createClassReducer,
-    };
-};
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        classAdd: (data) =>
-            dispatch(createClass('http://localhost:8300/api/v1/newclass/create', data)),
-    };
-};
-
-const ConnectedCreateClass2 = connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(CreateNewClass2);
-
-export default ConnectedCreateClass2;
+export default CreateNewClass2;
