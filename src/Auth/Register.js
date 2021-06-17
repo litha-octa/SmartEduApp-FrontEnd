@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import "../css/register/register.css";
+import "./register.css";
 import { connect } from 'react-redux';
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';

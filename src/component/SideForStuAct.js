@@ -24,7 +24,7 @@ class SideForStuAct extends Component {
                 </div>
 
                 <div id="sideDash-none">
-                    <Link to="/Dashboard/dashAllSchedule" id="Sidebar-Menu">
+                    <Link to="/Dashboard" id="Sidebar-Menu">
                         <div>
                             <img src="assets/Dashboard Icon.png" alt="dashboard-icon" id="SidebarIcon" />
                             Dashboard
@@ -33,7 +33,7 @@ class SideForStuAct extends Component {
                 </div>
 
                 <div id="sideDash-white">
-                    <Link to="/ActivityStudent/addNewClass" id="Sidebar-MenuSelected">
+                    <Link to="/addNewClass" id="Sidebar-MenuSelected">
                         <div>
                             <img src="assets/Activity Icon2.png" alt="dashboard-icon" id="SidebarIcon" />
                                Activity

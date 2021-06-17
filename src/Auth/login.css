@@ -1,0 +1,414 @@
+@media (min-width: 829px){  	
+#body-login{background-color:  #E6EDF6;
+		width:100%;}
+	.two{	height: 100%;
+		align-items: center;
+		align-content: center;
+		}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 3.5vw;
+		color: #010620;
+		text-align: center; 
+		margin:2% 0 5% 0%;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.7em;
+					width:100px;
+					color: #ADA9BB;
+					margin:1% 0 0 35%;
+					background-color: #E5E5E5;
+}
+.input {	
+					width :30%;
+					min-height: 4vw;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin: 0 0 0% 35%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.8em;
+		color: #000000;
+		text-decoration:none;
+		margin:0% 35% 0% 0%;
+		float: right;
+}
+#btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4vw;
+			color: #FFFFFF;
+			margin:3% 0 0 35%;
+			width: 30%;
+			height: 4vw;
+			border:none;
+			border-radius: 6px;
+}
+#btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	margin:1% 0 0 35%;
+	width:30%;
+	height: 4vw;
+	border:none;
+	border-radius: 6px;
+	padding:1%;
+}
+			
+.google{margin: 0% 5% 0% 0%;
+}
+#text-btn-w-google{
+	margin: 0% 0 5% 35%;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.9em;
+	color: #010620;
+}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1vw;
+					color: #ADA9BB;
+					margin:5% 0 0% 47%;
+}
+.regist-link{color:#5784BA;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 828px) and (min-width:691px){  	
+#body-login{background-color:  #E6EDF6;
+		width:100%;}
+	.two{
+		height: 100%;
+		align-items: center;
+		align-content: center;
+		}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 3.5vw;
+		color: #010620;
+		text-align: center; 
+		margin:2% 0 5% 0%;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 0.7em;
+					width:100px;
+					color: #ADA9BB;
+					margin:1% 0 0 35%;
+					background-color: #E5E5E5;
+}
+.input {	
+					width :30%;
+					min-height: 4vw;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin: 0 0 0% 35%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 0.8em;
+		color: #000000;
+		text-decoration:none;
+		margin:0% 35% 0% 0%;
+		float: right;
+}
+#btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4vw;
+			color: #FFFFFF;
+			margin:3% 0 0 35%;
+			width: 30%;
+			height: 4vw;
+			border:none;
+			border-radius: 6px;
+}
+#btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	margin:1% 0 0 35%;
+	width:30%;
+	height: 4vw;
+	border:none;
+	border-radius: 6px;
+	padding:1%;
+}
+			
+.google{margin: 0% 5% 0% 0%;
+}
+#text-btn-w-google{
+	margin: 0% 0 5% 35%;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.9em;
+	color: #010620;
+}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1vw;
+					color: #ADA9BB;
+					margin:5% 0 0% 47%;
+}
+.regist-link{color:#5784BA;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 690px) and (min-width:450px){  	
+#body-login{background-color:  #E6EDF6;
+		width:100%;}
+	.two{
+		height: 100%;
+		align-items: center;
+		align-content: center;
+		}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 4.5vw;
+		color: #010620;
+		text-align: center; 
+		margin:2% 0 5% 0%;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1em;
+					width:100px;
+					color: #ADA9BB;
+					margin:1% 0 0 30%;
+					background-color: #E5E5E5;
+}
+.input {	
+					width :40%;
+					min-height: 5vw;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin: 0 0 0% 30%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.3em;
+		color: #000000;
+		text-decoration:none;
+		margin:0% 30% 0% 0%;
+		float: right;
+}
+#btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4vw;
+			color: #FFFFFF;
+			margin:3% 0 0 30%;
+			width: 40%;
+			height: 5vw;
+			border:none;
+			border-radius: 6px;
+}
+#btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	margin:1% 0 0 30%;
+	width:40%;
+	height: 5vw;
+	border:none;
+	border-radius: 6px;
+	padding:1%;
+}
+			
+.google{margin: 0% 5% 0% 0%;
+}
+#text-btn-w-google{
+	margin: 0% 0 5% 35%;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2em;
+	color: #010620;
+}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1.3em;
+					color: #ADA9BB;
+					margin:5% 0 0% 45%;
+}
+.regist-link{color:#5784BA;}
+}
+
+
+
+
+
+
+
+@media (max-width: 449px) and (min-width:426px){  	
+#body-login{background-color:  #E6EDF6;
+		width:100%;}
+	.two{
+		height: 100%;
+		align-items: center;
+		align-content: center;
+		}
+#title-login{		
+		font-family: Kanit;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 6em;
+		color: #010620;
+		text-align: center; 
+		margin:2% 0 5% 0%;
+}
+#label{				
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2em;
+					width:100px;
+					color: #ADA9BB;
+					margin:1% 0 0 25%;
+					background-color: #E5E5E5;
+}
+.input {	
+					width :50%;
+					min-height: 7vw;
+					background: #FFFFFF;
+					border: 1px solid #ADA9BB;
+					box-sizing: border-box;
+					border-radius: 5px;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.8vw;
+					color: #010620;
+					margin: 0 0 0% 25%;
+}
+#toReset{	
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 1.8em;
+		color: #000000;
+		text-decoration:none;
+		margin:0% 30% 0% 0%;
+		float: right;
+}
+#btn-login{	
+			background: #5784BA;
+			font-family: Kanit;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 2.5em;
+			color: #FFFFFF;
+			margin:5% 0 0 25%;
+			width: 50%;
+			height: 7vw;
+			border:none;
+			border-radius: 6px;
+}
+#btn-google{
+	background: rgba(0, 13, 79, 0.08);
+	margin:2% 0 0 25%;
+	width:50%;
+	height: 7vw;
+	border:none;
+	border-radius: 6px;
+	padding:1%;
+	font-size: 1.6em;
+}
+			
+.google{margin: 0% 5% 0% 0%;
+}
+#text-btn-w-google{
+	margin: 0% 0 5% 35%;
+	font-family: Kanit;
+	font-style: normal;
+	font-weight: 500;
+	color: #010620;
+}
+
+#linkToRegist{		font-family: Kanit;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 1.8em;
+					color: #ADA9BB;
+					margin:5% 0 0% 40%;
+}
+.regist-link{color:#5784BA;}
+}
+
+
+

@@ -6,19 +6,17 @@
 				margin:1% 0 0 0%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
   			text-align: center;
+			  border-radius: 20px;
   		}
 
-.contentdash1{width: 63%;
+.contentdash1{width: 50%;
 			background:#E6EDF6;
   			margin-left: 19%;
 }
 .contentdash2{width: 30%;
 			border-radius: 20px;
 			margin:0 2% 0 1%;}
-									#grid3{		
-											width: 100%;
-											border-radius: 20px;
-										}
+									
 									#search-bar{background-color: #E6EDF6;
 												border-radius:20px;
 												width: 95%;
@@ -62,53 +60,17 @@
 				.dash-news-pics{
 					border-radius: 20px;
 					width: 100%;
-					height: 90%;
+					height: 100%;
 				}
+#dashboardContentFor{
+	margin-top: 10%;
+}
 #schedule{
 		  width:95%;
 		  height:25%;
 		  margin:10% 1% 0 0;
 		  border-radius: 20px;	
-}
-								.table-schedule{
-									width: 100%;
-									border-radius: 20px;
-								}
-								#date{
-										grid-column-end: span 7;
-										font-family: Montserrat;
-										font-style: normal;
-										font-weight: bold;
-										font-size: 1.8vw;
-										line-height: 29px;
-										color: #000000;
-										text-align: left;
-										padding-left:4%;
-										padding-top:4%;
-										padding-bottom: 2%;
-									}
-									.calendar{
-										width:2vw;
-										float:right;
-										margin-right:10%;
-									}
-									#date-day{font-size: 0.8em;}
-									#select{
-												background-color: #5784BA;
-												color:white;
-												border-radius: 20px;
-												width:30%;
-											}
-									#img 			{width: 80%;}
-									#time			{grid-column-end: span 7;}
-									.h5-dash		{color:blue;
-													text-align: center}
-									.link-foryou	{text-align: center;
-													text-decoration: none;
-													color: #ADA9BB;}
-									#task1-pic		{
-														width: 80%;
-														}
+}		
 #fas-task{
 	height: 7vw;
 	box-shadow: 3px -3px 5px rgba(0,0,0,0.8);
@@ -173,24 +135,18 @@ color: #000000;
 .container-dash{display:flex;
 				align-content: space-around;
 				margin:0% 0% 0 2%;
-				padding: 12% 5% 10% 2%;}
+				padding: 12% 2% 0% 0%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
   			text-align: center;
+			  border-radius: 20px;
   			}
-
-.aside{
-	display: none;
-	}
-.contentdash1{width: 67%;
+.contentdash1{width: 70%;
 			background:#E6EDF6;
+			margin-right: 1%;
 }
-.contentdash2{width: 35%;
+.contentdash2{width: 30%;
 			border-radius: 20px;
 			}
-									#grid3{		
-											width: 100%;
-											border-radius: 20px;
-										}
 									#search-bar{background-color: #E6EDF6;
 												border-radius:20px;
 												width: 95%;
@@ -217,14 +173,14 @@ color: #000000;
 
 									
 #dashnews {
-  width:95%;
+  width:100%;
   height:25%;
   margin-right: 1%;
   border-radius: 20px;
 }
 				.dash-news{
-					margin-left: 3%;
-					padding-top: 1%;
+					margin-left: 1%;
+					padding-top: 0%;
 					font-family: Montserrat;
 					font-style: normal;
 					font-weight: bold;
@@ -242,47 +198,15 @@ color: #000000;
 		  margin:10% 1% 0 0;
 		  border-radius: 20px;	
 }
-								.table-schedule{
-									width: 100%;
-									border-radius: 20px;
-								}
-								#date{
-										grid-column-end: span 7;
-										font-family: Montserrat;
-										font-style: normal;
-										font-weight: bold;
-										font-size: 1.8vw;
-										line-height: 29px;
-										color: #000000;
-										text-align: left;
-										padding-left:4%;
-										padding-top:4%;
-										padding-bottom: 2%;
-									}
-									.calendar{
-										width:2vw;
-										float:right;
-										margin-right:10%;
-									}
-									#date-day{font-size: 0.8em;}
-									#select{
-												background-color: #5784BA;
-												color:white;
-												border-radius: 20px;
-												width:30%;
-											}
-									#img 			{width: 85%;
-													}
-									#time			{grid-column-end: span 7;}
-									.h5-dash		{color:blue;
-													text-align: center}
-									.link-foryou	{text-align: center;
-													text-decoration: none;
-													color: #ADA9BB;}
-									#task1-pic		{
-														width:90%;
-														margin: 0 3% 0 3%;
-														}
+
+#dashboardContentFor{
+	margin-top: 10%;
+	background-color: white;
+	color:black;
+	padding:2%;
+	border-radius: 20px;
+}
+								
 #fas-task{
 	height: 7vw;
 	box-shadow: 3px -3px 5px rgba(0,0,0,0.8);
@@ -341,20 +265,15 @@ color: #000000;
 .container-dash{
 				width: 100%;
 				align-content: space-around;
-				padding:20% 0 0 2.5%;}
+				padding:15% 0 0 2.5%;}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
-  			//text-align: center;
+  			text-align: center;
   		}
-.aside{
-	display:none;
-	}
 .contentdash1{width: 100%;
 			background:#E6EDF6;
 }
 .contentdash2{display: none}		
 #dashnews {
-  width:95%;
-  height:25%;
   margin-right: 3%;
   border-radius: 20px;
 }
@@ -368,7 +287,6 @@ color: #000000;
 					color: #000000;
 				}
 				.dash-news-pics{
-					border-radius: 20px;
 					width: 100%;
 					height: 100%;
 				}
@@ -378,51 +296,15 @@ color: #000000;
 		  margin:2% 1% 0 0;
 		  border-radius: 20px;	
 }
-								.table-schedule{
-									width: 100%;
-									border-radius: 20px;
-								}
-								#date{
-										grid-column-end: span 7;
-										font-family: Montserrat;
-										font-style: normal;
-										font-weight: bold;
-										font-size: 2.5em;
-										line-height: 29px;
-										color: #000000;
-										text-align: left;
-										padding-left:4%;
-										padding-top:4%;
-										padding-bottom: 2%;
-									}
-									.calendar{
-										width:6vw;
-										float:right;
-										margin-right:10%;
-									}
-									#date-day{font-size: 1.5em;
-												font-weight: 500;}
-									#select{
-												background-color: #5784BA;
-												color:white;
-												border-radius: 20px;
-												width:30%;
-											}
-									#img 			{width: 80%;
-														margin-left: 10%;
-														margin-top: 2%;}
-									#time			{grid-column-end: span 7;}
-									.h5-dash		{color:blue;
-													text-align: center;
-													font-size:1em;}
-									.link-foryou	{text-align: center;
-													text-decoration: none;
-													color: #ADA9BB;
-													font-size:1em}
-									#task1-pic		{
-													width:80%;
-													margin-left: 10%;
-														}
+#dashboardContentFor{
+	margin: 10% 0 10% 0;
+	background-color: white;
+	color:black;
+	padding:2%;
+	border-radius: 20px;
+
+}
+								
 #fas-task{
 	height: 7vw;
 	box-shadow: 3px -3px 5px rgba(0,0,0,0.8);

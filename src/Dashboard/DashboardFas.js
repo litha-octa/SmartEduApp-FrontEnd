@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/dashboard.css";
+import "./dashboard.css";
 import { Link } from "react-router-dom";
 import HeaderDash from "../component/HeaderDash";
 import SideForDash from "../component/SideForDash";
