@@ -1,21 +1,25 @@
 @media (min-width: 769px){  
 #body-dash{background:#E6EDF6;
-			width: 100%;}
+			width: 100%;
+			padding:1%;
+		}
 .container-dash{display:flex;
 				align-content: space-around;
-				margin:1% 0 0 0%;}
+				}
 .grid-item{background-color: rgba(255, 255, 255, 0.8);
-  			text-align: center;
+  			
 			  border-radius: 20px;
   		}
 
 .contentdash1{width: 50%;
 			background:#E6EDF6;
   			margin-left: 19%;
+  			text-align: center;
 }
 .contentdash2{width: 30%;
 			border-radius: 20px;
-			margin:0 2% 0 1%;}
+			margin:0 2% 0 0%;
+		}
 									
 									#search-bar{background-color: #E6EDF6;
 												border-radius:20px;
@@ -29,15 +33,15 @@
 														width: 80%;
 													}
 									.chats{
-										width:20vw;
-										margin-left:8%;
+										width:25vw;
+										margin:2% 0% 2% 3%;
 									}
 									.mesagges{	font-family: Montserrat;
 												font-style: normal;
 												font-weight: bold;
 												font-size: 1.3em;
 												color: #000000;
-												margin-left:5%;
+												margin-left:8%;
 												padding-top:2%;
 											}
 
@@ -80,7 +84,6 @@
 font-style: normal;
 font-weight: 500;
 font-size: 1em;
-line-height: 22px;
 color: #000000;
 }
 #fas-new-task{
@@ -88,13 +91,14 @@ color: #000000;
 	color:white;
 	border-radius: 20px;
 	width: 20%;
-	text-align: center;
+	align-self: center;
 	font-family: Kanit;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.5em;
-	padding: 0 15px;
-	margin-left: 40%;
+	padding: 3px 15px;
+	margin: 0% 0% 0% 4%;
+	text-decoration: none;
 	}
 	}				
 										

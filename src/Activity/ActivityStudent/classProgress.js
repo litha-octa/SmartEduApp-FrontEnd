@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../css/styleActFas/classDetail.css";
 import HeaderAct from "../component/HeaderAct";
-import SideForStuAct from "../component/SideForStuAct";
-import ActCont4 from "../component/ActCont4";
+import SideActivity from "../component/SideActivity";
+// import ActCont4 from ".././component/ActCont4";
 
 class classProgress extends Component {
   render() {
@@ -11,7 +11,7 @@ class classProgress extends Component {
        <div className="Container-ActFas">
         <body>
           <HeaderAct />
-        <SideForStuAct />
+        <SideActivity />
             <p id="title-ActFas">
               <Link to="/ActivityStudent/addNewClass">
                 <img src="assets/Back Icon.png" alt=" " />
@@ -57,7 +57,7 @@ class classProgress extends Component {
                                                   &nbsp;&nbsp;&nbsp;         
                         </div>
                       <img src="assets/line.png" className="line" alt=" " /> 
-                      <ActCont4/>
+                      {/* <ActCont4/> */}
                   </div>
          
         

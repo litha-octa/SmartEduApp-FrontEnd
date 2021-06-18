@@ -54,6 +54,8 @@
 						font-size: 1em;
                         color:white;
                         text-justify: center;
+                        text-decoration: none
+
                     }
 
 
@@ -63,7 +65,8 @@
 						font-size: 1em;
                         color:black;
                         background-color: white;
-                        		                border-radius: 10px;
+                       	border-radius: 10px;
+                       	 text-decoration: none
                     }
         #Sidebar-MenuLogout{  font-family: montserrat;
 						font-style: normal;

@@ -8,26 +8,11 @@ import ResetInsertEmail from "./ResetPass/ResetInsertEmail.js";
 import ResetOTP from "./ResetPass/ResetOTP.js";
 import CreateNewPass from "./ResetPass/CreateNewPass.js";
 
-import DashboardStudent from "./Dashboard/DashboardStudent.js";
-import dashMySchedule from "./Dashboard/dashMyschedule.js";
-import DashboardFas from "./Dashboard/DashboardFas";
+import DashboardStudent from "./Dashboard/component/DashboardStudent.js";
+import DashboardFas from "./Dashboard/component/DashboardFas";
 import Dashboard from "./Dashboard/Dashboard";
 
 import Profile from "./Profile/Profile";
-
-import addNewClass from "./ActivityStudent/addNewClass";
-import myClass from "./ActivityStudent/myClass";
-import classDetailStu from "./ActivityStudent/classDetailStu";
-import classProgress from "./ActivityStudent/classProgress";
-
-import HeaderDash from "./component/HeaderDash";
-import HeaderAct from "./component/HeaderAct";
-import HeaderProf from "./component/HeaderProf";
-
-import CreateNewClassdummy from "./ActivityFas/CreateNewClassdummy";
-import CreateNewClass from "./ActivityFas/CreateNewClass";
-import classDetailFas from "./ActivityFas/classDetailFas";
-import classMember from "./ActivityFas/classMember";
 
 
 
@@ -46,28 +31,15 @@ class Main extends Component {
             <Route path="/ResetOTP" component={ResetOTP} />
             <Route path="/CreateNewPass" component={CreateNewPass} />
 
-            {/* Dashboard student,fasilitator & profile */}
-            <Route path="/DashboardStudent" component={DashboardStudent} />
-            <Route path="/dashMySchedule" component={dashMySchedule} />
-            <Route path="/DashboardFas" component={DashboardFas} />
+            {/* Dashboard student,fasilitator*/}
             <Route path="/Dashboard" component={Dashboard}/>
-            <Route path="/Profile" component={Profile} />
+            <Route path="/DashboardStudent" component={DashboardStudent} />
+            <Route path="/DashboardFas" component={DashboardFas} />
 
-            {/* Activity Student */}
-            <Route path="/addNewClass" component={addNewClass} />
-            <Route path="/myClass" component={myClass} />
-            <Route path="/classDetailStu" component={classDetailStu} />
-            <Route path="/classProgress" component={classProgress} />
-
-            {/* <Route path="/component/HeaderAct" component={HeaderAct} />
-            <Route path="/component/HeaderProf" component={HeaderProf} />
-            <Route path="/component/HeaderDash" component={HeaderDash} /> */}
-
-            {/* Activity Fasilitator */}
-            <Route path="/CreateNewClass" component={CreateNewClass} />
-            <Route path="/CreateNewClassdummy" component={CreateNewClassdummy} />
-            <Route path="/classDetailFas" component={classDetailFas} />
-            <Route path="/classMember" component={classMember} />
+            {/*Profile*/}
+            <Route path="/Profile" component={Profile}/>
+            
+            
 
           </div>
         </div>

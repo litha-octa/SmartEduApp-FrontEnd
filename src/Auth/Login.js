@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import "./login.css";
+import "./component/login.css";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -71,7 +71,7 @@ class Login extends Component {
             onChange={this.passwordHandler}
           />
 
-          <Link to="/ResetPass/ResetInsertEmail">
+          <Link to="/ResetInsertEmail">
             <label id="toReset">Forgot password?</label>
           </Link>
 

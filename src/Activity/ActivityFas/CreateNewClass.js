@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useHistory } from "react-router-dom";
 import "../css/styleActFas/CreateNewClass.css";
-import HeaderAct from "../component/HeaderAct";
-import ModalComp from '../component/ModalComp';
+import HeaderAct from "../../component/HeaderAct";
+import ModalComp from '../../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SideForStuAct from "../component/SideForStuAct";
+import SideAct from "../component/SideActivity";
 import axios from 'axios';
 
 // import { connect } from 'react-redux';
@@ -98,7 +98,7 @@ function CreateNewClass2(props) {
 
         <div>
             <HeaderAct />
-            <SideForStuAct />
+            <SideActivity />
             {/* <SideActivity /><br /> */}
             <div id="title-box">
                 <label id="title-act">Activity</label><br />

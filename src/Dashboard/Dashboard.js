@@ -1,66 +1,16 @@
 import React, { Component } from "react";
-import "./dashboard.css";
+import "./component/dashboard.css";
 import { Link } from "react-router-dom";
-import DashboardStudent from "./DashboardStudent";
-import HeaderDash from "../component/HeaderDash";
-import SideForDash from "../component/SideForDash";
+import DashboardStudent from "./component/DashboardStudent";
+import DashboardFas from "./component/DashboardFas";
+import HeaderDash from "./component/HeaderDash";
+import SideDashboard from "./component/SideDashboard";
 
 function Dashboard() {
-  let dateNow = new Date();
-  let dd = String(dateNow.getDate()).padStart(2, "0");
-  let monthNow = new Date();
-  let month = new Array(12);
-  month[0] = "January";
-  month[1] = "February";
-  month[2] = "March";
-  month[3] = "April";
-  month[4] = "May";
-  month[5] = "June";
-  month[6] = "July";
-  month[7] = "August";
-  month[8] = "September";
-  month[9] = "October";
-  month[10] = "November";
-  month[11] = "December";
-  let mm = month[monthNow.getMonth()];
-
-  let yyyy = dateNow.getFullYear();
-  dateNow = dd + " " + mm;
-
-  // This Week
-  let days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-  let daysLength = days.length;
-  let d = new Date();
-  let currentDays = days[d.getDay()];
-  let currentIndexDay = days.findIndex((day) => day == currentDays) + 1;
-  let resultDay = [];
-  let indexDays;
-  for (indexDays = 0; indexDays < daysLength; indexDays++) {
-    let indexDay = indexDays + currentIndexDay;
-    if (indexDay > daysLength) {
-      indexDay = indexDay - daysLength;
-    }
-    if (indexDay < indexDays < 0) {
-      indexDay = indexDay - 1;
-    }
-    indexDay = indexDay - 1;
-    resultDay.push(days[indexDay]);
-  }
-  // get date with Date function (yyyy-mm-dd) for next 6 days
-  let startDate = new Date();
-  let resultDate = [];
-  let indexDate;
-  for (indexDate = 0; indexDate < daysLength; indexDate++) {
-    let currentDate = new Date().setTime(
-      startDate.getTime() + indexDate * 24 * 60 * 60 * 1000
-    );
-    currentDate = new Date(currentDate).getDate();
-    resultDate.push(currentDate);
-  }
-  return (
-    <div id="body-dash">
+  return(
+      <div id="body-dash">
       <HeaderDash />
-      <SideForDash />
+      <SideDashboard />
       <div className="container-dash">
         <div className="contentdash1">
           <div className="grid-item" id="dashnews">
@@ -68,7 +18,8 @@ function Dashboard() {
             <img src="assets/Carousel.png" className="dash-news-pics" alt=" " />
           </div>
           <div id="dashboardContentFor">
-            <DashboardStudent />
+            
+            <DashboardFas/>
           </div>
         </div>
 

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../css/activity.css";
 import { Link } from "react-router-dom";
-import HeaderAct from "../component/HeaderAct";
-import SideForStuAct from "../component/SideForStuAct";
-import ActCont2 from "../component/ActCont2";
+import HeaderAct from "../../component/HeaderAct";
+import SideActivity from "../component/SideActivity";
+import ActCont2 from "../../component/ActCont2";
 
 class myClass extends Component {
 
@@ -13,7 +13,7 @@ class myClass extends Component {
     return (
       <div>
         <HeaderAct />
-        <SideForStuAct/>
+        <SideActivity/>
         <main>
           <div className="container-act2">
             <div className="myclass">

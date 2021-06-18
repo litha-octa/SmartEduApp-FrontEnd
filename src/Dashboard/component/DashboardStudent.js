@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./dashboardStudent.css";
+import "./dashboard.css";
 import { Link } from "react-router-dom";
-
+import { Tabs,Tab } from 'react-bootstrap';
 
 function DashboardStudent(){
   let dateNow = new Date();
@@ -55,7 +56,7 @@ function DashboardStudent(){
     currentDate = new Date(currentDate).getDate();
     resultDate.push(currentDate);
   }
-    return (
+    return (  <div style={{backgroundColor:'white',marginLeft:'-3%', borderRadius:20,width:'100%'}}>
              <table className="table-schedule">
               <tr id="date">
                 <td colspan="7">
@@ -119,34 +120,34 @@ function DashboardStudent(){
                   </div>
                 </td>
               </tr>
-                <tr>
-                  <td colspan="7" id="time"><h5 className="h5-dash">All Schedule</h5></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><Link to="/dashMySchedule" className="link-foryou"><h5>For You</h5></Link></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/8.00.png" id="img" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/d1fc.png" id="task1-pic" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/11.00.png" id="img" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/d1sc.png" id="task1-pic" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/13.00.png" id="img" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/d1tc.png" id="task1-pic" alt=" " /></td>
-                </tr>
-                <tr>
-                  <td colspan="7" id="time"><img src="assets/finish.png" id="img" alt=" " /></td>
-                </tr>
               </table>
+              <Tabs defaultActiveKey = "For You">
+              <Tab eventKey = "All schedule"
+             
+              title = "All Schedule">
+              <img src="assets/8.00.png" id="img" alt=" " />
+              <img src="assets/d1fc.png" id="task1-pic" alt=" " />
+              <img src="assets/11.00.png" id="img" alt=" " />
+              <img src="assets/d1sc.png" id="task1-pic" alt=" " />
+              <img src="assets/13.00.png" id="img" alt=" " />
+              <img src="assets/d1tc.png" id="task1-pic" alt=" " />
+              <img src="assets/finish.png" id="img" alt=" " />
+              </Tab>
+
+
+
+              <Tab eventKey = "For You"
+             
+              title = "For You">
+              <img src="assets/8.00.png" id="img" alt=" " />
+              <img src="assets/d1fc.png" id="task1-pic" alt=" " />
+              <img src="assets/11.00.png" id="img" alt=" " />
+              <img src="assets/d1sc.png" id="task1-pic" alt=" " />
+              <img src="assets/finish.png" id="img" alt=" " />
+              </Tab>
+              </Tabs>
+              </div>
+              
     );
   }
 

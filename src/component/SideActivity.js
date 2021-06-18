@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../css/Sidebar.css";
+import "../css/SideBar.css";
 import App from "../Modal/App";
 
 class SideForStuAct extends Component {
     render() {
         return (
            <div className="sidebar">
-
                 <div className="sidebarminiprofile">
                 <div id="side-MiniProf">
-                    <div id="notif"><App /></div>
+                    <div id="notif"><App/></div>
                         <Link to ="/Profile/Profile">
                             <img src="assets/profile.png" id="sideActMiniProfile" alt=" " /><br />
                             <div id="sideActMiniName">
@@ -22,7 +21,6 @@ class SideForStuAct extends Component {
                         </Link>
                 </div>
                 </div>
-
                 <div id="sideDash-none">
                     <Link to="/Dashboard" id="Sidebar-Menu">
                         <div>

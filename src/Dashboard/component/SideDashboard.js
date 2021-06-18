@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "../css/Sidebar.css";
-import App from "../Modal/App";
+import "./SideBar.css";
 
 class SideForDash extends Component {
     render() {
@@ -10,7 +9,7 @@ class SideForDash extends Component {
 
                 <div className="sidebarminiprofile">
                     <div id="side-MiniProf">
-                        <div id="notif"><App /></div>
+                        <div id="notif">notif</div>
                         <Link to="/Profile/Profile"><img src="assets/profile.png" id="sideActMiniProfile" alt=" " /><br />
                             <div id="sideActMiniName">
                                 Emir Kharisma

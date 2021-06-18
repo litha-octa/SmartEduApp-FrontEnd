@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import "../css/styleActFas/classMember.css";
 import HeaderAct from "../component/HeaderAct";
 import SideForStuAct from "../component/SideForStuAct";
-import Member from "../Modal/scoreMem";
+
 
 class classMember extends Component {
   render() {
