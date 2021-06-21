@@ -1,16 +1,16 @@
 import React, {useState} from "react";
-import "../css/activity.css";
+import "../component/AddNewClass.css";
 import { Link } from "react-router-dom";
-import HeaderAct from "../component/HeaderAct";
-import SideForStuAct from "../component/SideForStuAct";
 //simport ActCont1 from "./component/ActCont1";
 import { connect } from "react-redux";
-import getAllClass from "../redux/ActionCreators/allclass";
-//import allClassReducer from "./redux/Reducers/allclass"
+import getAllClass from "../../redux/ActionCreators/allclass";
+import "react-statusbar/dist/statusbar.css";
+import * as Statusbar from "react-statusbar";
+import { Dropdown, Button,DropdownButton } from "react-bootstrap";
 
 
 
-//class  extends Component { 
+
 function AddNewClass(props) {
 
     const [newClassList, setNewClassList] = useState();
@@ -20,15 +20,10 @@ function AddNewClass(props) {
         getAllClass,
         allClassReducer
     } = props;
-
-    
-
     let numPage = [];
-
     const pageHandler = (url) => {
       getAllClass(url);
     };
-
     if (info) {
       for (let i = 0; i < info.totalPage; i++) {
         numPage.push(
@@ -48,142 +43,229 @@ function AddNewClass(props) {
             }
           >
             {i + 1}
-          </span>
+          </span>          
         );
       }
-    }
+    };
+    const myClassDummy = {
+      name1: "Front-end fundamentals",
+      name2: "HTML for Beginners",
+      name3: "History of Europe",
+
+      category1: "Software",
+      category2: "Software",
+      category3: "History",
+
+      des1: "Learn the fundamentals of front end...",
+      des2: "HTML from scratch",
+      des3: "The history of Europe concerns itself...",
+    };
 
 
     return (
-      <div>
-        <HeaderAct />
-        <SideForStuAct />
-        <div className="container-act">
-          <div className="myclass">
-            <label id="title-act1">Activity</label>
-            <br />
-            <label id="subtitle-act1">My Class</label>
-            <br />
-            <table id="myclass-table">
-              <tr>
-                <td>
-                  <input className="form-check-input" type="checkbox" />
-                </td>
-                <td className="myclass-table-column">Class Name</td>
-                <td className="myclass-table-column">Category</td>
-                <td className="myclass-table-column">Description</td>
-                <td className="myclass-table-column">Progress</td>
-                <td className="myclass-table-column">Status</td>
-                <td className="myclass-table-column">Score</td>
-              </tr>
-              <tr className="white-line">
-                <td>
-                  <input className="form-check-input" type="checkbox" />
-                </td>
-                <td className="myclass-table-content">
-                  Front-end fundamentals
-                </td>
-                <td className="myclass-table-content">Software</td>
-                <td className="myclass-table-content">
-                  Learn the fundamentals of front end...
-                </td>
-                <td>
-                  <img src="assets/progress bar.png" id="progress" alt=" " />
-                </td>
-                <td>
-                  <img src="assets/status.png" id="myclass-status" alt=" " />
-                </td>
-                <td>
-                  <p id="font-score" className="score1">
-                    86
-                    <img src="assets/list.png" alt=" " className="list" />
-                  </p>
-                </td>
-              </tr>
-              <tr class="white-line">
-                <td>
-                  <input className="form-check-input" type="checkbox" />
-                </td>
-                <td className="myclass-table-content">HTML for Beginners</td>
-                <td className="myclass-table-content">Software</td>
-                <td className="myclass-table-content">HTML from scratch</td>
-                <td>
-                  <img src="assets/progress bar2.png" id="progress" alt=" " />
-                </td>
-                <td>
-                  <img src="assets/status.png" id="myclass-status" alt=" " />
-                </td>
-                <td>
-                  <p id="font-score" className="score1">
-                    {" "}
-                    71
-                    <img src="assets/list.png" alt=" " className="list" />
-                  </p>
-                </td>
-              </tr>
-              <tr class="white-line">
-                <td>
-                  <input class="form-check-input" type="checkbox" />
-                </td>
-                <td className="myclass-table-content">History of Europe</td>
-                <td className="myclass-table-content">History</td>
-                <td className="myclass-table-content">
-                  The history of Europe concerns itself...
-                </td>
-                <td>
-                  <img src="assets/progress bar3.png" id="progress" alt=" " />
-                </td>
-                <td>
-                  <img src="assets/status.png" id="myclass-status" alt=" " />
-                </td>
-                <td>
-                  <p id="font-score" className="score2">
-                    62
-                    <img src="assets/list.png" alt=" " className="list" />
-                  </p>
-                </td>
-              </tr>
-            </table>
-            <Link to="/myClass" className="act1-view-all">
-              view all
-              <img src="assets/arrow.png" className="arrowicon-act1" alt=" " />
-            </Link>
-          </div>
+      <div className="bodyActivity">
+        <div className="containerActivity">
+          <label id="titleActivity">Activity</label>
+          <br />
+          <table className="tableActivity">
+            <tr>
+              <td colspan="7" id="subtitleActivity">
+                My Class
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td className="myclassColumn">
+                Class Name
+              </td>
+              <td className="myclassColumn">Category</td>
+              <td className="myclassColumn">
+                Description
+              </td>
+              <td className="myclassColumn">Progress</td>
+              <td className="myclassColumn">Status</td>
+              <td className="myclassColumn">Score</td>
+            </tr>
+            <tr className="bgWhite">
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td className="myclassContent">{myClassDummy.name1}</td>
+              <td className="myclassContent">{myClassDummy.category1}</td>
+              <td className="myclassContent">{myClassDummy.des1}</td>
+              <td>
+                <img src="assets/progress bar3.png" id="progress" alt=" " />
+              </td>
+              <td className="myclassContent">
+                <label className="status">Ongoing</label>
+              </td>
+              <td>
+                <p id="font-score" className="score2">
+                  62
+                  <img src="assets/list.png" alt=" " className="list" />
+                </p>
+              </td>
+            </tr>
+            <tr className="bgWhite">
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td className="myclassContent">{myClassDummy.name2}</td>
+              <td className="myclassContent">{myClassDummy.category2}</td>
+              <td className="myclassContent">{myClassDummy.des2}</td>
+              <td>
+                <img src="assets/progress bar3.png" id="progress" alt=" " />
+              </td>
+              <td className="myclassContent">
+                <label className="status">Ongoing</label>
+              </td>
+              <td>
+                <p id="font-score" className="score2">
+                  62
+                  <img src="assets/list.png" alt=" " className="list" />
+                </p>
+              </td>
+            </tr>
+            <tr className="bgWhite">
+              <td>
+                <input type="checkbox" />
+              </td>
+              <td className="myclassContent">{myClassDummy.name3}</td>
+              <td className="myclassContent">{myClassDummy.category3}</td>
+              <td className="myclassContent">{myClassDummy.des3}</td>
+              <td>
+                <img src="assets/progress bar3.png" id="progress" alt=" " />
+              </td>
+              <td className="myclassContent">
+                <label className="status">Ongoing</label>
+              </td>
+              <td>
+                <p id="font-score" className="score2">
+                  62
+                  <img src="assets/list.png" alt=" " className="list" />
+                </p>
+              </td>
+            </tr>
+          </table>
+          <Link to="/MyClass" className="viewAll">
+            view all
+            <img src="assets/arrow.png" className="viewAllArrow" alt=" " />
+          </Link>
+        </div>
 
-          <div className="container-newclass">
-            <div id="subtitle-act1">New Class</div>
+        {/* CONTAINER NEW CLASS */}
+        <div className="containerActivityNewClass">
+          <div
+            style={{
+              backgroundColor: "white",
+              borderRadius: 20,
+              width: "95%",
+              marginLeft: "2%",
+            }}
+          >
+            <label
+              id="subtitleActivity"
+              style={{ marginTop: "2%", marginLeft: "2%" }}
+            >
+              New Class
+            </label>
+            <br />
             <input
               type="text"
-              className="searchbar-act"
+              className="searchBar"
               placeholder="Quick Search"
             />
-            <input type="button" className="searchbutton-act" value="Search" />
-            <br />
-            <div className="filterby-act">
-              {" "}
-              Categories &nbsp;&nbsp;&nbsp;Level&nbsp;&nbsp;&nbsp;Pricing
-            </div>
+            <Button className="searchBtn">
+              Search
+            </Button>
+            <div
+              style={{
+                backgroundColor: "#EEEEEE",
+                width: "95%",
+                marginLeft: "2%",
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              <div>
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    Categories
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Software</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Math</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3"> History </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Psychological
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Science</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Finance</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+              <div>
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">Level</Dropdown.Toggle>
 
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Advance</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Beginner</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Intermediate
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+              <div>
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">Price</Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Free</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">$10</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">$50</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+            </div>
             <div className="show">
               {allClassReducer.isPending ? (
                 console.log("loading")
               ) : (
-                <table>
+                <table className="tableActivity">
                   <tr>
-                    <td className="myclass-table-column">Class Name</td>
-                    <td className="myclass-table-column">Category</td>
-                    <td className="myclass-table-column">Description</td>
-                    <td className="myclass-table-column">Level</td>
-                    <td className="myclass-table-column">Pricing</td>
+                    <td className="myclassColumn" style={{ width: "15%" }}>
+                      Class Name
+                    </td>
+                    <td className="myclassColumn" style={{ width: "15%" }}>
+                      Category
+                    </td>
+                    <td className="myclassColumn">Description</td>
+                    <td className="myclassColumn" style={{ width: "10%" }}>
+                      Level
+                    </td>
+                    <td className="myclassColumn" style={{ width: "10%" }}>
+                      Pricing
+                    </td>
+                    <td>&nbsp;</td>
                   </tr>
                   {allClassReducer.isFulfilled
                     ? allClassReducer.results.map((i) => (
                         <tr>
-                          <td>{i.class_name}</td>
-                          <td>{i.category}</td>
-                          <td>{i.description}</td>
-                          <td>{i.level}</td>
-                          <td>{i.pricing}</td>
+                          <td className="myclassContent">{i.class_name}</td>
+                          <td className="myclassContent">{i.category}</td>
+                          <td className="myclassContent">{i.description}</td>
+                          <td className="myclassContent">{i.level}</td>
+                          <td className="myclassContent">$ {i.pricing}</td>
+                          <td>
+                            <Button className="registerButton">
+                              {" "}
+                              Register
+                            </Button>
+                          </td>
                         </tr>
                       ))
                     : null}

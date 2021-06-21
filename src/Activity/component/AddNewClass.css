@@ -1,0 +1,358 @@
+@media (min-width:769px){
+.bodyActivity{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%; 
+}
+.containerActivity{
+    margin-left: 17%;
+}
+.containerActivityNewClass{
+    margin: 6% 0 0 17%;
+}
+#titleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2vw;
+	color: #000000;
+	text-align: left;
+}
+#subtitleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.8vw;
+    color: #000000;
+}
+.tableActivity{
+    width: 95%; 
+    margin-left: 2%;
+}
+.myclassColumn{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.2vw;
+	color: #000000;
+}
+.myclassContent{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1vw;
+	color: #000000;
+}
+.bgWhite{
+    background-color: white;
+}
+.status{
+    background-color:#D2DEED;
+    color:blue;
+    padding:2%;
+    border-radius: 10px;
+}
+#font-score{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.9vw;
+	margin-left: 5%;
+	}
+.score1{color: #51E72B;}
+.score2{color: #CCE72B;}
+.list{
+	float:right;
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.viewAll{
+	margin-left: 45%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1vw;
+	line-height: 15px;
+	color: #000000;
+	padding-top: 2%; 
+	text-decoration: none;
+}
+.viewAllArrow{
+	width:1vw;
+}
+#dropdown-basic{
+    font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.2vw;
+	color: #000000;
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin-right: 5%;
+}
+.registerButton{
+    border-radius: 20px;
+    background-color:#57BA61;
+    color:white;
+    border:none;
+}
+.searchBar{
+    margin: 2% 0 0 2%;
+    width: 85%;
+    padding: 6px;
+}
+.searchBtn{
+    background-color: #5784BA;
+    border: none;
+    padding: 6;
+    width: 10%;
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) and (min-width:426px){
+.bodyActivity{
+    width: 100%;
+    height: 100%;
+    padding: 20% 0; 
+}
+.containerActivity{
+    margin-left: 2%;
+}
+.containerActivityNewClass{
+    margin: 6% 0 0 2%;
+}
+#titleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #000000;
+	text-align: left;
+}
+#subtitleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+    color: #000000;
+}
+.tableActivity{
+    width: 98%; 
+}
+.myclassColumn{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.8em;
+	color: #000000;
+}
+.myclassContent{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.7em;
+	color: #000000;
+}
+.bgWhite{
+    background-color: white;
+}
+.status{
+    background-color:#D2DEED;
+    color:blue;
+    padding:2%;
+    border-radius: 10px;
+}
+#font-score{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+	margin-left: 5%;
+	}
+.score1{color: #51E72B;}
+.score2{color: #CCE72B;}
+.list{
+	float:right;
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.viewAll{
+	margin-left: 45%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.8em;
+	line-height: 15px;
+	color: #000000;
+	padding-top: 2%; 
+	text-decoration: none;
+}
+.viewAllArrow{
+	width:1vw;
+}
+#dropdown-basic{
+    font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.8em;
+	color: #000000;
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin-right: 5%;
+}
+.registerButton{
+    border-radius: 20px;
+    background-color:#57BA61;
+    color:white;
+    border:none;
+}
+.searchBar{
+    margin: 2% 0 0 2%;
+    width: 85%;
+    padding: 6px;
+}
+.searchBtn{
+    background-color: #5784BA;
+    border: none;
+    padding: 6;
+    width: 10%;
+    color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:425px){
+.bodyActivity{
+    width: 100%;
+    height: 100%;
+    padding: 10% 0; 
+}
+.containerActivity{
+    margin-left: 2%;
+}
+.containerActivityNewClass{
+    margin: 6% 0 0 2%;
+}
+#titleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #000000;
+	text-align: left;
+}
+#subtitleActivity{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+    color: #000000;
+}
+.tableActivity{
+    width: 98%; 
+}
+.myclassColumn{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.8em;
+	color: #000000;
+}
+.myclassContent{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.7em;
+	color: #000000;
+}
+.bgWhite{
+    background-color: white;
+}
+.status{
+    background-color:#D2DEED;
+    color:blue;
+    padding:2%;
+    border-radius: 10px;
+}
+#font-score{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1em;
+	margin-left: 5%;
+	}
+.score1{color: #51E72B;}
+.score2{color: #CCE72B;}
+.list{
+	float:right;
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.viewAll{
+	margin-left: 45%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.8em;
+	line-height: 15px;
+	color: #000000;
+	padding-top: 2%; 
+	text-decoration: none;
+}
+.viewAllArrow{
+	width:1vw;
+}
+#dropdown-basic{
+    font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 0.8em;
+	color: #000000;
+    background-color: transparent;
+    border: none;
+    color: black;
+    margin-right: 5%;
+}
+.registerButton{
+    border-radius: 20px;
+    background-color:#57BA61;
+    color:white;
+    border:none;
+}
+.searchBar{
+    margin: 2% 0 0 2%;
+    width: 85%;
+    padding: 6px;
+}
+.searchBtn{
+    background-color: #5784BA;
+    border: none;
+    padding: 6;
+    width: 10%;
+    color: white;
+}
+}

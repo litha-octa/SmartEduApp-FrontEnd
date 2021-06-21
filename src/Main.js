@@ -14,6 +14,9 @@ import Dashboard from "./Dashboard/Dashboard";
 
 import Profile from "./Profile/Profile";
 
+import Activity from "./Activity";
+import MyClass from "./Activity/ActivityStudent/MyClass";
+
 
 
 
@@ -32,15 +35,16 @@ class Main extends Component {
             <Route path="/CreateNewPass" component={CreateNewPass} />
 
             {/* Dashboard student,fasilitator*/}
-            <Route path="/Dashboard" component={Dashboard}/>
+            <Route path="/Dashboard" component={Dashboard} />
             <Route path="/DashboardStudent" component={DashboardStudent} />
             <Route path="/DashboardFas" component={DashboardFas} />
 
             {/*Profile*/}
-            <Route path="/Profile" component={Profile}/>
-            
-            
+            <Route path="/Profile" component={Profile} />
 
+            {/* Activity */}
+            <Route path="/Activity" component={Activity} />
+            <Route path="/MyClass" component={MyClass} />
           </div>
         </div>
       </HashRouter>

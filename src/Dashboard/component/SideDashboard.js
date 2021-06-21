@@ -31,7 +31,7 @@ class SideForDash extends Component {
                 </div>
 
                 <div id="sideDash-none">
-                    <Link to="addNewClass" id="Sidebar-Menu">
+                    <Link to="Activity" id="Sidebar-Menu">
                         <div>
                             <img src="assets/Activity Icon.png" alt="dashboard-icon" id="SidebarIcon" />
                                Activity

@@ -31,7 +31,7 @@ class SideForStuAct extends Component {
                 </div>
 
                 <div id="sideDash-white">
-                    <Link to="/addNewClass" id="Sidebar-MenuSelected">
+                    <Link to="/Activity" id="Sidebar-MenuSelected">
                         <div>
                             <img src="assets/Activity Icon2.png" alt="dashboard-icon" id="SidebarIcon" />
                                Activity

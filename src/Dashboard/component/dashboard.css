@@ -1,7 +1,7 @@
 @media (min-width: 769px){  
 #body-dash{background:#E6EDF6;
 			width: 100%;
-			padding:1%;
+			padding-top:1%;
 		}
 .container-dash{display:flex;
 				align-content: space-around;
