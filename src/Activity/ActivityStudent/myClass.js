@@ -71,7 +71,9 @@ function MyClass(){
               <td>
                 <input type="checkbox" />
               </td>
-              <td className="myclassContent">{myClassDummy.name1}</td>
+              <Link to="/ClassDetailStudent">
+                <td className="myclassContent">{myClassDummy.name1}</td>
+              </Link>
               <td className="myclassContent">{myClassDummy.category1}</td>
               <td className="myclassContent">{myClassDummy.des1}</td>
               <td>

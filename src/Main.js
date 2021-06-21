@@ -16,6 +16,7 @@ import Profile from "./Profile/Profile";
 
 import Activity from "./Activity";
 import MyClass from "./Activity/ActivityStudent/MyClass";
+import ClassDetailStudent from "./Activity/ActivityStudent/ClassDetailStudent";
 
 
 
@@ -45,6 +46,7 @@ class Main extends Component {
             {/* Activity */}
             <Route path="/Activity" component={Activity} />
             <Route path="/MyClass" component={MyClass} />
+            <Route path="/ClassDetailStudent" component={ClassDetailStudent}/>
           </div>
         </div>
       </HashRouter>
