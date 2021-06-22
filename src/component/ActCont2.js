@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../css/ActCont4.css";
+// import "../css/ActCont4.css";
 
 class ActCont2 extends Component {
  render() {

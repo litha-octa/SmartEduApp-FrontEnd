@@ -17,6 +17,7 @@ import Profile from "./Profile/Profile";
 import Activity from "./Activity";
 import MyClass from "./Activity/ActivityStudent/MyClass";
 import ClassDetailStudent from "./Activity/ActivityStudent/ClassDetailStudent";
+import progressDummy from "./Activity/component/progressDummy";
 
 
 

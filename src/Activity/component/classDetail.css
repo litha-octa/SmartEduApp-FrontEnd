@@ -57,3 +57,36 @@
 	width:10vw;
 	border:none;
 }
+.containerClassDetail2{
+	margin: 30% 0 0 19%;
+	width:79%;
+	background-color: white;
+	
+}
+.contentDetail{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.3vw;
+	color: #000000;
+}
+.tabs{
+	width: 100%;
+	padding:2%;
+	border-radius: 20px;
+}
+.classDetail-titleContent{
+														font-family: Montserrat;
+														font-style: normal;
+														font-weight: 600;
+														font-size: 1.2em;
+														color: #000000;
+								}
+								.classDetail-content{
+														font-family: Roboto;
+														font-style: normal;
+														font-weight: 300;
+														font-size: 1em;
+														color: #000000;
+
+								}

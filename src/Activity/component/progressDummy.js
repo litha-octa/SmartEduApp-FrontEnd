@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "../css/ActCont4.css";
+import "./ActCont4.css";
 
-class ActCont4 extends Component {
+class progressDummy extends Component {
  render() {
     return ( 
     	<div>
@@ -80,4 +80,4 @@ class ActCont4 extends Component {
 }
  
 
-export default ActCont4;
+export default progressDummy;
