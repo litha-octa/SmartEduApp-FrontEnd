@@ -11,32 +11,54 @@
 }
 
 #side-MiniProf{
-    height: 12vw;
+    height: 17vw;
+}
+#side-MiniProf2{
+    height: 17vw;background-color: white;
 }
 											#notif{				width:2.3vw;
 																float:right;
                                                                 margin:0% 18% 0 0;		
 											}
 											
-											#sideActMiniProfile{width: 6vw;
+											#sideProfile{width: 6vw;
 																margin-left: 8%;
 																margin-top: 25%;
 											}
-											#sideActMiniName{	font-family: 'Roboto';
+											
+											#sideName{	font-family: 'Roboto';
 																font-style: normal;
 																font-weight: 500;
-																font-size: 1.2em;
+																font-size: 1.7vw;
 																color: #ffffff;
 																margin-top: 9%;
 																margin-left:8%;
 											}
-											#sideActMiniStatus{ font-family:'Roboto';
+											#sideNameBlack{	font-family: 'Roboto';
+																font-style: normal;
+																font-weight: 500;
+																font-size: 1.7vw;
+																color:black;
+																margin-top: 9%;
+																margin-left:8%;
+																text-decoration: none;
+											}
+											#sideStatus{ font-family:'Roboto';
 																font-style: normal;
 																font-weight: normal;
-																font-size: 1em;
+																font-size: 1.4vw;
 																color: #ffffff;
 																
 											}
+											#sideStatusBlack{ font-family:'Roboto';
+																font-style: normal;
+																font-weight: normal;
+																font-size: 1.4vw;
+																color:black;
+																text-decoration: none;
+																
+											}
+
 
 #sideDash-none{  height: 5vw;
                 border-radius: 10px;
@@ -48,10 +70,10 @@
                 border-radius: 10px;
             }
 
-        #Sidebar-Menu{  font-family: montserrat;
+        #SideMenu{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1em;
+						font-size: 1.3vw;
                         color:white;
                         text-justify: center;
                         text-decoration: none
@@ -59,25 +81,26 @@
                     }
 
 
-        #Sidebar-MenuSelected{  font-family: montserrat;
+        #SideSelected{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1em;
+						font-size: 1.3vw;
                         color:black;
                         background-color: white;
                        	border-radius: 10px;
                        	 text-decoration: none
                     }
-        #Sidebar-MenuLogout{  font-family: montserrat;
+        #SideMenuLogout{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1em;
+						font-size: 1.3vw;
+						text-decoration: none;
                         color:rgb(201, 28, 28);
                         text-justify: center;
 		                border-radius: 10px;
 
 		                }
-        #SidebarIcon{   width:15%;
+        #SideIcon{   width:3vw;
                         justify-self: center;
                     	margin:0 5% 0 6%;
 					}

@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import "../component/AddNewClass.css";
 import { Link } from "react-router-dom";
-//simport ActCont1 from "./component/ActCont1";
 import { connect } from "react-redux";
 import getAllClass from "../../redux/ActionCreators/allclass";
 import sortBy from "../../redux/ActionCreators/sortBy";
 import filterCategory from "../../redux/ActionCreators/filter";
+import filterLevel from "../../redux/ActionCreators/filter";
+import filterPricing from "../../redux/ActionCreators/filter";
 import { Dropdown, Button, } from "react-bootstrap";
 
 function AddNewClass(props) {
   const { getAllClass, allClassReducer } = props;
   const { sortBy, sortByReducer } = props;
   const { filterCategory, filterCategoryReducer } = props;
+  const { filterLevel, filterLevelReducer } = props;
+  const { filterPricing, filterPricingReducer } = props;
 
 
   const myClassDummy = {
@@ -153,12 +156,24 @@ function AddNewClass(props) {
                   Categories
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item>Software</Dropdown.Item>
-                  <Dropdown.Item>Math</Dropdown.Item>
-                  <Dropdown.Item> History </Dropdown.Item>
-                  <Dropdown.Item>Psychological</Dropdown.Item>
-                  <Dropdown.Item>Science</Dropdown.Item>
-                  <Dropdown.Item>Finance</Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("6")}>
+                    Software
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("3")}>
+                    Math
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("2")}>
+                    History
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("4")}>
+                    Psychological
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("5")}>
+                    Science
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterCategory("1")}>
+                    Finance
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -167,9 +182,15 @@ function AddNewClass(props) {
                 <Dropdown.Toggle id="dropdown-basic">Level</Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Advance</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Beginner</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Intermediate</Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterLevel("1")}>
+                    Advance
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterLevel("2")}>
+                    Beginner
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterLevel("3")}>
+                    Intermediate
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -178,9 +199,15 @@ function AddNewClass(props) {
                 <Dropdown.Toggle id="dropdown-basic">Price</Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">Free</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">$10</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">$50</Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterPricing("0")}>
+                    Free
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterPricing("10")}>
+                    $10
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => filterPricing("50")}>
+                    $50
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -189,16 +216,32 @@ function AddNewClass(props) {
                 <Dropdown.Toggle id="dropdown-basic">Sort by </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
+                  <Dropdown.Item
+                    onClick={() => sortBy("all_class.category_id-AZ")}
+                  >
                     Category A to Z
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
+                  <Dropdown.Item
+                    onClick={() => sortBy("all_class.category_id-ZA")}
+                  >
                     Category Z to A
                   </Dropdown.Item>
-                  <Dropdown.Item onClick={sortBy}>Level A to Z</Dropdown.Item>
-                  <Dropdown.Item>Level Z to A</Dropdown.Item>
-                  <Dropdown.Item>Price A to Z</Dropdown.Item>
-                  <Dropdown.Item>Price Z to A</Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={() => sortBy("all_class.level_id-AZ")}
+                  >
+                    Level A to Z
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    onClick={() => sortBy("all_class.level_id-ZA")}
+                  >
+                    Level Z to A
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => sortBy("pricing-AZ")}>
+                    Price A to Z
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => sortBy("pricing-ZA")}>
+                    Price Z to A
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -241,13 +284,12 @@ function AddNewClass(props) {
               </table>
             )}
           </div>
+
           <div>
             {sortByReducer.isPending ? (
               console.log("loading")
             ) : (
               <table className="tableActivity">
-                <tr></tr>
-
                 {sortByReducer.isFulfilled
                   ? sortByReducer.results.map((s) => (
                       <tr>
@@ -255,13 +297,76 @@ function AddNewClass(props) {
                           {s.class_name}
                         </td>
                         <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.category_id}
+                          {s.category}
                         </td>
                         <td className="myclassContent" style={{ width: "10%" }}>
                           {s.description}
                         </td>
                         <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.level_id}
+                          {s.level}
+                        </td>
+                        <td className="myclassContent">$ {s.pricing}</td>
+                        <td>
+                          <Button className="registerButton"> Register</Button>
+                        </td>
+                      </tr>
+                    ))
+                  : null}
+              </table>
+            )}
+          </div>
+          <div>
+            {filterCategoryReducer.isPending ? (
+              console.log("loading")
+            ) : (
+              <table className="tableActivity">
+                {filterCategoryReducer.isFulfilled
+                  ? filterCategoryReducer.results.map((s) => (
+                      <tr>
+                        <td className="myclassContent" style={{ width: "15%" }}>
+                          {s.class_name}
+                        </td>
+                        <td className="myclassContent" style={{ width: "15%" }}>
+                          {s.category}
+                        </td>
+                        <td className="myclassContent" style={{ width: "10%" }}>
+                          {s.description}
+                        </td>
+                        <td className="myclassContent" style={{ width: "10%" }}>
+                          {s.level}
+                        </td>
+                        <td className="myclassContent">$ {s.pricing}</td>
+                        <td>
+                          <Button className="registerButton"> Register</Button>
+                        </td>
+                      </tr>
+                    ))
+                  : null}
+              </table>
+            )}
+          </div>
+
+          <div>
+            {filterLevelReducer.isPending ? (
+              console.log("loading")
+            ) : (
+              <table className="tableActivity">
+                <tr></tr>
+
+                {filterLevelReducer.isFulfilled
+                  ? filterLevelReducer.results.map((s) => (
+                      <tr>
+                        <td className="myclassContent" style={{ width: "15%" }}>
+                          {s.class_name}
+                        </td>
+                        <td className="myclassContent" style={{ width: "15%" }}>
+                          {s.category}
+                        </td>
+                        <td className="myclassContent" style={{ width: "10%" }}>
+                          {s.description}
+                        </td>
+                        <td className="myclassContent" style={{ width: "10%" }}>
+                          {s.level}
                         </td>
                         <td className="myclassContent">$ {s.pricing}</td>
                         <td>
@@ -275,35 +380,49 @@ function AddNewClass(props) {
           </div>
         </div>
       </div>
-      <button onclick={filterCategory}>hjbdj</button>
     </div>
   );
 }
 
 const mapStateToProps = (state) => {
-  const { allClassReducer, sortByReducer, filterCategoryReducer } = state;
+  const { allClassReducer, sortByReducer, filterCategoryReducer, filterLevelReducer,filterPricingReducer,} = state;
   return {
     allClassReducer,
     sortByReducer,
     filterCategoryReducer,
+    filterLevelReducer,
+    filterPricingReducer,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     getAllClass: () =>
-      dispatch
-      (getAllClass("http://localhost:8300/api/v1/newclass/")),
+      dispatch(getAllClass("http://localhost:8300/api/v1/newclass/")),
 
-    sortBy: () =>
-      dispatch
-        (sortBy(`http://localhost:8300/api/v1/newclass/sort/?sort=level_id-AZ`)
+    sortBy: (param) =>
+      dispatch(
+        sortBy(`http://localhost:8300/api/v1/newclass/sort/?sort=${param}`)
       ),
 
-    filterCategory: () =>
-      dispatch
-      (filterCategory(
-          "http://localhost:8300/api/v1/newclass/category/?search=6")),
+    filterCategory: (param) =>
+      dispatch(
+        filterCategory(
+          `http://localhost:8300/api/v1/newclass/category/?search=${param}`
+        )
+      ),
+    filterLevel: (param) =>
+      dispatch(
+        filterLevel(
+          `http://localhost:8300/api/v1/newclass/level/?search=${param}`
+        )
+      ),
+    filterPricing: (param) =>
+      dispatch(
+        filterPricing(
+          `http://localhost:8300/api/v1/newclass/level/?search=${param}`
+        )
+      ),
   };
 };
 const ConnectedActivity = connect(

@@ -1,0 +1,261 @@
+@media (min-width:769px){
+.bodyProfile{
+	background-color: #E6EDF6;
+	width: 100%;
+	height: 100%;
+	padding:1%;
+}
+.containerProfile{
+	margin-left: 25%;
+	width:65%;
+	height: 100%;
+}
+.profileSett{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 2vw;
+color: #000000;
+padding-left: 3%;
+padding-top: 2%;
+background-color:white;
+padding-bottom: 5%;
+}
+
+#text{
+	margin-top:0%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.2vw;
+	color: #000000;
+	padding-top: 2%;
+	padding-left: 3%;
+	background-color:white;
+	}
+#profile-bg-layer2{
+	position: absolute;
+	width: 64%;
+	height:20vw;
+	background: linear-gradient(0deg, #000000 -94.8%, rgba(0, 0, 0, 0) 122%);
+	border-radius: 20px 20px 0px 0px;
+	margin:-20vw 0 0 0%;
+	padding:2%;
+}
+
+#profile-bg{
+	width: 100%;
+	height:20vw;
+	border-radius: 20px 20px 0px 0px;
+}
+
+#profile{
+			width:10vw;
+			margin-top: 3%;
+			margin-left: 39%;
+}
+
+#edit-icon{
+	width:1.7vw;
+	margin-top:15%;
+	margin-left: -2%;
+}
+.card{
+	padding: 0.4vw;
+}
+#name-profile{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.8vw;
+			color: white;
+			margin-top: 5%;
+			text-align: center;
+}
+#menu-profile{width:3%; margin-right: 5%;}
+#icon{float:right;width:2vw;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) and (min-width : 426px){
+.bodyProfile{
+	background-color: #E6EDF6;
+	width: 100%;
+	height: 100%;
+	padding:31% 0 50% 0;
+}
+.containerProfile{
+	margin-left: 5%;
+	width:90%;
+	height: 100%;
+}
+.profileSett{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 2vw;
+color: #000000;
+padding-left: 3%;
+padding-top: 2%;
+background-color:white;
+padding-bottom: 5%;
+}
+
+#text{
+	margin-top:0%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5vw;
+	color: #000000;
+	padding-top: 2%;
+	padding-left: 3%;
+	background-color:white;
+	}
+#profile-bg-layer2{
+	position: absolute;
+	width: 90%;
+	height:30vw;
+	background: linear-gradient(0deg, #000000 -94.8%, rgba(0, 0, 0, 0) 122%);
+	border-radius: 20px 20px 0px 0px;
+	margin:-30vw 0 0 0%;
+	padding:2%;
+}
+
+#profile-bg{
+	width: 100%;
+	height:30vw;
+	border-radius: 20px 20px 0px 0px;
+}
+
+#profile{
+			width:15vw;
+			margin-top: 6%;
+			margin-left: 39%;
+}
+
+#edit-icon{
+	width:2.4vw;
+	margin-top:24%;
+	margin-left: -2%;
+}
+
+#name-profile{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 3vw;
+			color: white;
+			margin-top: 5%;
+			text-align: center;
+}
+#menu-profile{width:5%; margin-right: 5%;}
+#icon{float:right;width:2.5vw;}
+.card{
+	padding: 0.2vw;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:425px){
+.bodyProfile{
+	background-color: #E6EDF6;
+	width: 100%;
+	height: 100%;
+	padding:31% 0 50% 0;
+}
+.containerProfile{
+	margin-left: 5%;
+	width:90%;
+	height: 100%;
+}
+.profileSett{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 3.5vw;
+color: #000000;
+padding-left: 3%;
+padding-top: 2%;
+background-color:white;
+padding-bottom: 5%;
+}
+
+#text{
+	margin-top:0%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3vw;
+	color: #000000;
+	padding-top: 2%;
+	padding-left: 3%;
+	background-color:white;
+	}
+#profile-bg-layer2{
+	position: absolute;
+	width: 90%;
+	height:30vw;
+	background: linear-gradient(0deg, #000000 -94.8%, rgba(0, 0, 0, 0) 122%);
+	border-radius: 20px 20px 0px 0px;
+	margin:-30vw 0 0 0%;
+	padding:2%;
+}
+
+#profile-bg{
+	width: 100%;
+	height:30vw;
+	border-radius: 20px 20px 0px 0px;
+}
+
+#profile{
+			width:15vw;
+			margin-top: 6%;
+			margin-left: 39%;
+}
+
+#edit-icon{
+	width:2.4vw;
+	margin-top:24%;
+	margin-left: -2%;
+}
+
+#name-profile{
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 3vw;
+			color: white;
+			margin-top: 5%;
+			text-align: center;
+}
+#menu-profile{width:7%; margin-right: 5%;}
+#icon{float:right;width:3vw;}
+.card{
+	padding: 0.1vw;
+}
+}
+

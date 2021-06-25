@@ -3,8 +3,8 @@ import "./component/dashboard.css";
 import { Link } from "react-router-dom";
 import DashboardStudent from "./component/DashboardStudent";
 import DashboardFas from "./component/DashboardFas";
-import HeaderDash from "./component/HeaderDash";
-import SideDashboard from "./component/SideDashboard";
+import HeaderDash from "../component/HeaderDash";
+import SideDashboard from "../component/SideDashboard";
 
 function Dashboard() {
   return(

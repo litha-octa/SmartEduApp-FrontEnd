@@ -1,53 +1,94 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import axios from 'axios';
+import { Link, useHistory } from "react-router-dom";
 import "./component/login.css";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { connect } from "react-redux";
+import {login} from "../redux/ActionCreators/login";
+import { loginReducer } from "../redux/Reducers/login";
+import axios from "axios";
 
 
 class Login extends Component {
   state = {
-    name: null,
-    password: null,
+    name: "",
+    password: "",
     modalShow: false,
   };
-  nameHandler = (a) => {
+
+  // let history = useHistory();
+
+  nameHandler = (e) => {
     this.setState({
-      name: a.target.value,
+      name: e.target.value,
     });
   };
-  passwordHandler = (a) => {
+  passwordHandler = (e) => {
     this.setState({
-      password: a.target.value,
+      password: e.target.value,
     });
   };
+
   openModalHandler = () => {
     this.setState({
       modalShow: true,
     });
   };
-  submitHandler = (a) => {
-    a.preventDefault();
-    let dataLogin = {
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.props.loginReducer.isPending) {
+      console.log("Loading...");
+    } else if (this.props.loginReducer.isFulfilled) {
+      if (prevProps.loginReducer !== this.props.loginReducer) {
+        localStorage.setItem("token", this.props.loginReducer.result.token);
+
+        this.props.history.push("/Dashboard");
+      }
+    } else if (this.props.loginReducer.isRejected) {
+      if (
+        prevProps.loginReducer !== this.props.loginReducer &&
+        prevState.modalShow === false
+      ) {
+        this.setState({
+          modalShow: true,
+        });
+      }
+    }
+  }
+
+  loginHandler = (e) => {
+    e.preventDefault();
+    const dataLogin = {
       name: this.state.name,
+      email: this.state.name,
       password: this.state.password,
     };
+    //this.props.login(dataLogin);
+
+    // this.props.getUser();
+  //};
+
+  // submitHandler = (a) => {
+  //   a.preventDefault();
+  //   let dataLogin = {
+  //     name: this.state.name,
+  //     password: this.state.password,
+  //   };
 
     axios
-      .post('http://localhost:8300/api/v1/auth/', dataLogin)
+      .post("http://localhost:8300/api/v1/auth/", dataLogin)
       .then((res) => {
         if (res.data.success) {
-          console.log(res.data.result.token.payload)
-            this.props.history.push('/Dashboard')
-        };
+          console.log(res.data.result.token.payload);
+          this.props.history.push("/Dashboard");
+        }
       })
       .catch((err) => {
         this.setState({
           modalShow: true,
         });
       });
-  };
+   };
 
   render() {
     return (
@@ -79,12 +120,16 @@ class Login extends Component {
             type="submit"
             id="btn-login"
             value="login"
-            onClick={this.submitHandler}
+            onClick={this.loginHandler}
           >
             Login
           </button>
 
-          <button type="submit" id="btn-google">
+          <button
+            type="submit"
+            id="btn-google"
+            // onClick={() => getUser(`${this.nameHandler}`)}
+          >
             <p id="text-btn-w-google">
               <img src="assets/logogoogle.png" className="google" alt="logo" />
               Login with google
@@ -111,6 +156,22 @@ class Login extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  const{getUserReducer, loginReducer}= state;
+  return{
+    getUserReducer,loginReducer
+  };
+};
 
-
-export default Login;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    login : (data) => dispatch (login('http://localhost:8300/api/v1/auth/',data)),
+    // getUser: (param) => dispatch(getUser(`http://localhost:8300/api/v1/usr/${param}`)),
+    
+  };
+};
+const ConnectedLogin = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Login);
+export default ConnectedLogin;

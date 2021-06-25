@@ -10,11 +10,11 @@ const HeaderDash = function () {
         <h1 className="title">SmartEduApp!</h1>
 
         <div id="line-menu">
-          <NavLink to="/Dashboard/dashAllSchedule" id="header-selected">Dashboard</NavLink>
+          <NavLink to="/Dashboard" id="header-selected">Dashboard</NavLink>
 
           <NavLink to="/Notification" id="header-menu">Notification</NavLink>
 
-          <NavLink to="/ActivityStudent/addNewClass" id="header-menu">Activity</NavLink>
+          <NavLink to="/Activity" id="header-menu">Activity</NavLink>
 
           <NavLink to="/" id="header-menu">Logout</NavLink>
 

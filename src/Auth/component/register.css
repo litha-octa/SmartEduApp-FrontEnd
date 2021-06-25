@@ -1,24 +1,36 @@
 @media (min-width: 769px){  
 #body-regist{	background-color: #E6EDF6;
+	width: 100%;
+	height: 100%;
+	padding: 2% 2% 60% 2%;
 }
 #title-regist{		
 		font-family: Kanit;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 2.5em;
+		font-size: 4vw;
 		color: #010620;
-		margin: 0% 0 3% 0;
-		padding-top: 2%;
+		margin: 2% 0 2% 0;
 		text-align: center;
 }
-.label-input-register {		width: 25vw;
-					height: 3vw;
-					margin-left: 37%;
+#caption{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 1.2vw;
+					width:10vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 35%;
+}
+.label-input-register {		width: 30%;
+					height: 4vw;
+					margin-left: 35%;
 					background: #FFFFFF;
 					border: 1px solid #ADA9BB;
 					box-sizing: border-box;
 					border-radius: 5px;
 					margin-bottom:0.5% ;
+					font-size: 2vw;
 }
 .name{				
 					font-family: Roboto;
@@ -31,8 +43,10 @@
 #role-selector{font-family: Kanit;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 1em;
-					margin-left: 40%;}
+					font-size: 1.5vw;
+					margin:1% 0 0 42%;
+				}
+
 #role-drop{			background: #5784BA;
 					border-radius: 10px;
 					font-family: Kanit;
@@ -41,15 +55,7 @@
 					color: white;
 					font-size: 1em;}
 
-#caption{			font-family: Kanit;
-					font-style: normal;
-					font-weight: normal;
-					font-size: 1vw;
-					width:8%;
-					color: #ADA9BB;
-					background-color: #E5E5E5;
-					margin-left: 37%;
-}
+
 .btn-regist{	
 			background: #5784BA;
 			border-radius: 10px;
@@ -68,20 +74,20 @@
 .btn-googleregist{
 	background: rgba(0, 13, 79, 0.08);
 	border-radius: 10px;
-	margin:1% 0 2% 37%;
+	margin:1% 0 0% 37%;
 	width: 25vw;
 	height: 3vw;
 	border:none;
 	border-radius: 5px;}
 			
 .google{margin-left: -60%;
-	margin-top: 2%;
+	margin-top: -4%;
 		width:9%;
 }
 #registwith{font-family: Kanit;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 0.9em;
+	font-size: 1.4vw;
 	color: #010620;
 	text-align: center;
 	margin-top: -13%}
@@ -89,9 +95,9 @@
 #linkToLogin{		font-family: Kanit;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 0.8vw;
+					font-size: 1vw;
 					color: #ADA9BB;
-					margin:3% 0 0 45%;
+					margin:1% 0 0 43%;
 }
 .linktologin{color: blue;}
 #matchIcon{width:2.5vw;}
@@ -109,30 +115,39 @@
 
 
 
-@media (max-width:768px) and (min-width:426px){
-*{margin: 0;}
+@media (max-width: 768px) and (min-width:426px){  
 #body-regist{	background-color: #E6EDF6;
-				margin-top:0%;
-				width: 100%;
-				height: 100%;}
+	width: 100%;
+	height: 100%;
+	padding: 2% 2% 100% 2%;
+}
 #title-regist{		
 		font-family: Kanit;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 3em;
+		font-size: 5vw;
 		color: #010620;
-		margin:0% 0 5% 0%;
-		padding-top: 5%;
-		text-align: center; 
+		margin: 2% 0 5% 0;
+		text-align: center;
 }
-.label-input-register {		width: 25vw;
-					height: 3vw;
-					margin-left: 37%;
+#caption{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2vw;
+					width:10vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 30%;
+}
+.label-input-register {	width: 40%;
+					height: 6vw;
+					margin-left: 30%;
 					background: #FFFFFF;
 					border: 1px solid #ADA9BB;
 					box-sizing: border-box;
 					border-radius: 5px;
 					margin-bottom:0.5% ;
+					font-size: 2vw;
 }
 .name{				
 					font-family: Roboto;
@@ -142,26 +157,33 @@
 					color: #010620;
 }
 
-#caption{			font-family: Kanit;
+#role-selector{font-family: Kanit;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 1vw;
-					width:8%;
-					color: #ADA9BB;
-					background-color: #E5E5E5;
-					margin-left: 37%;
-}
+					font-size: 2vw;
+					margin:1% 0 0 40%;
+				}
+
+#role-drop{			background: #5784BA;
+					border-radius: 10px;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					color: white;
+					font-size: 1em;}
+
+
 .btn-regist{	
 			background: #5784BA;
 			border-radius: 10px;
 			font-family: Kanit;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 1vw;
+			font-size: 1.9vw;
 			color: #FFFFFF;
-			margin:4% 0 0 37%;
-			width: 25vw;
-			height: 3vw;
+			margin:2% 0 0 30%;
+			width: 40%;
+			height: 5vw;
 			border:none;
 			border-radius: 5px;
 			}
@@ -169,32 +191,38 @@
 .btn-googleregist{
 	background: rgba(0, 13, 79, 0.08);
 	border-radius: 10px;
-	margin:1% 0 2% 37%;
-	width: 25vw;
-	height: 3vw;
+	margin:1% 0 0% 30%;
+	width: 40%;
+	height: 5vw;
 	border:none;
 	border-radius: 5px;}
 			
 .google{margin-left: -60%;
-	margin-top: 2%;
+	margin-top: -4%;
 		width:9%;
 }
 #registwith{font-family: Kanit;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 1vw;
+	font-size: 1.8vw;
 	color: #010620;
 	text-align: center;
-margin-top: -13%}
+	margin-top: -13%}
+
 #linkToLogin{		font-family: Kanit;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 0.8vw;
+					font-size: 1.5vw;
 					color: #ADA9BB;
-					margin-left: 45%;
-					padding-bottom:28%;
+					margin:1% 0 0 40%;
 }
 .linktologin{color: blue;}
+#matchIcon{width:2.5vw;}
+#isMatch{margin-left: 45%;
+		width:11vw;
+		margin-bottom: 2%;
+		background-color: white;
+		border-radius: 10px;}
 }
 
 
@@ -203,33 +231,39 @@ margin-top: -13%}
 
 
 
-
-
-
-
-@media (max-width:425px){
-*{margin: 0;}
+@media (max-width: 425px){  
 #body-regist{	background-color: #E6EDF6;
-				width: 100%;
-				height: 100%;}
+	width: 100%;
+	height: 100%;
+	padding: 5% 2% 100% 2%;
+}
 #title-regist{		
 		font-family: Kanit;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 5em;
+		font-size: 6vw;
 		color: #010620;
-		margin:0% 0 15% 0%;
-		padding-top: 10%;
-		text-align: center; 
+		margin: 2% 0 9% 0;
+		text-align: center;
 }
-.label-input-register {		width: 50vw;
-					height: 6vw;
+#caption{			font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 2.3vw;
+					width:10vw;
+					color: #ADA9BB;
+					background-color: #E5E5E5;
+					margin-left: 25%;
+}
+.label-input-register {	width: 50%;
+					height: 7vw;
 					margin-left: 25%;
 					background: #FFFFFF;
 					border: 1px solid #ADA9BB;
 					box-sizing: border-box;
 					border-radius: 5px;
-					margin-bottom:2%;
+					margin-bottom:0.5% ;
+					font-size: 4vw;
 }
 .name{				
 					font-family: Roboto;
@@ -239,26 +273,33 @@ margin-top: -13%}
 					color: #010620;
 }
 
-#caption{			font-family: Kanit;
+#role-selector{font-family: Kanit;
 					font-style: normal;
 					font-weight: normal;
-					font-size: 1em;
-					width:18vw;
-					color: #ADA9BB;
-					background-color: #E5E5E5;
-					margin-left: 25%;
-}
+					font-size: 3vw;
+					margin:1% 0 2% 35%;
+				}
+
+#role-drop{			background: #5784BA;
+					border-radius: 10px;
+					font-family: Kanit;
+					font-style: normal;
+					font-weight: normal;
+					color: white;
+					font-size: 1em;}
+
+
 .btn-regist{	
 			background: #5784BA;
 			border-radius: 10px;
 			font-family: Kanit;
 			font-style: normal;
 			font-weight: 500;
-			font-size: 2vw;
+			font-size: 3vw;
 			color: #FFFFFF;
-			margin:5% 0 0 25%;
-			width: 50vw;
-			height: 6vw;
+			margin:2% 0 0 25%;
+			width: 50%;
+			height: 7vw;
 			border:none;
 			border-radius: 5px;
 			}
@@ -266,36 +307,46 @@ margin-top: -13%}
 .btn-googleregist{
 	background: rgba(0, 13, 79, 0.08);
 	border-radius: 10px;
-	margin:2% 0 2% 25%;
-	width: 50vw;
-	height: 6vw;
+	margin:1% 0 0% 25%;
+	width: 50%;
+	height: 7vw;
 	border:none;
 	border-radius: 5px;}
 			
 .google{margin-left: -60%;
-	margin-top: -2%;
+	margin-top: -4%;
 		width:9%;
 }
 #registwith{font-family: Kanit;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 2vw;
+	font-size: 2.7vw;
 	color: #010620;
 	text-align: center;
-margin-top: -12%}
+	margin-top: -13%}
+
 #linkToLogin{		font-family: Kanit;
 					font-style: normal;
 					font-weight: 500;
-					font-size: 0.8vw;
+					font-size: 2.3vw;
 					color: #ADA9BB;
-					margin:20% 0 20% 45%;
-					bottom: 0;
-					background-color:#E6EDF6; 
-					padding-bottom: 50%;
-					width: 20%;
-					height: 40%;
+					position: fixed;
+					bottom:100;
+					margin:3% 0 0 35%;
 }
 .linktologin{color: blue;}
+#matchIcon{width:2.5vw;}
+#isMatch{margin-left: 45%;
+		width:11vw;
+		margin-bottom: 2%;
+		background-color: white;
+		border-radius: 10px;}
 }
+
+
+
+
+
+
 
 

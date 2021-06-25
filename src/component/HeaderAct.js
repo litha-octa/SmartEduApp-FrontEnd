@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Header.css";
+import "./Header.css";
 import { NavLink, HashRouter } from "react-router-dom";
 
 const HeaderAct = function () {
