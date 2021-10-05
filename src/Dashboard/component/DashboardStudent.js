@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./dashboardStudent.css";
-import "./dashboard.css";
 import { Link } from "react-router-dom";
 import { Tabs,Tab } from 'react-bootstrap';
 
@@ -24,7 +23,7 @@ function DashboardStudent(){
   let mm = month[monthNow.getMonth()];
 
   let yyyy = dateNow.getFullYear();
-  dateNow = dd + " " + mm;
+  dateNow = dd + " " + mm + " " + yyyy;
 
   // This Week
   let days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
@@ -56,98 +55,96 @@ function DashboardStudent(){
     currentDate = new Date(currentDate).getDate();
     resultDate.push(currentDate);
   }
-    return (  <div style={{backgroundColor:'white',marginLeft:'-3%', borderRadius:20,width:'100%'}}>
-             <table className="table-schedule">
-              <tr id="date">
-                <td colspan="7">
-                  Today,
-                  {dateNow}
-                  <img
-                    src="assets/Calendar Icon.png"
-                    className="calendar"
-                    alt=" "
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div id="select">
-                    {resultDay[0]}
-                    <br />
-                    {resultDate[0]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[1]}
-                    <br />
-                    {resultDate[1]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[2]}
-                    <br />
-                    {resultDate[2]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[3]}
-                    <br />
-                    {resultDate[3]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[4]}
-                    <br />
-                    {resultDate[4]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[5]}
-                    <br />
-                    {resultDate[5]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[6]}
-                    <br />
-                    {resultDate[6]}
-                  </div>
-                </td>
-              </tr>
-              </table>
-              <Tabs defaultActiveKey = "For You">
-              <Tab eventKey = "All schedule"
-             
-              title = "All Schedule">
-              <img src="assets/8.00.png" id="img" alt=" " />
-              <img src="assets/d1fc.png" id="task1-pic" alt=" " />
-              <img src="assets/11.00.png" id="img" alt=" " />
-              <img src="assets/d1sc.png" id="task1-pic" alt=" " />
-              <img src="assets/13.00.png" id="img" alt=" " />
-              <img src="assets/d1tc.png" id="task1-pic" alt=" " />
-              <img src="assets/finish.png" id="img" alt=" " />
-              </Tab>
-
-
-
-              <Tab eventKey = "For You"
-             
-              title = "For You">
-              <img src="assets/8.00.png" id="img" alt=" " />
-              <img src="assets/d1fc.png" id="task1-pic" alt=" " />
-              <img src="assets/11.00.png" id="img" alt=" " />
-              <img src="assets/d1sc.png" id="task1-pic" alt=" " />
-              <img src="assets/finish.png" id="img" alt=" " />
-              </Tab>
-              </Tabs>
+    return (
+      <div className="main-container">
+        <table className="table-schedule">
+          <tr id="date">
+            <td colspan="7">
+              Today,
+              {dateNow}
+              <img
+                src="assets/Calendar Icon.png"
+                className="calendar"
+                alt=" "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="select">
+                {resultDay[0]}
+                <br />
+                {resultDate[0]}
               </div>
-              
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[1]}
+                <br />
+                {resultDate[1]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[2]}
+                <br />
+                {resultDate[2]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[3]}
+                <br />
+                {resultDate[3]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[4]}
+                <br />
+                {resultDate[4]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[5]}
+                <br />
+                {resultDate[5]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[6]}
+                <br />
+                {resultDate[6]}
+              </div>
+            </td>
+          </tr>
+        </table>
+        <Tabs defaultActiveKey="For You" style={{ alignSelf: "center" }}>
+          <Tab
+            eventKey="All schedule"
+            style={{ alignSelf: "center" }}
+            title="All Schedule"
+          >
+            <img src="assets/8.00.png" id="img" alt=" " />
+            <img src="assets/d1fc.png" id="task1-pic" alt=" " />
+            <img src="assets/11.00.png" id="img" alt=" " />
+            <img src="assets/d1sc.png" id="task1-pic" alt=" " />
+            <img src="assets/13.00.png" id="img" alt=" " />
+            <img src="assets/d1tc.png" id="task1-pic" alt=" " />
+            <img src="assets/finish.png" id="img" alt=" " />
+          </Tab>
+
+          <Tab eventKey="For You" title="For You">
+            <img src="assets/8.00.png" id="img" alt=" " />
+            <img src="assets/d1fc.png" id="task1-pic" alt=" " />
+            <img src="assets/11.00.png" id="img" alt=" " />
+            <img src="assets/d1sc.png" id="task1-pic" alt=" " />
+            <img src="assets/finish.png" id="img" alt=" " />
+          </Tab>
+        </Tabs>
+      </div>
     );
   }
 

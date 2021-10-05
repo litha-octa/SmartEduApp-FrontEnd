@@ -17,6 +17,7 @@ import Profile from "./Profile/Profile";
 import Activity from "./Activity";
 import MyClass from "./Activity/ActivityStudent/MyClass";
 import ClassDetailStudent from "./Activity/ActivityStudent/ClassDetailStudent";
+import CreateNewClass from './Activity/ActivityFas/CreateNewClass';
 import progressDummy from "./Activity/component/progressDummy";
 
 
@@ -48,6 +49,7 @@ class Main extends Component {
             <Route path="/Activity" component={Activity} />
             <Route path="/MyClass" component={MyClass} />
             <Route path="/ClassDetailStudent" component={ClassDetailStudent}/>
+            <Route path="/CreateNewClass" component={CreateNewClass}/>
           </div>
         </div>
       </HashRouter>

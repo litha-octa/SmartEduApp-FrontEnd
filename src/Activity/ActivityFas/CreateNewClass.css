@@ -1,9 +1,7 @@
 @media (min-width:769px){
 
-
-.body-createclass {background-color:  #E6EDF6;}	
-
-#title-box{margin-left: 20%;}
+#containerCreateClass{background-color:#E6EDF6;
+		padding-left: 20%;}
 									#title-act{
 										font-family: Montserrat;
 									font-style: normal;
@@ -18,17 +16,11 @@
 									font-size: 1.8vw;
 									color: #000000;
 									}
-.d-flex{
-	width:70%;
-	height: 100%;
-	background-color: #E6EDF6;
-	margin:1% 5% 0 25%; 
-}
+.tableMyClass{width: 95%;margin-top: 3%;}
 
 .table-title{
 	width:100%;
 	justify-content: center;
-	padding-left: -5%;
 	background-color:#E6EDF6;
 	font-family: Montserrat;
 	font-style: normal;
@@ -50,7 +42,7 @@
 .form-check-input{width:1.3vw;}
 #nameclass{width:20%;}
 
-#cateory{width:10%;
+#category{width:10%;
 		margin-left: 5%;}
 
 #description{	width:30%;

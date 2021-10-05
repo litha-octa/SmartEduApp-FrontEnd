@@ -1,12 +1,37 @@
-import React, { Component } from "react";
+import React, { useRef,useEffect } from "react";
 import "./component/dashboard.css";
-import { Link } from "react-router-dom";
 import DashboardStudent from "./component/DashboardStudent";
 import DashboardFas from "./component/DashboardFas";
 import HeaderDash from "../component/HeaderDash";
 import SideDashboard from "../component/SideDashboard";
+import {connect} from "react-redux";
+import {getUser} from "../redux/ActionCreators/login";
 
-function Dashboard() {
+
+
+function Dashboard(props) {
+  useEffect(() => {props.getUser(props.loginReducer.result.data.email)},[props])
+  //  const ref = useRef();
+  // useEffect(() => {
+  //   if (!ref.current) {
+  //     getUser();
+  //     ref.current = true;
+  //   } else {
+  //     if (props.getUserReducer.isPending) {
+  //       console.log("Loading...");
+  //     } else if (props.getUserReducer.isFulfilled) {
+  //       localStorage.setItem(
+  //         "name",
+  //         props.getUserReducer.currentUser.name
+  //       );
+  //       localStorage.setItem("role", props.getUserReducer.currentUser.role);
+  //       localStorage.setItem("avatar", props.getUserReducer.currentUser.avatar);
+  //     } else if (props.getDataUserReducer.isRejected) {
+  //       console.log("Failed");
+  //     }
+  //   }
+  // });
+  
   return(
       <div id="body-dash">
       <HeaderDash />
@@ -18,8 +43,8 @@ function Dashboard() {
             <img src="assets/Carousel.png" className="dash-news-pics" alt=" " />
           </div>
           <div id="dashboardContentFor">
-            
-            <DashboardFas/>
+            {props.loginReducer.result.data.role === "student" ? <DashboardStudent/> : <DashboardFas/> 
+            }
           </div>
         </div>
 
@@ -62,5 +87,22 @@ function Dashboard() {
     </div>
   );
 }
+const mapStateToProps = (state) => {
+  const { loginReducer } = state;
+  return {
+    loginReducer,
+  };
+};
 
-export default Dashboard;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getUser: (email) =>
+      dispatch(getUser(`http://localhost:8300/api/v1/usr/${email}`)),
+  };
+};
+
+const ConnectedDashboard = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Dashboard);
+export default ConnectedDashboard;

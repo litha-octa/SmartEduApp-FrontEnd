@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./dashboard.css";
+
 import "./dashboardStudent.css";
 import { Link } from "react-router-dom";
 
@@ -56,100 +56,107 @@ function DashboardFas(){
     resultDate.push(currentDate);
   }
     return (
-              <div style={{backgroundColor:'white',marginLeft:'-3%', borderRadius:20,width:'100%'}}>
-              <table className="table-schedule">
-                 <tr id="date">
-                <td colspan="7">
-                  Today,
-                  {dateNow}
-                  <img
-                    src="assets/Calendar Icon.png"
-                    className="calendar"
-                    alt=" "
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div id="select">
-                    {resultDay[0]}
-                    <br />
-                    {resultDate[0]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[1]}
-                    <br />
-                    {resultDate[1]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[2]}
-                    <br />
-                    {resultDate[2]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[3]}
-                    <br />
-                    {resultDate[3]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[4]}
-                    <br />
-                    {resultDate[4]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[5]}
-                    <br />
-                    {resultDate[5]}
-                  </div>
-                </td>
-                <td>
-                  <div id="date-day">
-                    {resultDay[6]}
-                    <br />
-                    {resultDate[6]}
-                  </div>
-                </td>
-              </tr>
-                <tr>
-                  <td colspan="7">&nbsp;</td></tr>
-                <tr id="fas-task">
-                  <td colspan="2">08.00 - 09.40</td>
-                  <td colspan="3">Front-end fundamentals</td>
-                  <td colspan="2">24<img src="assets/Student Icon.png" alt=" " /></td>
-                </tr>
-                <tr id="fas-task">
-                  <td colspan="2">11.00 - 11.40</td>
-                  <td colspan="3">HTML for Beginners</td>
-                  <td colspan="2">32<img src="assets/Student Icon.png" alt=" " /></td>
-                </tr>
-                <tr>
-                <td colspan="7">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td colspan="7">
-                    <div>
-                      <Link to="/ActivityFas/CreateNewClass" id="fas-new-task">
-                        <img src="assets/Plus Icon.png" id="plus-icon" alt=" " />
-                New Task
-            </Link>
-                    </div>
-                  </td>
-                </tr>
-                 <tr>
-                <td colspan="7">&nbsp;</td>
-                </tr>
-              </table>
+      <div className="main-container">
+        <table className="table-schedule">
+          <tr id="date">
+            <td colspan="7">
+              Today,
+              {dateNow}
+              <img
+                src="assets/Calendar Icon.png"
+                className="calendar"
+                alt=" "
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div id="select">
+                {resultDay[0]}
+                <br />
+                {resultDate[0]}
               </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[1]}
+                <br />
+                {resultDate[1]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[2]}
+                <br />
+                {resultDate[2]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[3]}
+                <br />
+                {resultDate[3]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[4]}
+                <br />
+                {resultDate[4]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[5]}
+                <br />
+                {resultDate[5]}
+              </div>
+            </td>
+            <td>
+              <div id="date-day">
+                {resultDay[6]}
+                <br />
+                {resultDate[6]}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7">&nbsp;</td>
+          </tr>
+          <tr id="fas-task">
+            <td colspan="2">08.00 - 09.40</td>
+            <td colspan="3">Front-end fundamentals</td>
+            <td colspan="2">
+              24
+              <img src="assets/Student Icon.png" alt=" " />
+            </td>
+          </tr>
+          <tr id="fas-task">
+            <td colspan="2">11.00 - 11.40</td>
+            <td colspan="3">HTML for Beginners</td>
+            <td colspan="2">
+              32
+              <img src="assets/Student Icon.png" alt=" " />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="7">
+              <div>
+                <Link to="/CreateNewClass" id="fas-new-task">
+                  <img src="assets/Plus Icon.png" id="plus-icon" alt=" " />
+                  New Task
+                </Link>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7">&nbsp;</td>
+          </tr>
+        </table>
+      </div>
     );
 }
 

@@ -1,11 +1,12 @@
 @media(min-width:769px){  
 .sidebar{	background:#5784BA;
 			border-radius: 20px;
-			padding:1% 0 30% 0;
+			padding:1% 0 1% 0;
 			margin: 0% 0 0 1%;	
 			float:left;
 			width:15%;
 			position: fixed;
+			height: 95%;
 }
 .sidebarminiprofile{margin-bottom: 30%;
 }
@@ -73,7 +74,7 @@
         #SideMenu{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1.3vw;
+						font-size: 1.1vw;
                         color:white;
                         text-justify: center;
                         text-decoration: none
@@ -84,7 +85,7 @@
         #SideSelected{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1.3vw;
+						font-size: 1.1vw;
                         color:black;
                         background-color: white;
                        	border-radius: 10px;
@@ -93,14 +94,14 @@
         #SideMenuLogout{  font-family: montserrat;
 						font-style: normal;
 						font-weight: 650;
-						font-size: 1.3vw;
+						font-size: 1.1vw;
 						text-decoration: none;
                         color:rgb(201, 28, 28);
                         text-justify: center;
 		                border-radius: 10px;
 
 		                }
-        #SideIcon{   width:3vw;
+        #SideIcon{   width:2.3vw;
                         justify-self: center;
                     	margin:0 5% 0 6%;
 					}

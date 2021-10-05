@@ -2,6 +2,7 @@
 #body-dash{background:#E6EDF6;
 			width: 100%;
 			padding-top:1%;
+
 		}
 .container-dash{display:flex;
 				align-content: space-around;
@@ -11,14 +12,14 @@
 			  border-radius: 20px;
   		}
 
-.contentdash1{width: 50%;
-			background:#E6EDF6;
-  			margin-left: 19%;
+.contentdash1{width: 51%;
+  			margin-left: 17%;
   			text-align: center;
 }
 .contentdash2{width: 30%;
 			border-radius: 20px;
-			margin:0 2% 0 0%;
+			margin:0 0% 0 1%;
+			float: right;
 		}
 									
 									#search-bar{background-color: #E6EDF6;
@@ -47,7 +48,7 @@
 
 									
 #dashnews {
-  width:95%;
+  width:100%;
   height:30%;
   margin-right: 1%;
   border-radius: 20px;
@@ -67,13 +68,8 @@
 					height: 100%;
 				}
 #dashboardContentFor{
-	margin-top: 10%;
-}
-#schedule{
-		  width:95%;
-		  height:25%;
-		  margin:10% 1% 0 0;
-		  border-radius: 20px;	
+	margin-top: 6%;
+	width: 100%;
 }		
 #fas-task{
 	height: 7vw;

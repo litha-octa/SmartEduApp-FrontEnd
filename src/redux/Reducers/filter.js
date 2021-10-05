@@ -7,7 +7,7 @@ const initialState = {
   err: {},
 };
 
- const filterCategoryReducer = (state = initialState, { type, payload }) => {
+export const filterCategoryReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case "GET_filterCategory_PENDING":
       return {
@@ -35,7 +35,7 @@ const initialState = {
       return state;
   }
 };
- const filterLevelReducer = (state = initialState, { type, payload }) => {
+export const filterLevelReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case "GET_filterLevel_PENDING":
       return {
@@ -64,7 +64,7 @@ const initialState = {
   }
 };
 
- const filterPricingReducer = (state = initialState, { type, payload }) => {
+export const filterPricingReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case "GET_filterPricing_PENDING":
       return {
@@ -93,4 +93,4 @@ const initialState = {
   }
 };
  
-export default filterCategoryReducer
+//export default filterCategoryReducer

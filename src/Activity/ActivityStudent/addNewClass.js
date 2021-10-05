@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import getAllClass from "../../redux/ActionCreators/allclass";
 import sortBy from "../../redux/ActionCreators/sortBy";
-import filterCategory from "../../redux/ActionCreators/filter";
-import filterLevel from "../../redux/ActionCreators/filter";
-import filterPricing from "../../redux/ActionCreators/filter";
+import {filterCategory, filterLevel,filterPricing } from "../../redux/ActionCreators/filter";
 import { Dropdown, Button, } from "react-bootstrap";
 
 function AddNewClass(props) {
@@ -252,20 +250,12 @@ function AddNewClass(props) {
             ) : (
               <table className="tableActivity">
                 <tr>
-                  <td className="myclassColumn" style={{ width: "15%" }}>
-                    Class Name
-                  </td>
-                  <td className="myclassColumn" style={{ width: "15%" }}>
-                    Category
-                  </td>
+                  <td className="myclassColumn">Class Name</td>
+                  <td className="myclassColumn">Category</td>
                   <td className="myclassColumn">Description</td>
-                  <td className="myclassColumn" style={{ width: "10%" }}>
-                    Level
-                  </td>
-                  <td className="myclassColumn" style={{ width: "10%" }}>
-                    Pricing
-                  </td>
-                  <td>&nbsp;</td>
+                  <td className="myclassColumn">Level</td>
+                  <td className="myclassColumn">Pricing</td>
+                  <td className="myclassColumn">&nbsp;</td>
                 </tr>
                 {allClassReducer.isFulfilled
                   ? allClassReducer.results.map((i) => (
@@ -275,66 +265,33 @@ function AddNewClass(props) {
                         <td className="myclassContent">{i.description}</td>
                         <td className="myclassContent">{i.level}</td>
                         <td className="myclassContent">$ {i.pricing}</td>
-                        <td>
+                        <td className="myclassContent">
                           <Button className="registerButton"> Register</Button>
                         </td>
                       </tr>
                     ))
                   : null}
-              </table>
-            )}
-          </div>
-
-          <div>
-            {sortByReducer.isPending ? (
-              console.log("loading")
-            ) : (
-              <table className="tableActivity">
                 {sortByReducer.isFulfilled
                   ? sortByReducer.results.map((s) => (
                       <tr>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.class_name}
-                        </td>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.category}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.description}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.level}
-                        </td>
+                        <td className="myclassContent">{s.class_name}</td>
+                        <td className="myclassContent">{s.category}</td>
+                        <td className="myclassContent">{s.description}</td>
+                        <td className="myclassContent">{s.level}</td>
                         <td className="myclassContent">$ {s.pricing}</td>
-                        <td>
+                        <td className="myclassContent">
                           <Button className="registerButton"> Register</Button>
                         </td>
                       </tr>
                     ))
                   : null}
-              </table>
-            )}
-          </div>
-          <div>
-            {filterCategoryReducer.isPending ? (
-              console.log("loading")
-            ) : (
-              <table className="tableActivity">
                 {filterCategoryReducer.isFulfilled
                   ? filterCategoryReducer.results.map((s) => (
                       <tr>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.class_name}
-                        </td>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.category}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.description}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.level}
-                        </td>
+                        <td className="myclassContent">{s.class_name}</td>
+                        <td className="myclassContent">{s.category}</td>
+                        <td className="myclassContent">{s.description}</td>
+                        <td className="myclassContent">{s.level}</td>
                         <td className="myclassContent">$ {s.pricing}</td>
                         <td>
                           <Button className="registerButton"> Register</Button>
@@ -342,32 +299,27 @@ function AddNewClass(props) {
                       </tr>
                     ))
                   : null}
-              </table>
-            )}
-          </div>
-
-          <div>
-            {filterLevelReducer.isPending ? (
-              console.log("loading")
-            ) : (
-              <table className="tableActivity">
-                <tr></tr>
-
                 {filterLevelReducer.isFulfilled
                   ? filterLevelReducer.results.map((s) => (
                       <tr>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.class_name}
+                        <td className="myclassContent">{s.class_name}</td>
+                        <td className="myclassContent">{s.category}</td>
+                        <td className="myclassContent">{s.description}</td>
+                        <td className="myclassContent">{s.level}</td>
+                        <td className="myclassContent">$ {s.pricing}</td>
+                        <td>
+                          <Button className="registerButton"> Register</Button>
                         </td>
-                        <td className="myclassContent" style={{ width: "15%" }}>
-                          {s.category}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.description}
-                        </td>
-                        <td className="myclassContent" style={{ width: "10%" }}>
-                          {s.level}
-                        </td>
+                      </tr>
+                    ))
+                  : null}
+                {filterPricingReducer.isFulfilled
+                  ? filterPricingReducer.results.map((s) => (
+                      <tr>
+                        <td className="myclassContent">{s.class_name}</td>
+                        <td className="myclassContent">{s.category}</td>
+                        <td className="myclassContent">{s.description}</td>
+                        <td className="myclassContent">{s.level}</td>
                         <td className="myclassContent">$ {s.pricing}</td>
                         <td>
                           <Button className="registerButton"> Register</Button>
@@ -420,7 +372,7 @@ const mapDispatchToProps = (dispatch) => {
     filterPricing: (param) =>
       dispatch(
         filterPricing(
-          `http://localhost:8300/api/v1/newclass/level/?search=${param}`
+          `http://localhost:8300/api/v1/newclass/pricing/?search=${param}`
         )
       ),
   };

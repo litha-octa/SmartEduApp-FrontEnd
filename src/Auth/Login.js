@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./component/login.css";
 import ModalComp from '../component/ModalComp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from "react-redux";
 import {login} from "../redux/ActionCreators/login";
-import { loginReducer } from "../redux/Reducers/login";
-import axios from "axios";
+
 
 
 class Login extends Component {
@@ -15,8 +14,6 @@ class Login extends Component {
     password: "",
     modalShow: false,
   };
-
-  // let history = useHistory();
 
   nameHandler = (e) => {
     this.setState({
@@ -39,23 +36,11 @@ class Login extends Component {
     if (this.props.loginReducer.isPending) {
       console.log("Loading...");
     } else if (this.props.loginReducer.isFulfilled) {
-      if (prevProps.loginReducer !== this.props.loginReducer) {
-        localStorage.setItem("token", this.props.loginReducer.result.token);
-
         this.props.history.push("/Dashboard");
-      }
     } else if (this.props.loginReducer.isRejected) {
-      if (
-        prevProps.loginReducer !== this.props.loginReducer &&
-        prevState.modalShow === false
-      ) {
-        this.setState({
-          modalShow: true,
-        });
-      }
+      console.log("Loading...");
     }
-  }
-
+  };
   loginHandler = (e) => {
     e.preventDefault();
     const dataLogin = {
@@ -63,32 +48,29 @@ class Login extends Component {
       email: this.state.name,
       password: this.state.password,
     };
-    //this.props.login(dataLogin);
+    this.props.login(dataLogin);
+  };
 
-    // this.props.getUser();
-  //};
-
-  // submitHandler = (a) => {
+  // loginHandler = (a) => {
   //   a.preventDefault();
   //   let dataLogin = {
   //     name: this.state.name,
   //     password: this.state.password,
   //   };
-
-    axios
-      .post("http://localhost:8300/api/v1/auth/", dataLogin)
-      .then((res) => {
-        if (res.data.success) {
-          console.log(res.data.result.token.payload);
-          this.props.history.push("/Dashboard");
-        }
-      })
-      .catch((err) => {
-        this.setState({
-          modalShow: true,
-        });
-      });
-   };
+  //   axios
+  //     .post("http://localhost:8300/api/v1/auth/", dataLogin)
+  //     .then((res) => {
+  //       if (res.data.success) {
+  //         console.log(res.data);
+  //         this.props.history.push("/Dashboard");
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       this.setState({
+  //         modalShow: true,
+  //       });
+  //     });
+  //  };
 
   render() {
     return (
@@ -157,17 +139,15 @@ class Login extends Component {
   }
 }
 const mapStateToProps = (state) => {
-  const{getUserReducer, loginReducer}= state;
+  const{ loginReducer}= state;
   return{
-    getUserReducer,loginReducer
+    loginReducer
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    login : (data) => dispatch (login('http://localhost:8300/api/v1/auth/',data)),
-    // getUser: (param) => dispatch(getUser(`http://localhost:8300/api/v1/usr/${param}`)),
-    
+    login : (data) => dispatch (login('http://localhost:8300/api/v1/auth/',data)),  
   };
 };
 const ConnectedLogin = connect(
